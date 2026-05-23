@@ -1,0 +1,56 @@
+name: Process Approved Submission
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  process:
+    if: github.event.label.name == 'approved'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.KB_WRITER_TOKEN }}
+
+      - name: Extract and validate submission
+        id: extract
+        run: |
+          BODY='${{ github.event.issue.body }}'
+          # Extract JSON from code block
+          JSON=$(echo "$BODY" | sed -n '/^```json/,/^```/p' | grep -v '```')
+          
+          # Validate required fields exist
+          for field in domain key source before_value after_value macos_version; do
+            echo "$JSON" | python3 -c "import json,sys; d=json.load(sys.stdin); assert '$field' in d" \
+              || (echo "Missing field: $field" && exit 1)
+          done
+          
+          echo "submission=$JSON" >> $GITHUB_OUTPUT
+
+      - name: This step is a placeholder for the KB entry
+        # The actual KB entry JSON is produced by the Cowork curation session,
+        # not by this workflow. This workflow only runs after Cowork has already
+        # edited settings-kb.json and version.json and committed them.
+        # See Cowork Curation Session section for the full flow.
+        run: echo "Workflow triggered — curation handled by Cowork session"
+
+      - name: Close issue
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.KB_WRITER_TOKEN }}
+          script: |
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            });
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: 'This submission has been processed and incorporated into the knowledge base.'
+            });
