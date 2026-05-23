@@ -11,7 +11,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "10.12",
-    "notes": "1 = natural scrolling on, 0 = off. Also applies to mouse scroll wheel direction.",
+    "notes": "Values appear as True/False when read from .GlobalPreferences.plist directly, or 1/0 via defaults export. True/1 = natural scrolling on, False/0 = off. Also applies to mouse scroll wheel direction.",
     "ai_generated": true,
     "contributed_by_issue": null
   },
