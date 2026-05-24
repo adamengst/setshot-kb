@@ -1911,13 +1911,13 @@
     "value_type": "bool",
     "description": "Show recently opened apps in a separate section at the end of the Dock.",
     "ui_location": "System Settings → Desktop & Dock → Show recent applications in Dock",
-    "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension",
+    "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension?Dock",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": 3
   },
   {
     "id": "dock.launchanim",
