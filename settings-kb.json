@@ -6866,5 +6866,38 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null
+  },
+  {
+    "id": "mail.LastKnownReindexReasons",
+    "domain": "group.com.apple.mail",
+    "key": "",
+    "key_prefix": "LastKnownReindexReasons[",
+    "source": "plist",
+    "value_type": "string",
+    "description": "Mail: Spotlight reindex log entry.",
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Timestamped log of Mail reindex events triggered by Spotlight; not a user setting.",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 10
+  },
+  {
+    "id": "weatherd.last-app-instance-date",
+    "domain": "com.apple.weatherd",
+    "key": "com.apple.app-analytics.crash-detection.last-app-instance-date",
+    "source": "plist",
+    "value_type": "string",
+    "description": "Weather daemon: last run timestamp for crash detection.",
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Crash detection bookkeeping timestamp; changes every time the Weather daemon runs.",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 9
   }
 ]
