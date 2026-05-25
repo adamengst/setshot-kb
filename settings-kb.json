@@ -5088,6 +5088,178 @@
     "contributed_by_issue": null
   },
   {
+    "id": "dock-wvous-tl-corner",
+    "domain": "com.apple.dock",
+    "key": "wvous-tl-corner",
+    "source": "defaults",
+    "value_type": "integer",
+    "description": "Hot corner action: top-left corner.",
+    "ui_location": "System Settings → Desktop & Dock → Hot Corners → Top Left",
+    "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension?Dock",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Disabled", "1": "Mission Control", "2": "Mission Control",
+      "3": "Application Windows", "4": "Desktop",
+      "6": "Start Screen Saver", "7": "Disable Screen Saver",
+      "10": "Put Display to Sleep", "11": "Launchpad",
+      "12": "Quick Note", "13": "Lock Screen", "14": "Stage Manager"
+    }
+  },
+  {
+    "id": "dock-wvous-tl-modifier",
+    "domain": "com.apple.dock",
+    "key": "wvous-tl-modifier",
+    "source": "defaults",
+    "value_type": "integer",
+    "description": "Hot corner modifier key: top-left corner (hold this key to activate).",
+    "ui_location": "System Settings → Desktop & Dock → Hot Corners → Top Left",
+    "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension?Dock",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "None", "131072": "Shift", "262144": "Control",
+      "524288": "Option", "1048576": "Command"
+    }
+  },
+  {
+    "id": "dock-wvous-tr-corner",
+    "domain": "com.apple.dock",
+    "key": "wvous-tr-corner",
+    "source": "defaults",
+    "value_type": "integer",
+    "description": "Hot corner action: top-right corner.",
+    "ui_location": "System Settings → Desktop & Dock → Hot Corners → Top Right",
+    "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension?Dock",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Disabled", "1": "Mission Control", "2": "Mission Control",
+      "3": "Application Windows", "4": "Desktop",
+      "6": "Start Screen Saver", "7": "Disable Screen Saver",
+      "10": "Put Display to Sleep", "11": "Launchpad",
+      "12": "Quick Note", "13": "Lock Screen", "14": "Stage Manager"
+    }
+  },
+  {
+    "id": "dock-wvous-tr-modifier",
+    "domain": "com.apple.dock",
+    "key": "wvous-tr-modifier",
+    "source": "defaults",
+    "value_type": "integer",
+    "description": "Hot corner modifier key: top-right corner (hold this key to activate).",
+    "ui_location": "System Settings → Desktop & Dock → Hot Corners → Top Right",
+    "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension?Dock",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "None", "131072": "Shift", "262144": "Control",
+      "524288": "Option", "1048576": "Command"
+    }
+  },
+  {
+    "id": "dock-wvous-bl-corner",
+    "domain": "com.apple.dock",
+    "key": "wvous-bl-corner",
+    "source": "defaults",
+    "value_type": "integer",
+    "description": "Hot corner action: bottom-left corner.",
+    "ui_location": "System Settings → Desktop & Dock → Hot Corners → Bottom Left",
+    "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension?Dock",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Disabled", "1": "Mission Control", "2": "Mission Control",
+      "3": "Application Windows", "4": "Desktop",
+      "6": "Start Screen Saver", "7": "Disable Screen Saver",
+      "10": "Put Display to Sleep", "11": "Launchpad",
+      "12": "Quick Note", "13": "Lock Screen", "14": "Stage Manager"
+    }
+  },
+  {
+    "id": "dock-wvous-bl-modifier",
+    "domain": "com.apple.dock",
+    "key": "wvous-bl-modifier",
+    "source": "defaults",
+    "value_type": "integer",
+    "description": "Hot corner modifier key: bottom-left corner (hold this key to activate).",
+    "ui_location": "System Settings → Desktop & Dock → Hot Corners → Bottom Left",
+    "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension?Dock",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "None", "131072": "Shift", "262144": "Control",
+      "524288": "Option", "1048576": "Command"
+    }
+  },
+  {
+    "id": "dock-wvous-br-corner",
+    "domain": "com.apple.dock",
+    "key": "wvous-br-corner",
+    "source": "defaults",
+    "value_type": "integer",
+    "description": "Hot corner action: bottom-right corner.",
+    "ui_location": "System Settings → Desktop & Dock → Hot Corners → Bottom Right",
+    "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension?Dock",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Disabled", "1": "Mission Control", "2": "Mission Control",
+      "3": "Application Windows", "4": "Desktop",
+      "6": "Start Screen Saver", "7": "Disable Screen Saver",
+      "10": "Put Display to Sleep", "11": "Launchpad",
+      "12": "Quick Note", "13": "Lock Screen", "14": "Stage Manager"
+    }
+  },
+  {
+    "id": "dock-wvous-br-modifier",
+    "domain": "com.apple.dock",
+    "key": "wvous-br-modifier",
+    "source": "defaults",
+    "value_type": "integer",
+    "description": "Hot corner modifier key: bottom-right corner (hold this key to activate).",
+    "ui_location": "System Settings → Desktop & Dock → Hot Corners → Bottom Right",
+    "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension?Dock",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "None", "131072": "Shift", "262144": "Control",
+      "524288": "Option", "1048576": "Command"
+    }
+  },
+  {
     "id": "dock-enterMissionControlByTopWindowDrag",
     "domain": "com.apple.dock",
     "key": "enterMissionControlByTopWindowDrag",
