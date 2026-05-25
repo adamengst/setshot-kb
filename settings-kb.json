@@ -2381,7 +2381,10 @@
     "min_macos": "13.0",
     "notes": "Values: 'icnv'=Icon, 'Nlsv'=List, 'clmv'=Column, 'glyv'=Gallery.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "icnv": "Icon", "Nlsv": "List", "clmv": "Column", "glyv": "Gallery"
+    }
   },
   {
     "id": "finder.FXSortFoldersFirst",
