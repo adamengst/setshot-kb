@@ -5106,8 +5106,8 @@
       "0": "Disabled", "1": "Mission Control", "2": "Mission Control",
       "3": "Application Windows", "4": "Desktop",
       "6": "Start Screen Saver", "7": "Disable Screen Saver",
-      "10": "Put Display to Sleep", "11": "Launchpad",
-      "12": "Quick Note", "13": "Lock Screen", "14": "Stage Manager"
+      "10": "Put Display to Sleep", "11": "Apps",
+      "12": "Notification Center", "13": "Lock Screen", "14": "Quick Note"
     }
   },
   {
@@ -5116,7 +5116,7 @@
     "key": "wvous-tl-modifier",
     "source": "defaults",
     "value_type": "integer",
-    "description": "Hot corner modifier key: top-left corner (hold this key to activate).",
+    "description": "Hot corner modifier key: top-left corner.",
     "ui_location": "System Settings → Desktop & Dock → Hot Corners → Top Left",
     "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension?Dock",
     "noise": false,
@@ -5149,8 +5149,8 @@
       "0": "Disabled", "1": "Mission Control", "2": "Mission Control",
       "3": "Application Windows", "4": "Desktop",
       "6": "Start Screen Saver", "7": "Disable Screen Saver",
-      "10": "Put Display to Sleep", "11": "Launchpad",
-      "12": "Quick Note", "13": "Lock Screen", "14": "Stage Manager"
+      "10": "Put Display to Sleep", "11": "Apps",
+      "12": "Notification Center", "13": "Lock Screen", "14": "Quick Note"
     }
   },
   {
@@ -5159,7 +5159,7 @@
     "key": "wvous-tr-modifier",
     "source": "defaults",
     "value_type": "integer",
-    "description": "Hot corner modifier key: top-right corner (hold this key to activate).",
+    "description": "Hot corner modifier key: top-right corner.",
     "ui_location": "System Settings → Desktop & Dock → Hot Corners → Top Right",
     "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension?Dock",
     "noise": false,
@@ -5192,8 +5192,8 @@
       "0": "Disabled", "1": "Mission Control", "2": "Mission Control",
       "3": "Application Windows", "4": "Desktop",
       "6": "Start Screen Saver", "7": "Disable Screen Saver",
-      "10": "Put Display to Sleep", "11": "Launchpad",
-      "12": "Quick Note", "13": "Lock Screen", "14": "Stage Manager"
+      "10": "Put Display to Sleep", "11": "Apps",
+      "12": "Notification Center", "13": "Lock Screen", "14": "Quick Note"
     }
   },
   {
@@ -5202,7 +5202,7 @@
     "key": "wvous-bl-modifier",
     "source": "defaults",
     "value_type": "integer",
-    "description": "Hot corner modifier key: bottom-left corner (hold this key to activate).",
+    "description": "Hot corner modifier key: bottom-left corner.",
     "ui_location": "System Settings → Desktop & Dock → Hot Corners → Bottom Left",
     "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension?Dock",
     "noise": false,
@@ -5235,8 +5235,8 @@
       "0": "Disabled", "1": "Mission Control", "2": "Mission Control",
       "3": "Application Windows", "4": "Desktop",
       "6": "Start Screen Saver", "7": "Disable Screen Saver",
-      "10": "Put Display to Sleep", "11": "Launchpad",
-      "12": "Quick Note", "13": "Lock Screen", "14": "Stage Manager"
+      "10": "Put Display to Sleep", "11": "Apps",
+      "12": "Notification Center", "13": "Lock Screen", "14": "Quick Note"
     }
   },
   {
@@ -5245,7 +5245,7 @@
     "key": "wvous-br-modifier",
     "source": "defaults",
     "value_type": "integer",
-    "description": "Hot corner modifier key: bottom-right corner (hold this key to activate).",
+    "description": "Hot corner modifier key: bottom-right corner.",
     "ui_location": "System Settings → Desktop & Dock → Hot Corners → Bottom Right",
     "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension?Dock",
     "noise": false,
