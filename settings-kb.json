@@ -6899,5 +6899,22 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 9
+  },
+  {
+    "id": "universalaccessAuthWarning",
+    "domain": "com.apple.universalaccessAuthWarning",
+    "key": "",
+    "key_prefix": "",
+    "source": "plist",
+    "value_type": "string",
+    "description": "Accessibility permission grant record.",
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Records which apps have been granted Accessibility access; keys are app executable paths that change with updates and App Translocation.",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 11
   }
 ]
