@@ -5104,6 +5104,38 @@
     "contributed_by_issue": null
   },
   {
+    "id": "AppleMultitouchTrackpad-TrackpadPinch",
+    "domain": "com.apple.AppleMultitouchTrackpad",
+    "key": "TrackpadPinch",
+    "source": "plist",
+    "value_type": "bool",
+    "description": "Pinch to Zoom: enable or disable the pinch gesture on the built-in trackpad.",
+    "ui_location": "System Settings -> Trackpad -> Scroll & Zoom -> Zoom in or out",
+    "settings_url": "x-apple.systempreferences:com.apple.Trackpad-Settings.extension?ScrollZoom",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null
+  },
+  {
+    "id": "BTTrackpad-TrackpadPinch",
+    "domain": "com.apple.driver.AppleBluetoothMultitouch.trackpad",
+    "key": "TrackpadPinch",
+    "source": "plist",
+    "value_type": "bool",
+    "description": "Pinch to Zoom: enable or disable the pinch gesture on the Magic Trackpad.",
+    "ui_location": "System Settings -> Trackpad -> Scroll & Zoom -> Zoom in or out",
+    "settings_url": "x-apple.systempreferences:com.apple.Trackpad-Settings.extension?ScrollZoom",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null
+  },
+  {
     "id": "AppleMultitouchTrackpad-TrackpadFiveFingerPinchGesture",
     "domain": "com.apple.AppleMultitouchTrackpad",
     "key": "TrackpadFiveFingerPinchGesture",
