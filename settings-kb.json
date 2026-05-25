@@ -6820,6 +6820,22 @@
     "contributed_by_issue": null
   },
   {
+    "id": "cleanshot.markupLastToolIndex",
+    "domain": "com.getcleanshot.app-setapp",
+    "key": "markupLastToolIndex",
+    "source": "defaults",
+    "value_type": "integer",
+    "description": "CleanShot X: last selected annotation tool index.",
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Tracks which annotation tool was last used in CleanShot; not a user-facing setting.",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null
+  },
+  {
     "id": "cleanshot.markupLastWidth",
     "domain": "com.getcleanshot.app-setapp",
     "key": "markupLastWidth",
