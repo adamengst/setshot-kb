@@ -7176,5 +7176,22 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 19
+  },
+  {
+    "id": "audio-device.device-settings-all",
+    "domain": "com.apple.audio.DeviceSettings",
+    "key": "",
+    "key_prefix": "",
+    "source": "plist",
+    "value_type": "float",
+    "description": "Live audio hardware state for any audio device (volume, gain, hardware control registers); includes MAC-address-keyed external devices.",
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "All keys in this domain are live hardware state (output levels, input gains, hardware control registers) that change whenever audio settings are adjusted. Keys for external devices include the device MAC address and are user-specific.",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 20
   }
 ]
