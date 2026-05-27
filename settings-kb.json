@@ -7676,5 +7676,39 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 28
+  },
+  {
+    "id": "siri.KeyboardShortcutSAE.enabled",
+    "domain": "com.apple.Siri",
+    "key": "KeyboardShortcutSAE.enabled",
+    "source": "plist",
+    "value_type": "bool",
+    "description": "Enables or disables the keyboard shortcut to invoke Siri.",
+    "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Keyboard Shortcut",
+    "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 29,
+    "icon_bundle_id": "com.apple.Siri-Settings.extension"
+  },
+  {
+    "id": "siri.KeyboardShortcutSAE.value.parameters",
+    "domain": "com.apple.Siri",
+    "key": "",
+    "key_prefix": "KeyboardShortcutSAE.value.parameters",
+    "source": "plist",
+    "value_type": "string",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Internal keycode and modifier flag parameters set automatically when the Siri keyboard shortcut is configured; not user-readable.",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 29
   }
 ]
