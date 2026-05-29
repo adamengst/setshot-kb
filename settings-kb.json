@@ -6329,7 +6329,7 @@
     "key": "AccessibilityReaderHotkeyEnabled",
     "source": "defaults",
     "value_type": "bool",
-    "description": "Accessibility Reader: enable the keyboard shortcut (⌘T) to open Accessibility Reader.",
+    "description": "Accessibility Reader: enabled.",
     "ui_location": "System Settings -> Accessibility -> Read & Speak",
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
