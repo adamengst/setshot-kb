@@ -3539,7 +3539,7 @@
     "key": "VoiceControl",
     "source": "defaults",
     "value_type": "int",
-    "description": "Voice Control icon visibility in the menu bar.",
+    "description": "Whether Voice Control appears in Control Center. (The active microphone status icon appears in the menu bar automatically while Voice Control is running, regardless of this setting.)",
     "ui_location": "System Settings → Control Center → Voice Control",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
@@ -6052,6 +6052,24 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null
+  },
+  {
+    "id": "accessibility-vc-enabled",
+    "domain": "com.apple.Accessibility",
+    "key": "CommandAndControlEnabled",
+    "source": "plist",
+    "value_type": "bool",
+    "description": "Voice Control is enabled.",
+    "ui_location": "System Settings → Accessibility → Voice Control",
+    "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": null,
+    "icon_bundle_id": null
   },
   {
     "id": "speech-CACOverlayFadeOpacity",
