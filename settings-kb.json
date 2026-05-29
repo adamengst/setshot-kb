@@ -4067,6 +4067,23 @@
     "contributed_by_issue": null
   },
   {
+    "id": "accessibility.SpeakThisEnabled",
+    "domain": "com.apple.Accessibility",
+    "key": "SpeakThisEnabled",
+    "source": "plist",
+    "value_type": "bool",
+    "description": "Speak Selection: enables the Speak This service so selected text can be spoken aloud.",
+    "ui_location": "System Settings \u2192 Accessibility \u2192 Read & Speak \u2192 Speak Selection",
+    "ui_location_overrides": [{"before_macos_major": 26, "ui_location": "System Settings \u2192 Accessibility \u2192 Spoken Content \u2192 Speak Selection"}],
+    "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 37
+  },
+  {
     "id": "universalaccess.speakItemUnderMouseEnabled",
     "domain": "com.apple.universalaccess",
     "key": "speakItemUnderMouseEnabled",
@@ -7781,5 +7798,37 @@
     "contributed_by_issue": 33,
     "value_map": null,
     "icon_bundle_id": null
+  },
+  {
+    "id": "activitymonitor-DisplayType",
+    "domain": "com.apple.ActivityMonitor",
+    "key": "DisplayType",
+    "source": "plist",
+    "value_type": "bool",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Internal Activity Monitor app-state preference; not a user-facing System Settings option",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 37
+  },
+  {
+    "id": "safari-cloud-AcknowledgedPushNotifications",
+    "domain": "com.apple.SafariCloudHistoryPushAgent",
+    "key": "AcknowledgedPushNotifications",
+    "source": "plist",
+    "value_type": "bool",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Internal Safari sync-agent state tracking whether a push notification was acknowledged; not user-controllable",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 37
   }
 ]
