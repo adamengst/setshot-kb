@@ -8096,5 +8096,39 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 2
+  },
+  {
+    "id": "ampdevicesagent-userMaxConcurrentDownloads",
+    "domain": "com.apple.AMPDevicesAgent",
+    "key": "userMaxConcurrentDownloads",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "integer",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Internal AMPDevicesAgent default; not user-configurable",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 4
+  },
+  {
+    "id": "parsecd-SBABookmark",
+    "domain": "com.apple.parsecd",
+    "key": "SBABookmark",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "string",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Spotlight parsing daemon internal bookmark with timestamp; changes on its own",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 4
   }
 ]
