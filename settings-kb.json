@@ -4061,7 +4061,12 @@
     "value_type": "bool",
     "description": "Speak Selection: read aloud any selected text when the keyboard shortcut is pressed.",
     "ui_location": "System Settings \u2192 Accessibility \u2192 Read & Speak \u2192 Speak Selection",
-    "ui_location_overrides": [{"before_macos_major": 26, "ui_location": "System Settings \u2192 Accessibility \u2192 Spoken Content \u2192 Speak Selection"}],
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Accessibility \u2192 Spoken Content \u2192 Speak Selection"
+      }
+    ],
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -4078,7 +4083,12 @@
     "value_type": "bool",
     "description": "Speak Selection: enables the Speak This service so selected text can be spoken aloud.",
     "ui_location": "System Settings \u2192 Accessibility \u2192 Read & Speak \u2192 Speak Selection",
-    "ui_location_overrides": [{"before_macos_major": 26, "ui_location": "System Settings \u2192 Accessibility \u2192 Spoken Content \u2192 Speak Selection"}],
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Accessibility \u2192 Spoken Content \u2192 Speak Selection"
+      }
+    ],
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -4095,7 +4105,12 @@
     "value_type": "bool",
     "description": "Speak item under the pointer: speak the word or item currently under the cursor.",
     "ui_location": "System Settings \u2192 Accessibility \u2192 Read & Speak \u2192 Speak item under pointer",
-    "ui_location_overrides": [{"before_macos_major": 26, "ui_location": "System Settings \u2192 Accessibility \u2192 Spoken Content \u2192 Speak item under pointer"}],
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Accessibility \u2192 Spoken Content \u2192 Speak item under pointer"
+      }
+    ],
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -4112,7 +4127,12 @@
     "value_type": "bool",
     "description": "Live Speech: type text and have it spoken aloud by the device.",
     "ui_location": "System Settings \u2192 Accessibility \u2192 Read & Speak \u2192 Live Speech",
-    "ui_location_overrides": [{"before_macos_major": 26, "ui_location": "System Settings \u2192 Accessibility \u2192 Spoken Content \u2192 Live Speech"}],
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Accessibility \u2192 Spoken Content \u2192 Live Speech"
+      }
+    ],
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -4129,7 +4149,12 @@
     "value_type": "bool",
     "description": "Spoken Content echoes each word or character aloud while typing.",
     "ui_location": "System Settings \u2192 Accessibility \u2192 Read & Speak \u2192 Speak while typing",
-    "ui_location_overrides": [{"before_macos_major": 26, "ui_location": "System Settings \u2192 Accessibility \u2192 Spoken Content \u2192 Speak while typing"}],
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Accessibility \u2192 Spoken Content \u2192 Speak while typing"
+      }
+    ],
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -6103,7 +6128,7 @@
     "source": "plist",
     "value_type": "float",
     "description": "Voice Control: seconds before the command overlay begins to fade.",
-    "ui_location": "System Settings → Accessibility → Voice Control",
+    "ui_location": "System Settings \u2192 Accessibility \u2192 Voice Control",
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -6169,7 +6194,7 @@
     "source": "plist",
     "value_type": "bool",
     "description": "Voice Control: play a sound when a command is recognized.",
-    "ui_location": "System Settings → Accessibility → Voice Control",
+    "ui_location": "System Settings \u2192 Accessibility \u2192 Voice Control",
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -6367,7 +6392,12 @@
     "value_type": "bool",
     "description": "Spoken Content: keyboard shortcut to speak selected text enabled.",
     "ui_location": "System Settings -> Accessibility -> Read & Speak -> Speak Selection",
-    "ui_location_overrides": [{"before_macos_major": 26, "ui_location": "System Settings -> Accessibility -> Spoken Content -> Speak Selection"}],
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings -> Accessibility -> Spoken Content -> Speak Selection"
+      }
+    ],
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -6384,7 +6414,12 @@
     "value_type": "bool",
     "description": "Spoken Content: speak alert text automatically.",
     "ui_location": "System Settings -> Accessibility -> Read & Speak -> Speak Announcements",
-    "ui_location_overrides": [{"before_macos_major": 26, "ui_location": "System Settings -> Accessibility -> Spoken Content -> Speak Announcements"}],
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings -> Accessibility -> Spoken Content -> Speak Announcements"
+      }
+    ],
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -6401,7 +6436,12 @@
     "value_type": "bool",
     "description": "Spoken Content: detect languages automatically for text-to-speech.",
     "ui_location": "System Settings -> Accessibility -> Read & Speak",
-    "ui_location_overrides": [{"before_macos_major": 26, "ui_location": "System Settings -> Accessibility -> Spoken Content"}],
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings -> Accessibility -> Spoken Content"
+      }
+    ],
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -6418,7 +6458,12 @@
     "value_type": "bool",
     "description": "Spoken Content: use custom fonts for Hover Text.",
     "ui_location": "System Settings -> Accessibility -> Read & Speak",
-    "ui_location_overrides": [{"before_macos_major": 26, "ui_location": "System Settings -> Accessibility -> Spoken Content"}],
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings -> Accessibility -> Spoken Content"
+      }
+    ],
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -6435,7 +6480,12 @@
     "value_type": "bool",
     "description": "Spoken Content: custom pronunciations enabled.",
     "ui_location": "System Settings -> Accessibility -> Read & Speak -> Pronunciations",
-    "ui_location_overrides": [{"before_macos_major": 26, "ui_location": "System Settings -> Accessibility -> Spoken Content -> Pronunciations"}],
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings -> Accessibility -> Spoken Content -> Pronunciations"
+      }
+    ],
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -7899,7 +7949,7 @@
     "ui_location": null,
     "settings_url": null,
     "noise": true,
-    "noise_reason": "Internal accessibility preference initialized when Pointer Control settings are first opened; (not set)→False is macOS writing a default, not a user change",
+    "noise_reason": "Internal accessibility preference initialized when Pointer Control settings are first opened; (not set)\u2192False is macOS writing a default, not a user change",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
@@ -7961,5 +8011,90 @@
     "contributed_by_issue": 1,
     "value_map": null,
     "icon_bundle_id": null
+  },
+  {
+    "id": "audio-systemsettings-output-master-data-source-0",
+    "domain": "com.apple.audio.SystemSettings",
+    "key": "preferred devices.output[0].master data source value",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "string",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Internal audio engine sample-frame counter; changes whenever the output device changes",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 2
+  },
+  {
+    "id": "audio-systemsettings-output-master-data-source-1",
+    "domain": "com.apple.audio.SystemSettings",
+    "key": "preferred devices.output[1].master data source value",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "string",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Internal audio engine sample-frame counter; changes whenever the output device changes",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 2
+  },
+  {
+    "id": "audio-systemsettings-output-master-data-source-2",
+    "domain": "com.apple.audio.SystemSettings",
+    "key": "preferred devices.output[2].master data source value",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "string",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Internal audio engine sample-frame counter; changes whenever the output device changes",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 2
+  },
+  {
+    "id": "audio-systemsettings-output-master-data-source-3",
+    "domain": "com.apple.audio.SystemSettings",
+    "key": "preferred devices.output[3].master data source value",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "string",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Internal audio engine sample-frame counter; changes whenever the output device changes",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 2
+  },
+  {
+    "id": "audio-systemsettings-output-uid",
+    "domain": "com.apple.audio.SystemSettings",
+    "key": "",
+    "key_prefix": "preferred devices.output",
+    "source": "plist",
+    "value_type": "string",
+    "description": "Sound: Output device",
+    "ui_location": "System Settings > Sound > Output",
+    "settings_url": "x-apple.systempreferences:com.apple.preference.sound?Output",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 2
   }
 ]
