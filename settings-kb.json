@@ -7887,7 +7887,7 @@
     "ai_generated": false,
     "contributed_by_issue": 40,
     "value_map": null,
-    "icon_bundle_id": null
+    "icon_bundle_id": "com.apple.screenshot.launcher"
   },
   {
     "id": "universalaccess-mouseDriver",
