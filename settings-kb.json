@@ -7939,5 +7939,23 @@
     "contributed_by_issue": 40,
     "value_map": null,
     "icon_bundle_id": null
+  },
+  {
+    "id": "ampdevicesagent-updateLevel",
+    "domain": "com.apple.AMPDevicesAgent",
+    "key": "updateLevel",
+    "source": "plist",
+    "value_type": "integer",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Internal counter incremented by the Music/device sync agent; not a user-facing setting",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 1,
+    "value_map": null,
+    "icon_bundle_id": null
   }
 ]
