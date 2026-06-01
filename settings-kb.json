@@ -2675,15 +2675,19 @@
     "key": "Use device speaker for TTS",
     "source": "defaults",
     "value_type": "int",
-    "description": "How Siri delivers spoken responses.",
+    "description": "Siri: Voice Feedback",
     "ui_location": "System Settings \u2192 Siri \u2192 Siri Responses",
     "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "2=Prefer Spoken Responses, 1=Automatic.",
-    "ai_generated": true,
-    "contributed_by_issue": null
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "1": "Automatic (only speaks with Hey Siri)",
+      "2": "Always speaks (Voice Feedback on)"
+    }
   },
   {
     "id": "usernoted.contentVisibility",
