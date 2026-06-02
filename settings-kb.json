@@ -1559,13 +1559,13 @@
     "key": "com.apple.sound.beep.sound",
     "source": "defaults",
     "value_type": "string",
-    "description": "System alert sound. Value is the full path to the .aiff sound file.",
+    "description": "System alert sound.",
     "ui_location": "System Settings \u2192 Sound \u2192 Sound Effects \u2192 Alert sound",
     "settings_url": "x-apple.systempreferences:com.apple.Sound-Settings.extension?effects",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "E.g. '/System/Library/Sounds/Tink.aiff' (Boop). Absent key = default sound.",
+    "notes": "Value is the sound name, e.g. 'Frog' or 'Submarine'. Absent key = default sound.",
     "ai_generated": true,
     "contributed_by_issue": null
   },
@@ -8501,5 +8501,22 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 5
+  },
+  {
+    "id": "ncprefs-summarize-previews",
+    "domain": "com.apple.ncprefs",
+    "key": "summarize_previews",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "boolean",
+    "description": "Summarize notification previews using Apple Intelligence.",
+    "ui_location": "System Settings → Notifications → Summarize Previews",
+    "settings_url": "x-apple.systempreferences:com.apple.preference.notifications",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "15.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 10
   }
 ]
