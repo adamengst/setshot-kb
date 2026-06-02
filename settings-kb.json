@@ -3455,7 +3455,8 @@
     "min_macos": "14.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "icon_bundle_id": "com.apple.Passwords"
   },
   {
     "id": "mail.AlertForNonmatchingDomains",
