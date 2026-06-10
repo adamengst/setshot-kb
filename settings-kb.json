@@ -18413,7 +18413,8 @@
     "id": "com.apple.escrowsecurityalert.esahealthsampleupdatestoragekey",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.powerd.charging",
@@ -18428,7 +18429,8 @@
     "id": "com.apple.powerd.charging.policies",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.Preferences",
@@ -18443,7 +18445,8 @@
     "id": "com.apple.preferences.userdictionary",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.messages",
@@ -18488,7 +18491,8 @@
     "id": "com.apple.airscanscanner",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.AppleMediaServicesUI",
@@ -18503,7 +18507,8 @@
     "id": "com.apple.applemediaservicesui",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.AssistiveControl.editor",
@@ -18518,7 +18523,8 @@
     "id": "com.apple.assistivecontrol.editor",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.AssistiveControl.editor.LSSharedFileList",
@@ -18533,7 +18539,8 @@
     "id": "com.apple.assistivecontrol.editor.lssharedfilelist",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.BiomeAgent",
@@ -18548,7 +18555,8 @@
     "id": "com.apple.biomeagent",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.CalendarAgent",
@@ -18563,7 +18571,8 @@
     "id": "com.apple.calendaragent",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.CloudSubscriptionFeatures.ticket.cache",
@@ -18578,7 +18587,8 @@
     "id": "com.apple.cloudsubscriptionfeatures.ticket.cache",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.CoreDuet",
@@ -18593,7 +18603,8 @@
     "id": "com.apple.coreduet",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.EmojiPreferences",
@@ -18608,7 +18619,8 @@
     "id": "com.apple.emojipreferences",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.EscrowSecurityAlert",
@@ -18623,7 +18635,8 @@
     "id": "com.apple.escrowsecurityalert",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.FamilyControlsAgent",
@@ -18638,7 +18651,8 @@
     "id": "com.apple.familycontrolsagent",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.FileStatsAgent",
@@ -18653,7 +18667,8 @@
     "id": "com.apple.filestatsagent",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.FollowUpUI",
@@ -18668,7 +18683,8 @@
     "id": "com.apple.followupui",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.Intents.UpcomingMediaManager",
@@ -18683,7 +18699,8 @@
     "id": "com.apple.intents.upcomingmediamanager",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.KeyboardViewer",
@@ -18698,7 +18715,8 @@
     "id": "com.apple.keyboardviewer",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.Maps.pushdaemon",
@@ -18713,7 +18731,8 @@
     "id": "com.apple.maps.pushdaemon",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.MapsSupport",
@@ -18728,7 +18747,8 @@
     "id": "com.apple.mapssupport",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.MassStorageCamera",
@@ -18743,7 +18763,8 @@
     "id": "com.apple.massstoragecamera",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.MessagesHistoryImporter",
@@ -18758,7 +18779,8 @@
     "id": "com.apple.messageshistoryimporter",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.MigrateAssistant",
@@ -18773,7 +18795,8 @@
     "id": "com.apple.migrateassistant",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.MobileDeviceCrashCopy",
@@ -18788,7 +18811,8 @@
     "id": "com.apple.mobiledevicecrashcopy",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.NetAuthAgent",
@@ -18803,7 +18827,8 @@
     "id": "com.apple.netauthagent",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.NotesMigratorService",
@@ -18818,7 +18843,8 @@
     "id": "com.apple.notesmigratorservice",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.PTPCamera",
@@ -18833,7 +18859,8 @@
     "id": "com.apple.ptpcamera",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.Preview.SandboxedPersistentURLs.LSSharedFileList",
@@ -18848,7 +18875,8 @@
     "id": "com.apple.preview.sandboxedpersistenturls.lssharedfilelist",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.PubSubAgent",
@@ -18863,7 +18891,8 @@
     "id": "com.apple.pubsubagent",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.QuickLookDaemon",
@@ -18878,7 +18907,8 @@
     "id": "com.apple.quicklookdaemon",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.QuickLookDaemon32",
@@ -18893,7 +18923,8 @@
     "id": "com.apple.quicklookdaemon32",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.RemoteManagement",
@@ -18908,7 +18939,8 @@
     "id": "com.apple.remotemanagement",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.Safari.SandboxBroker",
@@ -18923,7 +18955,8 @@
     "id": "com.apple.safari.sandboxbroker",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.SharedWebCredentials",
@@ -18938,7 +18971,8 @@
     "id": "com.apple.sharedwebcredentials",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.ShazamKit",
@@ -18953,7 +18987,8 @@
     "id": "com.apple.shazamkit",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.TMHelperAgent",
@@ -18968,7 +19003,8 @@
     "id": "com.apple.tmhelperagent",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.TextEdit.SandboxedPersistentURLs.LSSharedFileList",
@@ -18983,7 +19019,8 @@
     "id": "com.apple.textedit.sandboxedpersistenturls.lssharedfilelist",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.UIKit",
@@ -18998,7 +19035,8 @@
     "id": "com.apple.uikit",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.VideoSubscriberAccount",
@@ -19013,7 +19051,8 @@
     "id": "com.apple.videosubscriberaccount",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.VoiceOverUtilityCacheBuilder",
@@ -19028,7 +19067,8 @@
     "id": "com.apple.voiceoverutilitycachebuilder",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.WebKit.WebContent",
@@ -19043,7 +19083,8 @@
     "id": "com.apple.webkit.webcontent",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.account.linkedin",
@@ -19058,7 +19099,8 @@
     "id": "com.apple.account.linkedin",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.applescript",
@@ -19073,7 +19115,8 @@
     "id": "com.apple.applescript",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.assistant.token",
@@ -19088,7 +19131,8 @@
     "id": "com.apple.assistant.token",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.assistant_service",
@@ -19103,7 +19147,8 @@
     "id": "com.apple.assistant_service",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.awacsd",
@@ -19118,7 +19163,8 @@
     "id": "com.apple.awacsd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.bookstoreagent",
@@ -19133,7 +19179,8 @@
     "id": "com.apple.bookstoreagent",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.cameracapture",
@@ -19148,7 +19195,8 @@
     "id": "com.apple.cameracapture",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.clock",
@@ -19163,7 +19211,8 @@
     "id": "com.apple.clock",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.cloudd",
@@ -19178,7 +19227,8 @@
     "id": "com.apple.cloudd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.cmio.ContinuityCaptureAgent",
@@ -19193,7 +19243,8 @@
     "id": "com.apple.cmio.continuitycaptureagent",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.commerce.safari",
@@ -19208,7 +19259,8 @@
     "id": "com.apple.commerce.safari",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.commerce.spotlight",
@@ -19223,7 +19275,8 @@
     "id": "com.apple.commerce.spotlight",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.controlstrip",
@@ -19238,7 +19291,8 @@
     "id": "com.apple.controlstrip",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.coreauthd",
@@ -19253,7 +19307,8 @@
     "id": "com.apple.coreauthd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.corespotlightui",
@@ -19268,7 +19323,8 @@
     "id": "com.apple.corespotlightui",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.dashboard.client",
@@ -19283,7 +19339,8 @@
     "id": "com.apple.dashboard.client",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.diskspaced",
@@ -19298,7 +19355,8 @@
     "id": "com.apple.diskspaced",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.fileproviderd",
@@ -19313,7 +19371,8 @@
     "id": "com.apple.fileproviderd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.findmy",
@@ -19328,7 +19387,8 @@
     "id": "com.apple.findmy",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.findmy.fmfcore.notbackedup",
@@ -19343,7 +19403,8 @@
     "id": "com.apple.findmy.fmfcore.notbackedup",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.freeform",
@@ -19358,7 +19419,8 @@
     "id": "com.apple.freeform",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.helpd",
@@ -19373,7 +19435,8 @@
     "id": "com.apple.helpd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.icbaccountsd",
@@ -19388,7 +19451,8 @@
     "id": "com.apple.icbaccountsd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.icloud.fmip.clientconfiguration",
@@ -19403,7 +19467,8 @@
     "id": "com.apple.icloud.fmip.clientconfiguration",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.ids.service.com.apple.private.alloy.continuity.activity.public",
@@ -19418,7 +19483,8 @@
     "id": "com.apple.ids.service.com.apple.private.alloy.continuity.activity.public",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.internetconfigpriv",
@@ -19433,7 +19499,8 @@
     "id": "com.apple.internetconfigpriv",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.ist.ds.appleconnect.external",
@@ -19448,7 +19515,8 @@
     "id": "com.apple.ist.ds.appleconnect.external",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.iLifePhotoStream",
@@ -19463,7 +19531,8 @@
     "id": "com.apple.ilifephotostream",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.iLifePhotoStream.importstatus",
@@ -19478,7 +19547,8 @@
     "id": "com.apple.ilifephotostream.importstatus",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.iTunes.eq",
@@ -19493,7 +19563,8 @@
     "id": "com.apple.itunes.eq",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.iTunesHelper",
@@ -19508,7 +19579,8 @@
     "id": "com.apple.ituneshelper",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.iWork09",
@@ -19523,7 +19595,8 @@
     "id": "com.apple.iwork09",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.iWork09.Installer",
@@ -19538,7 +19611,8 @@
     "id": "com.apple.iwork09.installer",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.keyboard",
@@ -19553,7 +19627,8 @@
     "id": "com.apple.keyboard",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.keyboardservicesd",
@@ -19568,7 +19643,8 @@
     "id": "com.apple.keyboardservicesd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.languageassetd",
@@ -19583,7 +19659,8 @@
     "id": "com.apple.languageassetd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.linkedin.xpc",
@@ -19598,7 +19675,8 @@
     "id": "com.apple.linkedin.xpc",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.lookup",
@@ -19613,7 +19691,8 @@
     "id": "com.apple.lookup",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.managedappdistributionagent",
@@ -19628,7 +19707,8 @@
     "id": "com.apple.managedappdistributionagent",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.maps.destinationd",
@@ -19643,7 +19723,8 @@
     "id": "com.apple.maps.destinationd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.mdmclient",
@@ -19658,7 +19739,8 @@
     "id": "com.apple.mdmclient",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.mediaaccessibility",
@@ -19673,7 +19755,8 @@
     "id": "com.apple.mediaaccessibility",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.messages.text",
@@ -19688,7 +19771,8 @@
     "id": "com.apple.messages.text",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.messaging.downgrade.sms",
@@ -19703,7 +19787,8 @@
     "id": "com.apple.messaging.downgrade.sms",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.messaging.expire",
@@ -19718,7 +19803,8 @@
     "id": "com.apple.messaging.expire",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.metadata.SpotlightNetHelper",
@@ -19733,7 +19819,8 @@
     "id": "com.apple.metadata.spotlightnethelper",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.mobile.iTunes.store",
@@ -19748,7 +19835,8 @@
     "id": "com.apple.mobile.itunes.store",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.mobileipod",
@@ -19763,7 +19851,8 @@
     "id": "com.apple.mobileipod",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.networkd",
@@ -19778,7 +19867,8 @@
     "id": "com.apple.networkd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.networkextension.cache",
@@ -19793,7 +19883,8 @@
     "id": "com.apple.networkextension.cache",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.networkextension.necp",
@@ -19808,7 +19899,8 @@
     "id": "com.apple.networkextension.necp",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.networkresolutiond",
@@ -19823,7 +19915,8 @@
     "id": "com.apple.networkresolutiond",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.newsd",
@@ -19838,7 +19931,8 @@
     "id": "com.apple.newsd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.osanalytics.DiagnosticsReporter",
@@ -19853,7 +19947,8 @@
     "id": "com.apple.osanalytics.diagnosticsreporter",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.osascript",
@@ -19868,7 +19963,8 @@
     "id": "com.apple.osascript",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.osprey",
@@ -19883,7 +19979,8 @@
     "id": "com.apple.osprey",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.passkit",
@@ -19898,7 +19995,8 @@
     "id": "com.apple.passkit",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.people",
@@ -19913,7 +20011,8 @@
     "id": "com.apple.people",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.powerlogHelperd",
@@ -19928,7 +20027,8 @@
     "id": "com.apple.powerloghelperd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.preference.general",
@@ -19943,7 +20043,8 @@
     "id": "com.apple.preference.general",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.preferences.extensions.PhotoEditing",
@@ -19958,7 +20059,8 @@
     "id": "com.apple.preferences.extensions.photoediting",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.preferences.extensions.PhotoProjects",
@@ -19973,7 +20075,8 @@
     "id": "com.apple.preferences.extensions.photoprojects",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.preferences.extensions.QuickLook",
@@ -19988,7 +20091,8 @@
     "id": "com.apple.preferences.extensions.quicklook",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.preferences.extensions.ServicesWithUI",
@@ -20003,7 +20107,8 @@
     "id": "com.apple.preferences.extensions.serviceswithui",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.preferences.extensions.ShareMenu",
@@ -20018,7 +20123,8 @@
     "id": "com.apple.preferences.extensions.sharemenu",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.preferences.extensions.SharedLinks",
@@ -20033,7 +20139,8 @@
     "id": "com.apple.preferences.extensions.sharedlinks",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.preferences.extensions.XcodeSourceControlHost",
@@ -20048,7 +20155,8 @@
     "id": "com.apple.preferences.extensions.xcodesourcecontrolhost",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.preferences.extensions.XcodeSourceEditor",
@@ -20063,7 +20171,8 @@
     "id": "com.apple.preferences.extensions.xcodesourceeditor",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.preferences.extensions.CredentialProvider",
@@ -20078,7 +20187,8 @@
     "id": "com.apple.preferences.extensions.credentialprovider",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.preferences.screentime",
@@ -20093,7 +20203,8 @@
     "id": "com.apple.preferences.screentime",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.print.PrinterProxy",
@@ -20108,7 +20219,8 @@
     "id": "com.apple.print.printerproxy",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.print.makequeuesagent",
@@ -20123,7 +20235,8 @@
     "id": "com.apple.print.makequeuesagent",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.quicklookconfig",
@@ -20138,7 +20251,8 @@
     "id": "com.apple.quicklookconfig",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.remotemanagement.ManagedSettingsSubscriber",
@@ -20153,7 +20267,8 @@
     "id": "com.apple.remotemanagement.managedsettingssubscriber",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.rtcreporting",
@@ -20168,7 +20283,8 @@
     "id": "com.apple.rtcreporting",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.scheduler",
@@ -20183,7 +20299,8 @@
     "id": "com.apple.scheduler",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.searchd",
@@ -20198,7 +20315,8 @@
     "id": "com.apple.searchd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.secureelementservice.aapp",
@@ -20213,7 +20331,8 @@
     "id": "com.apple.secureelementservice.aapp",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.security",
@@ -20228,7 +20347,8 @@
     "id": "com.apple.security",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.security.cloudkeychainproxy.keysToRegister",
@@ -20243,7 +20363,8 @@
     "id": "com.apple.security.cloudkeychainproxy.keystoregister",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.security.pboxd",
@@ -20258,7 +20379,8 @@
     "id": "com.apple.security.pboxd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.security.revocation",
@@ -20273,7 +20395,8 @@
     "id": "com.apple.security.revocation",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.settings.storage",
@@ -20288,7 +20411,8 @@
     "id": "com.apple.settings.storage",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.shazamd",
@@ -20303,7 +20427,8 @@
     "id": "com.apple.shazamd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.siri.audio",
@@ -20318,7 +20443,8 @@
     "id": "com.apple.siri.audio",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.siri.notebook",
@@ -20333,7 +20459,8 @@
     "id": "com.apple.siri.notebook",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.siri.sirisuggestions",
@@ -20348,7 +20475,8 @@
     "id": "com.apple.siri.sirisuggestions",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.socialpushagent",
@@ -20363,7 +20491,8 @@
     "id": "com.apple.socialpushagent",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.speech.prefs",
@@ -20378,7 +20507,8 @@
     "id": "com.apple.speech.prefs",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.stocks2",
@@ -20393,7 +20523,8 @@
     "id": "com.apple.stocks2",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.suggestd",
@@ -20408,7 +20539,8 @@
     "id": "com.apple.suggestd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.systemprefs",
@@ -20423,7 +20555,8 @@
     "id": "com.apple.systemprefs",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.systemsettings.extensions",
@@ -20438,7 +20571,8 @@
     "id": "com.apple.systemsettings.extensions",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.twitterd",
@@ -20453,7 +20587,8 @@
     "id": "com.apple.twitterd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.updatesetings",
@@ -20468,7 +20603,8 @@
     "id": "com.apple.updatesetings",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.usernoted",
@@ -20483,7 +20619,8 @@
     "id": "com.apple.usernoted",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.usernotificationsd",
@@ -20498,7 +20635,8 @@
     "id": "com.apple.usernotificationsd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.voicememod",
@@ -20513,7 +20651,8 @@
     "id": "com.apple.voicememod",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.wallpaper.aerial",
@@ -20528,7 +20667,8 @@
     "id": "com.apple.wallpaper.aerial",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.weather",
@@ -20543,7 +20683,8 @@
     "id": "com.apple.weather",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.weatherd",
@@ -20558,7 +20699,8 @@
     "id": "com.apple.weatherd",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.wifi.WiFiAgent",
@@ -20573,7 +20715,8 @@
     "id": "com.apple.wifi.wifiagent",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.wifi.keychain-format",
@@ -20588,7 +20731,8 @@
     "id": "com.apple.wifi.keychain-format",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "Firewall",
@@ -20603,7 +20747,8 @@
     "id": "firewall",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.anvil.501",
@@ -20618,7 +20763,8 @@
     "id": "com.apple.anvil.501",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.controlcenter.displayablemenuextras",
@@ -20633,7 +20779,8 @@
     "id": "com.apple.controlcenter.displayablemenuextras",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   },
   {
     "domain": "com.apple.iWork",
@@ -20648,6 +20795,7 @@
     "id": "com.apple.iwork",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "key": ""
   }
 ]
