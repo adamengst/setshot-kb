@@ -11951,7 +11951,7 @@
     "key_prefix": "NSUserDictionaryReplacementItems[",
     "source": "defaults",
     "value_type": "string",
-    "description": "Text replacements list",
+    "description": "Text replacement",
     "ui_location": "System Settings > Keyboard > Text Replacements",
     "settings_url": "x-apple.systempreferences:com.apple.Keyboard-Settings.extension",
     "noise": false,
