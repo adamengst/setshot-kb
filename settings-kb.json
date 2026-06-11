@@ -2598,7 +2598,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "icon_bundle_id": "com.apple.finder"
   },
   {
     "id": "finder.FinderSpawnTab",
@@ -8586,7 +8587,8 @@
     "min_macos": "15.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": 10
+    "contributed_by_issue": 10,
+    "icon_bundle_id": "com.apple.Notifications-Settings.extension"
   },
   {
     "id": "terminal-window-settings",
@@ -10340,7 +10342,8 @@
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "icon_bundle_id": "com.apple.findmy"
   },
   {
     "id": "remote-desktop-allow-connections",
@@ -11997,7 +12000,8 @@
       "com.bing.www": "Bing",
       "com.yahoo.www": "Yahoo",
       "com.ecosia.org": "Ecosia"
-    }
+    },
+    "icon_bundle_id": "com.apple.Safari"
   },
   {
     "id": "globaldomain-rsvp-detectors",
@@ -15009,7 +15013,11 @@
     "min_macos": "15.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": 11
+    "contributed_by_issue": 11,
+    "icon_bundle_id": "com.apple.Screenshot",
+    "value_map": {
+      "BuiltInMicrophoneDevice": "Built-in Microphone"
+    }
   },
   {
     "id": "freeform-analytics-device-id",
@@ -15210,7 +15218,7 @@
     "key_prefix": null,
     "source": "plist",
     "value_type": "int",
-    "description": "Hibernate mode on AC power (0=RAM-only sleep, 3=safe sleep, 25=disk hibernate)",
+    "description": "Hibernate mode on AC power",
     "ui_location": "Terminal: pmset hibernatemode",
     "settings_url": null,
     "noise": false,
@@ -15232,7 +15240,7 @@
     "key_prefix": null,
     "source": "plist",
     "value_type": "int",
-    "description": "Hibernate mode on battery (0=RAM-only sleep, 3=safe sleep, 25=disk hibernate)",
+    "description": "Hibernate mode on battery",
     "ui_location": "Terminal: pmset hibernatemode",
     "settings_url": null,
     "noise": false,
@@ -17625,7 +17633,8 @@
     "id": "com.apple.mail-shared.alertfornonmatchingdomains",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "icon_bundle_id": "com.apple.mail"
   },
   {
     "domain": "com.apple.mail-shared",
