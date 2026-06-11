@@ -5005,7 +5005,7 @@
     "key": "Battery Power.Display Sleep Timer",
     "source": "plist",
     "value_type": "integer",
-    "description": "Display sleep timer on battery (minutes; 0=never).",
+    "description": "Display sleep timer on battery",
     "ui_location": "System Settings -> Battery -> Options -> Turn display off on battery when inactive",
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension?options",
     "noise": false,
@@ -5013,7 +5013,21 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Never",
+      "1": "1 minute",
+      "2": "2 minutes",
+      "3": "3 minutes",
+      "5": "5 minutes",
+      "10": "10 minutes",
+      "15": "15 minutes",
+      "20": "20 minutes",
+      "25": "25 minutes",
+      "30": "30 minutes",
+      "45": "45 minutes",
+      "60": "1 hour"
+    }
   },
   {
     "id": "PowerManagement-ACDisplaySleep",
