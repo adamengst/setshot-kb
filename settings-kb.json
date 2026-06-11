@@ -712,7 +712,8 @@
       "3": "Green",
       "4": "Blue",
       "5": "Purple",
-      "6": "Pink"
+      "6": "Pink",
+      "": "Multicolor"
     }
   },
   {
@@ -738,7 +739,8 @@
       "1.000000 0.749020 0.600000 Orange": "Orange",
       "1.000000 0.937255 0.690196 Yellow": "Yellow",
       "0.752941 0.964706 0.678431 Green": "Green",
-      "0.847059 0.847059 0.862745 Graphite": "Graphite"
+      "0.847059 0.847059 0.862745 Graphite": "Graphite",
+      "": "Multicolor"
     }
   },
   {
