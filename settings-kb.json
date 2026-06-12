@@ -672,6 +672,7 @@
     "notes": "Value: 'Dark' = dark mode; key absent or any other value = light mode.",
     "ai_generated": true,
     "contributed_by_issue": 38,
+    "implicit_default": "",
     "value_map": {
       "": "Light",
       "Dark": "Dark"
