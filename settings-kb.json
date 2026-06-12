@@ -933,7 +933,7 @@
     "key": "AppleActionOnDoubleClick",
     "source": "defaults",
     "value_type": "string",
-    "description": "Action when double-clicking a window title bar: Minimize, Maximize, or nothing.",
+    "description": "Action when double-clicking a window title bar.",
     "ui_location": "System Settings → Desktop & Dock → Double-click a window's title bar to",
     "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension",
     "noise": false,
@@ -941,7 +941,7 @@
     "min_macos": "13.0",
     "notes": "Values: 'Maximize', 'Minimize', 'None'. Overrides AppleMiniaturizeOnDoubleClick when set.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": 40
   },
   {
     "id": "globaldomain.AppleMiniaturizeOnDoubleClick",
