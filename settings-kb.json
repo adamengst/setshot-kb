@@ -663,7 +663,7 @@
     "key": "AppleInterfaceStyle",
     "source": "defaults",
     "value_type": "string",
-    "description": "Light or Dark Mode. When set to 'Dark', the system uses dark backgrounds throughout the UI. Absent key means Light Mode.",
+    "description": "Light or Dark Mode.",
     "ui_location": "System Settings → Appearance → Appearance",
     "settings_url": "x-apple.systempreferences:com.apple.Appearance-Settings.extension?appearance",
     "noise": false,
@@ -671,7 +671,11 @@
     "min_macos": "13.0",
     "notes": "Value: 'Dark' = dark mode; key absent or any other value = light mode.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": 38,
+    "value_map": {
+      "": "Light",
+      "Dark": "Dark"
+    }
   },
   {
     "id": "globaldomain.AppleInterfaceStyleSwitchesAutomatically",
