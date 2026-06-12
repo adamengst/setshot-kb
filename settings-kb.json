@@ -1595,9 +1595,9 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Value is the sound name, e.g. 'Frog' or 'Submarine'. Absent key = default sound.",
+    "notes": "Value is the internal sound file name (e.g. 'Frog', 'Basso'). On macOS 26+, these file names differ from the UI display names — e.g. 'Basso' shows as 'Mezzo', 'Frog' shows as 'Jump'. Full macOS 26 mapping TBD.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": 39
   },
   {
     "id": "globaldomain.beepVolume",
