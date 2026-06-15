@@ -477,9 +477,15 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "12.0",
-    "notes": "Values: 0 = Always (default), 1 = When Unlocked, 2 = Never. Individual apps can override this global setting.",
-    "ai_generated": true,
-    "contributed_by_issue": null
+    "notes": "On macOS 15 Sequoia, Always may be stored as 3 rather than 0. Individual apps can override this global setting.",
+    "ai_generated": false,
+    "contributed_by_issue": 46,
+    "value_map": {
+      "0": "Always",
+      "1": "When Unlocked",
+      "2": "Never",
+      "3": "Always"
+    }
   },
   {
     "id": "ncprefs.sort_order",
@@ -1404,9 +1410,16 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Values: 'OneButton'=Off, 'TwoButton'/'RightHanded'=Click Right Side, 'LeftHanded'=Click Left Side.",
-    "ai_generated": true,
-    "contributed_by_issue": null
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 49,
+    "value_map": {
+      "OneButton": "Off (secondary click disabled)",
+      "TwoButton": "Click on right side",
+      "RightHanded": "Click on right side",
+      "TwoButtonSwapped": "Click on left side",
+      "LeftHanded": "Click on left side"
+    }
   },
   {
     "id": "hitoolbox.AppleDictationAutoEnable",
@@ -1596,7 +1609,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Value is the internal sound file name (e.g. 'Frog', 'Basso'). On macOS 26+, these file names differ from the UI display names — e.g. 'Basso' shows as 'Mezzo', 'Frog' shows as 'Jump'. Full macOS 26 mapping TBD.",
+    "notes": "Valid sound names in macOS 15 (Sequoia) and macOS 26 (Tahoe): Boop, Breeze, Bubble, Crystal, Funky, Heroine, Jump, Mezzo, notification, Pebble, Pluck, Pong, Sonar, Sonumi, Submerge. Stored value is the sound file name; legacy names (Basso, Funk, Hero, Sosumi, etc.) may appear in snapshots taken on older macOS versions.",
     "ai_generated": true,
     "contributed_by_issue": 39
   },
@@ -4802,15 +4815,19 @@
     "key": "ShowDate",
     "source": "plist",
     "value_type": "bool",
-    "description": "Show the date next to the time in the menu bar clock.",
+    "description": "When to show the date next to the time in the menu bar clock.",
     "ui_location": "System Settings › Control Center › Clock Options › Show date",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
-    "ai_generated": true,
-    "contributed_by_issue": null
+    "notes": "In macOS 13+, the UI offers three options: Always, When Space Allows, Never. True = Always, False = Never. 'When Space Allows' may be stored as an integer (0).",
+    "ai_generated": false,
+    "contributed_by_issue": 48,
+    "value_map": {
+      "True": "Always",
+      "False": "Never"
+    }
   },
   {
     "id": "com.apple.menuextra.clock-ShowDayOfWeek",
@@ -5088,15 +5105,18 @@
     "key": "AC Power.Disk Sleep Timer",
     "source": "plist",
     "value_type": "integer",
-    "description": "Hard disk sleep timer on AC power (minutes; 0=never).",
-    "ui_location": "System Settings -> Battery -> Options",
+    "description": "Hard disk sleep timer on AC power, in minutes.",
+    "ui_location": "System Settings → Battery → Options",
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension?options",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": 54,
+    "value_map": {
+      "0": "Never (disabled)"
+    }
   },
   {
     "id": "PowerManagement-ACDarkWake",
@@ -16240,14 +16260,14 @@
     "source": "plist",
     "value_type": "bool",
     "description": "Allow Siri to play explicit music and media.",
-    "ui_location": "System Settings → Screen Time → Content & Privacy → Content Restrictions → Music, Podcasts, News & Fitness → Explicit Content",
+    "ui_location": "System Settings → Screen Time → Content & Privacy → Store Restrictions → Explicit Content",
     "settings_url": "x-apple.systempreferences:com.apple.Screen-Time-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
+    "notes": "In macOS 15 Sequoia, this option appears under Store Restrictions. Earlier versions used Content Restrictions.",
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": 47
   },
   {
     "id": "bluetooth.domainNoise",
