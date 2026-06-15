@@ -1027,14 +1027,15 @@
     "source": "defaults",
     "value_type": "bool",
     "description": "Display time using a 24-hour clock rather than 12-hour AM/PM.",
-    "ui_location": "System Settings → General → Language & Region → Time format → 24-hour time",
-    "settings_url": "x-apple.systempreferences:com.apple.Localization-Settings.extension",
+    "ui_location": "System Settings → General → Date & Time → 24-hour time",
+    "settings_url": "x-apple.systempreferences:com.apple.preference.datetime",
     "noise": false,
     "noise_reason": null,
+    "value_map": {"0": "Off", "1": "On"},
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": 56
   },
   {
     "id": "globaldomain.AppleLocale",
