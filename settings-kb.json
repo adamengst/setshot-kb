@@ -26,10 +26,15 @@
     "settings_url": "x-apple.systempreferences:com.apple.Appearance-Settings.extension?showScrollBars",
     "noise": false,
     "noise_reason": null,
+    "value_map": {
+      "Always": "Always",
+      "WhenScrolling": "When scrolling",
+      "Automatic": "Automatic"
+    },
     "min_macos": "10.12",
-    "notes": "Values: Always, WhenScrolling, Automatic (based on mouse/trackpad presence).",
+    "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": 61
   },
   {
     "id": "globaldomain.AppleFontSmoothing",
@@ -830,7 +835,7 @@
     "key": "AppleScrollerPagingBehavior",
     "source": "defaults",
     "value_type": "bool",
-    "description": "Controls what happens when clicking in the scroll bar track: jump to the clicked spot or jump to the next page.",
+    "description": "Controls what happens when clicking in the scroll bar track.",
     "ui_location": "System Settings → Appearance → Click in the scroll bar to",
     "settings_url": "x-apple.systempreferences:com.apple.Appearance-Settings.extension?clickScrollbarTo",
     "noise": false,
@@ -838,7 +843,7 @@
     "min_macos": "13.0",
     "notes": "True/1 = jump to clicked spot; False/0 or absent = jump to next page.",
     "ai_generated": true,
-    "contributed_by_issue": null,
+    "contributed_by_issue": 60,
     "value_map": {
       "1": "Jump to the spot that's clicked",
       "0": "Jump to the next page"
@@ -1031,11 +1036,12 @@
     "settings_url": "x-apple.systempreferences:com.apple.preference.datetime",
     "noise": false,
     "noise_reason": null,
-    "value_map": {"0": "Off", "1": "On"},
+    "value_map": {"": "Off", "0": "Off", "1": "On"},
+    "icon_bundle_id": "com.apple.Date-Time-Settings.extension",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": 56
+    "contributed_by_issue": 58
   },
   {
     "id": "globaldomain.AppleLocale",
@@ -1765,7 +1771,7 @@
     "key": "relativeVolume",
     "source": "defaults",
     "value_type": "float",
-    "description": "Background sound volume as a fraction from 0.0 to 1.0.",
+    "description": "Background sound volume.",
     "ui_location": "System Settings → Accessibility → Audio → Background Sounds → Volume",
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
@@ -1773,7 +1779,7 @@
     "min_macos": "12.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": 62
   },
   {
     "id": "comfortsounds.stopsOnLock",
@@ -5469,15 +5475,15 @@
     "key": "StandardHideWidgets",
     "source": "defaults",
     "value_type": "bool",
-    "description": "Stage Manager: hide widgets when Stage Manager is off.",
-    "ui_location": "System Settings -> Desktop & Dock -> Desktop & Stage Manager -> Show Items -> On Desktop",
+    "description": "Hide widgets when Stage Manager is off.",
+    "ui_location": "System Settings → Desktop & Dock → Desktop & Stage Manager → Show Items → On Desktop",
     "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension?Desktop",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": 63
   },
   {
     "id": "dock-wvous-tl-corner",
