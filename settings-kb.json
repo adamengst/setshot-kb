@@ -2430,10 +2430,20 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Values: 'PfHm'=Home, 'PfDe'=Desktop, 'PfDo'=Documents, 'PfCm'=Computer, 'PfRe'=Recents, 'PfLo'=Other.",
+    "notes": "Known Pf* codes: PfVo=Computer, PfHm=Home, PfDe=Desktop, PfDo=Documents, PfDi=Downloads, PfRe=Recents, PfCo=iCloud Drive, PfAF=Other (custom folder).",
     "ai_generated": true,
-    "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.finder"
+    "contributed_by_issue": 71,
+    "icon_bundle_id": "com.apple.finder",
+    "value_map": {
+      "PfVo": "Computer (My Mac)",
+      "PfHm": "Home",
+      "PfDe": "Desktop",
+      "PfDo": "Documents",
+      "PfDi": "Downloads",
+      "PfRe": "Recents",
+      "PfCo": "iCloud Drive",
+      "PfAF": "Other\u2026"
+    }
   },
   {
     "id": "finder.FXEnableExtensionChangeWarning",
@@ -22769,5 +22779,22 @@
     "contributed_by_issue": 55,
     "value_map": null,
     "icon_bundle_id": null
+  },
+  {
+    "id": "audio-accessory-low-battery-devices",
+    "domain": "com.apple.AudioAccessory",
+    "key": "",
+    "key_prefix": "lowBatteryDevices",
+    "source": "plist",
+    "value_type": "string",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "System-maintained log of Bluetooth audio accessories (AirPods, Beats, etc.) that have reported a low battery; includes timestamps and device identifiers that change automatically.",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 70
   }
 ]
