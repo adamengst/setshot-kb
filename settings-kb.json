@@ -194,7 +194,10 @@
       "8": "Don't Show in Menu Bar",
       "16": "Always Show in Menu Bar"
     },
-    "icon_bundle_id": "com.apple.Battery-Settings.extension"
+    "icon_bundle_id": "com.apple.Battery-Settings.extension",
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "controlcenter.WiFi",
@@ -5107,7 +5110,10 @@
       "30": "30 minutes",
       "45": "45 minutes",
       "60": "1 hour"
-    }
+    },
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "PowerManagement-ACDisplaySleep",
@@ -5167,7 +5173,10 @@
       "60": "1 hour",
       "120": "2 hours",
       "180": "3 hours"
-    }
+    },
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "PowerManagement-ACSystemSleep",
@@ -5327,7 +5336,10 @@
     "value_map": {
       "0": "Disabled",
       "1": "Enabled"
-    }
+    },
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "PowerManagement-ACLowPower",
@@ -5367,7 +5379,10 @@
     "value_map": {
       "0": "Disabled",
       "1": "Enabled"
-    }
+    },
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "PowerManagement-BatteryReduceBrightness",
@@ -5387,7 +5402,10 @@
     "value_map": {
       "0": "Disabled",
       "1": "Enabled"
-    }
+    },
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "PowerManagement-OptimizeVideoStreaming",
@@ -5403,7 +5421,10 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "airport-PowerEnabled",
@@ -7758,7 +7779,10 @@
     "ai_generated": false,
     "contributed_by_issue": 25,
     "value_map": null,
-    "icon_bundle_id": "com.apple.Battery-Settings.extension"
+    "icon_bundle_id": "com.apple.Battery-Settings.extension",
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "controlcenter.BatteryShowPercentage",
@@ -7776,7 +7800,10 @@
     "ai_generated": false,
     "contributed_by_issue": 25,
     "value_map": null,
-    "icon_bundle_id": "com.apple.Battery-Settings.extension"
+    "icon_bundle_id": "com.apple.Battery-Settings.extension",
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "controlcenter.MusicRecognition",
@@ -10146,7 +10173,10 @@
     "value_map": {
       "0": "Off",
       "1": "On"
-    }
+    },
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "power-battery-disk-sleep",
@@ -10177,7 +10207,10 @@
       "60": "1 hour",
       "120": "2 hours",
       "180": "3 hours"
-    }
+    },
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "power-battery-standby",
@@ -10203,7 +10236,10 @@
       "28800": "8 hours",
       "86400": "1 day",
       "259200": "3 days"
-    }
+    },
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "power-battery-powernap",
@@ -10224,7 +10260,10 @@
     "value_map": {
       "0": "Off",
       "1": "On"
-    }
+    },
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "power-sleep-on-power-button-ac",
@@ -10258,7 +10297,10 @@
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "power-current-caps",
@@ -10275,7 +10317,10 @@
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "assistant-backedup-output-voice",
@@ -15493,7 +15538,10 @@
     "min_macos": null,
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": 11
+    "contributed_by_issue": 11,
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "power-ac-hibernate-mode",
@@ -15537,7 +15585,10 @@
       "0": "Sleep in RAM only",
       "3": "Safe sleep (default)",
       "25": "Hibernate to disk only"
-    }
+    },
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "power-ac-prioritize-network",
@@ -15588,7 +15639,10 @@
     "min_macos": null,
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": 11
+    "contributed_by_issue": 11,
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "power-battery-standby-enabled",
@@ -15605,7 +15659,10 @@
     "min_macos": null,
     "notes": "When enabled, allows a deeper sleep state to conserve battery power.",
     "ai_generated": false,
-    "contributed_by_issue": 11
+    "contributed_by_issue": 11,
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "power-battery-tcp-keepalive",
@@ -15622,7 +15679,10 @@
     "min_macos": null,
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": 11
+    "contributed_by_issue": 11,
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "power-battery-tty-prevent-sleep",
@@ -15639,7 +15699,10 @@
     "min_macos": null,
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": 11
+    "contributed_by_issue": 11,
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "power-battery-dark-wake",
@@ -15660,7 +15723,10 @@
     "value_map": {
       "0": "Disabled",
       "1": "Enabled"
-    }
+    },
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "windowserver.noise",
@@ -17055,7 +17121,10 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "pm.ac.displaySleepUsesDim",
@@ -17087,7 +17156,10 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "pm.ac.highStandbyDelay",
@@ -17137,7 +17209,10 @@
       "28800": "8 hours",
       "86400": "1 day",
       "259200": "3 days"
-    }
+    },
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "pm.ac.standbyBatteryThreshold",
@@ -17169,7 +17244,10 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "pm.ac.standbyDelay",
@@ -17226,7 +17304,10 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "pm.ac.wakeOnClamshellOpen",
@@ -17258,7 +17339,10 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "pm.ac.autoPowerOffDelay",
@@ -17308,7 +17392,10 @@
       "28800": "8 hours",
       "86400": "1 day",
       "259200": "3 days"
-    }
+    },
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "ua.alternateMouseButtons",
@@ -18430,7 +18517,10 @@
     "id": "com.apple.batteryui.charging.mac.com.apple.batteryui.charging.mac.prior.limit",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "domain": "com.apple.WebFoundation",
@@ -18573,7 +18663,10 @@
     "id": "com.apple.menuextra.battery.showpercent",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "domain": "com.apple.screencapture",
