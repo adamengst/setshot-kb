@@ -3310,7 +3310,7 @@
     "key": "com.apple.screensharing",
     "source": "sharing",
     "value_type": "bool",
-    "description": "Screen Sharing is enabled: other users on the network can view or control your screen",
+    "description": "Screen Sharing (lets other users on the network view or control your screen)",
     "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Screen Sharing",
     "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension?Services_ScreenSharing",
     "noise": false,
@@ -3318,7 +3318,11 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "enabled": "On",
+      "disabled": "Off"
+    }
   },
   {
     "id": "sharing.smbd",
@@ -3326,7 +3330,7 @@
     "key": "com.apple.smbd",
     "source": "sharing",
     "value_type": "bool",
-    "description": "SMB File Sharing is enabled, allowing Windows computers and Macs to access shared folders",
+    "description": "File Sharing (lets Windows computers and Macs access shared folders on this Mac)",
     "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 File Sharing",
     "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension?Services_PersonalFileSharing",
     "noise": false,
@@ -3334,7 +3338,11 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "enabled": "On",
+      "disabled": "Off"
+    }
   },
   {
     "id": "sharing.AppleFileServer",
@@ -3342,7 +3350,7 @@
     "key": "com.apple.AppleFileServer",
     "source": "sharing",
     "value_type": "bool",
-    "description": "Apple Filing Protocol file sharing is enabled",
+    "description": "File Sharing via AFP (lets Macs access shared folders over Apple Filing Protocol)",
     "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 File Sharing (AFP)",
     "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension?Services_PersonalFileSharing",
     "noise": false,
@@ -3350,7 +3358,11 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "enabled": "On",
+      "disabled": "Off"
+    }
   },
   {
     "id": "sharing.RemoteDesktop",
@@ -3358,7 +3370,7 @@
     "key": "com.apple.RemoteDesktop.agent",
     "source": "sharing",
     "value_type": "bool",
-    "description": "Remote Management via Apple Remote Desktop is enabled",
+    "description": "Remote Management (lets Apple Remote Desktop access and control this Mac)",
     "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Remote Management",
     "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension?Services_ARDService",
     "noise": false,
@@ -3366,7 +3378,11 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "enabled": "On",
+      "disabled": "Off"
+    }
   },
   {
     "id": "sharing.AirPlayXPCHelper",
@@ -3374,7 +3390,7 @@
     "key": "com.apple.AirPlayXPCHelper",
     "source": "sharing",
     "value_type": "bool",
-    "description": "AirPlay Receiver is enabled: other Apple devices can stream audio or video to this Mac",
+    "description": "AirPlay Receiver (lets other Apple devices stream audio or video to this Mac)",
     "ui_location": "System Settings \u2192 General \u2192 AirDrop & Handoff \u2192 AirPlay Receiver",
     "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension",
     "noise": false,
@@ -3382,7 +3398,11 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "enabled": "On",
+      "disabled": "Off"
+    }
   },
   {
     "id": "sharing.blued",
@@ -3390,7 +3410,7 @@
     "key": "PrefKeyServicesEnabled",
     "source": "plist",
     "value_type": "bool",
-    "description": "Bluetooth Sharing is enabled: other Bluetooth devices can browse and share files",
+    "description": "Bluetooth Sharing (lets Bluetooth devices browse and exchange files with this Mac)",
     "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Bluetooth Sharing",
     "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension?Services_BluetoothSharing",
     "noise": false,
@@ -3398,7 +3418,11 @@
     "min_macos": "13.0",
     "notes": "Stored in the ByHost plist (com.apple.Bluetooth.UUID). On macOS 13+, Bluetooth Sharing state is NOT reflected in launchctl service lists \u2014 it is controlled by this preference key.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "True": "On",
+      "False": "Off"
+    }
   },
   {
     "id": "bluetooth.ControllerPowerState",
@@ -6972,7 +6996,7 @@
     "key": "NAT.Enabled",
     "source": "plist",
     "value_type": "bool",
-    "description": "Internet Sharing is enabled",
+    "description": "Internet Sharing (shares this Mac\u2019s internet connection with other nearby devices)",
     "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Internet Sharing",
     "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension?Internet",
     "noise": false,
@@ -6980,7 +7004,11 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "True": "On",
+      "False": "Off"
+    }
   },
   {
     "id": "NSGlobalDomain-DoubleQuoteOption",
@@ -10758,7 +10786,7 @@
     "key_prefix": null,
     "source": "defaults",
     "value_type": "bool",
-    "description": "Content Caching enabled",
+    "description": "Content Caching (stores software updates and iCloud content to speed up downloads for nearby devices)",
     "ui_location": "System Settings > General > Sharing > Content Caching",
     "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension",
     "noise": false,
@@ -10766,7 +10794,11 @@
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "True": "On",
+      "False": "Off"
+    }
   },
   {
     "id": "assetcache-state",
@@ -22803,7 +22835,7 @@
     "key": "com.openssh.sshd",
     "source": "sharing",
     "value_type": "string",
-    "description": "Remote Login (SSH) is enabled: users can connect to this Mac from another computer using the command line",
+    "description": "Remote Login (lets users connect to this Mac from another computer via SSH)",
     "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Remote Login",
     "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension?Services_RemoteLogin",
     "noise": false,
@@ -22824,7 +22856,7 @@
     "key": "com.apple.AEServer",
     "source": "sharing",
     "value_type": "string",
-    "description": "Remote Application Scripting is enabled: AppleScript on remote computers can control apps on this Mac",
+    "description": "Remote Application Scripting (lets AppleScript on remote computers control apps on this Mac)",
     "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Remote Application Scripting",
     "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension",
     "noise": false,
@@ -22845,7 +22877,7 @@
     "key": "home-sharing-enabled",
     "source": "plist",
     "value_type": "bool",
-    "description": "Media Sharing (Home Sharing) is enabled: music, movies, and TV shows in your library are shared with other devices on your network",
+    "description": "Media Sharing (shares music, movies, and TV shows with other devices using Home Sharing)",
     "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Media Sharing",
     "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension",
     "noise": false,
@@ -22854,6 +22886,10 @@
     "notes": "Companion keys (home-sharing-computer-id, home-sharing-group-id, home-sharing-settings.*) are filtered as noise by the snapshot script.",
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.Music"
+    "icon_bundle_id": "com.apple.Music",
+    "value_map": {
+      "True": "On",
+      "False": "Off"
+    }
   }
 ]
