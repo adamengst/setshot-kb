@@ -22891,5 +22891,90 @@
       "True": "On",
       "False": "Off"
     }
+  },
+  {
+    "id": "rdm.LoadRemoteManagementMenuExtra",
+    "domain": "com.apple.RemoteManagement",
+    "key": "LoadRemoteManagementMenuExtra",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "bool",
+    "description": "Always Show Remote Management Status in Menu Bar (displays a Remote Management icon in the menu bar when active)",
+    "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Remote Management",
+    "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension?Services_ARDService",
+    "noise": false,
+    "noise_reason": null,
+    "value_map": {
+      "True": "On",
+      "False": "Off"
+    },
+    "icon_bundle_id": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null
+  },
+  {
+    "id": "rdm.ScreenSharingReqPermEnabled",
+    "domain": "com.apple.RemoteManagement",
+    "key": "ScreenSharingReqPermEnabled",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "bool",
+    "description": "Anyone May Request Permission to Control Screen (allows any user to request screen control through Remote Management)",
+    "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Remote Management",
+    "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension?Services_ARDService",
+    "noise": false,
+    "noise_reason": null,
+    "value_map": {
+      "True": "On",
+      "False": "Off"
+    },
+    "icon_bundle_id": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null
+  },
+  {
+    "id": "rdm.VNCLegacyConnectionsEnabled",
+    "domain": "com.apple.RemoteManagement",
+    "key": "VNCLegacyConnectionsEnabled",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "bool",
+    "description": "VNC Viewers May Control Screen with Password (allows standard VNC clients to connect to this Mac using a password)",
+    "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Remote Management",
+    "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension?Services_ARDService",
+    "noise": false,
+    "noise_reason": null,
+    "value_map": {
+      "True": "On",
+      "False": "Off"
+    },
+    "icon_bundle_id": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null
+  },
+  {
+    "id": "rdm-all",
+    "domain": "com.apple.RemoteManagement",
+    "key": "",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "allowInsecureDH and other internal ARD keys that change automatically",
+    "value_map": null,
+    "icon_bundle_id": null,
+    "min_macos": null,
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null
   }
 ]
