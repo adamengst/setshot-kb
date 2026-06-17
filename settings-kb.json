@@ -22976,5 +22976,27 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null
+  },
+  {
+    "id": "sharing.printers",
+    "domain": "sharing",
+    "key": "org.cups.PrintingPrefs.PrinterSharing",
+    "key_prefix": null,
+    "source": "sharing",
+    "value_type": "bool",
+    "description": "Printer Sharing (lets other users on the network access printers connected to this Mac)",
+    "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Printer Sharing",
+    "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension?Services_PrinterSharing",
+    "noise": false,
+    "noise_reason": null,
+    "value_map": {
+      "enabled": "On",
+      "disabled": "Off"
+    },
+    "icon_bundle_id": null,
+    "min_macos": "13.0",
+    "notes": "Printer Sharing state comes from cupsctl (_share_printers), not a launchd service.",
+    "ai_generated": false,
+    "contributed_by_issue": null
   }
 ]
