@@ -24,10 +24,11 @@ REQUIRED = {
 }
 
 OPTIONAL_STRING = {"description", "ui_location", "settings_url", "noise_reason",
-                   "min_macos", "notes", "key_prefix", "icon_bundle_id"}
+                   "min_macos", "notes", "key_prefix", "icon_bundle_id",
+                   "implicit_default"}
 OPTIONAL_INT = {"contributed_by_issue"}
 OPTIONAL_DICT = {"value_map"}       # [String: String]
-OPTIONAL_LIST = {"ui_location_overrides"}
+OPTIONAL_LIST = {"ui_location_overrides", "requires_hardware"}
 ALL_KNOWN = set(REQUIRED) | OPTIONAL_STRING | OPTIONAL_INT | OPTIONAL_DICT | OPTIONAL_LIST
 
 def validate():
