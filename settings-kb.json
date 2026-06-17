@@ -22964,7 +22964,7 @@
     "key": "",
     "key_prefix": null,
     "source": "plist",
-    "value_type": null,
+    "value_type": "bool",
     "description": null,
     "ui_location": null,
     "settings_url": null,
