@@ -3386,9 +3386,9 @@
   },
   {
     "id": "sharing.blued",
-    "domain": "sharing",
-    "key": "com.apple.blued",
-    "source": "sharing",
+    "domain": "com.apple.Bluetooth",
+    "key": "PrefKeyServicesEnabled",
+    "source": "plist",
     "value_type": "bool",
     "description": "Bluetooth Sharing is enabled: other Bluetooth devices can browse and share files",
     "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Bluetooth Sharing",
@@ -3396,7 +3396,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
+    "notes": "Stored in the ByHost plist (com.apple.Bluetooth.UUID). On macOS 13+, Bluetooth Sharing state is NOT reflected in launchctl service lists \u2014 it is controlled by this preference key.",
     "ai_generated": true,
     "contributed_by_issue": null
   },
@@ -22796,5 +22796,64 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 70
+  },
+  {
+    "id": "sharing.sshd",
+    "domain": "sharing",
+    "key": "com.openssh.sshd",
+    "source": "sharing",
+    "value_type": "string",
+    "description": "Remote Login (SSH) is enabled: users can connect to this Mac from another computer using the command line",
+    "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Remote Login",
+    "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension?Services_RemoteLogin",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Detected via launchctl print-disabled system (com.openssh.sshd => enabled/disabled).",
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "enabled": "On",
+      "disabled": "Off"
+    },
+    "icon_bundle_id": "com.apple.RemoteDesktop"
+  },
+  {
+    "id": "sharing.AEServer",
+    "domain": "sharing",
+    "key": "com.apple.AEServer",
+    "source": "sharing",
+    "value_type": "string",
+    "description": "Remote Application Scripting is enabled: AppleScript on remote computers can control apps on this Mac",
+    "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Remote Application Scripting",
+    "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Detected via launchctl print-disabled system (com.apple.AEServer => enabled/disabled).",
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "enabled": "On",
+      "disabled": "Off"
+    },
+    "icon_bundle_id": "com.apple.systempreferences"
+  },
+  {
+    "id": "sharing.mediasharing",
+    "domain": "com.apple.amp.mediasharingd",
+    "key": "home-sharing-enabled",
+    "source": "plist",
+    "value_type": "bool",
+    "description": "Media Sharing (Home Sharing) is enabled: music, movies, and TV shows in your library are shared with other devices on your network",
+    "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Media Sharing",
+    "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Companion keys (home-sharing-computer-id, home-sharing-group-id, home-sharing-settings.*) are filtered as noise by the snapshot script.",
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "icon_bundle_id": "com.apple.Music"
   }
 ]
