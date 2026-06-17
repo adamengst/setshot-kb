@@ -7011,6 +7011,24 @@
     }
   },
   {
+    "id": "nat-primary-interface",
+    "domain": "com.apple.nat",
+    "key": "NAT.PrimaryInterface.PrimaryUserReadable",
+    "source": "plist",
+    "value_type": "string",
+    "noise": false,
+    "ai_generated": false,
+    "description": "Internet Sharing Source Interface",
+    "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Internet Sharing",
+    "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension?Internet",
+    "value_map": null,
+    "icon_bundle_id": null,
+    "min_macos": "13.0",
+    "noise_reason": null,
+    "notes": "Human-readable name of the interface Internet Sharing shares from ('Share your connection from' dropdown).",
+    "contributed_by_issue": null
+  },
+  {
     "id": "NSGlobalDomain-DoubleQuoteOption",
     "domain": "NSGlobalDomain",
     "key": "KB_DoubleQuoteOption",
@@ -10787,7 +10805,7 @@
     "source": "defaults",
     "value_type": "bool",
     "description": "Content Caching",
-    "ui_location": "System Settings > General > Sharing > Content Caching",
+    "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Content Caching",
     "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -10799,6 +10817,27 @@
       "True": "On",
       "False": "Off"
     }
+  },
+  {
+    "id": "content-caching-tethered",
+    "domain": "com.apple.AssetCache",
+    "key": "AllowTetheredCaching",
+    "source": "plist",
+    "value_type": "bool",
+    "noise": false,
+    "ai_generated": false,
+    "description": "Share Internet Connection",
+    "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Content Caching",
+    "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension",
+    "value_map": {
+      "True": "On",
+      "False": "Off"
+    },
+    "icon_bundle_id": null,
+    "min_macos": "13.0",
+    "noise_reason": null,
+    "notes": "Shares the Mac's internet connection and cached content with iOS devices via USB.",
+    "contributed_by_issue": null
   },
   {
     "id": "assetcache-state",
@@ -22883,7 +22922,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Companion keys (home-sharing-computer-id, home-sharing-group-id, home-sharing-settings.*) are filtered as noise by the snapshot script.",
+    "notes": "Companion keys (home-sharing-computer-id, home-sharing-group-id, home-sharing-settings.home-sharing-user-id, home-sharing-settings.home-sharing-user-name) are filtered as noise by the snapshot script. home-sharing-settings.home-sharing-update-play-counts is captured.",
     "ai_generated": false,
     "contributed_by_issue": null,
     "icon_bundle_id": "com.apple.Music",
@@ -22891,6 +22930,69 @@
       "True": "On",
       "False": "Off"
     }
+  },
+  {
+    "id": "mediasharing-play-counts",
+    "domain": "com.apple.amp.mediasharingd",
+    "key": "home-sharing-settings.home-sharing-update-play-counts",
+    "source": "plist",
+    "value_type": "bool",
+    "noise": false,
+    "ai_generated": false,
+    "description": "Devices Update Play Counts",
+    "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Media Sharing",
+    "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension",
+    "value_map": {
+      "True": "On",
+      "False": "Off"
+    },
+    "icon_bundle_id": "com.apple.Music",
+    "min_macos": "13.0",
+    "noise_reason": null,
+    "notes": null,
+    "contributed_by_issue": null
+  },
+  {
+    "id": "mediasharing-photo-sharing",
+    "domain": "com.apple.amp.mediasharingd",
+    "key": "photo-sharing-enabled",
+    "source": "plist",
+    "value_type": "bool",
+    "noise": false,
+    "ai_generated": false,
+    "description": "Share Photos with Apple TV",
+    "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Media Sharing",
+    "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension",
+    "value_map": {
+      "True": "On",
+      "False": "Off"
+    },
+    "icon_bundle_id": "com.apple.Music",
+    "min_macos": "13.0",
+    "noise_reason": null,
+    "notes": null,
+    "contributed_by_issue": null
+  },
+  {
+    "id": "mediasharing-guest-sharing",
+    "domain": "com.apple.amp.mediasharingd",
+    "key": "public-sharing-enabled",
+    "source": "plist",
+    "value_type": "bool",
+    "noise": false,
+    "ai_generated": false,
+    "description": "Share Media with Guests",
+    "ui_location": "System Settings \u2192 General \u2192 Sharing \u2192 Media Sharing",
+    "settings_url": "x-apple.systempreferences:com.apple.Sharing-Settings.extension",
+    "value_map": {
+      "True": "On",
+      "False": "Off"
+    },
+    "icon_bundle_id": "com.apple.Music",
+    "min_macos": "13.0",
+    "noise_reason": null,
+    "notes": null,
+    "contributed_by_issue": null
   },
   {
     "id": "rdm.LoadRemoteManagementMenuExtra",
