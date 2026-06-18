@@ -181,7 +181,13 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Controls whether the Battery indicator appears in the menu bar or only in Control Center",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Battery",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Battery",
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Battery"
+      }
+    ],
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -7888,7 +7894,13 @@
     "source": "defaults",
     "value_type": "bool",
     "description": "Show the energy mode indicator next to the battery icon in the menu bar",
-    "ui_location": "System Settings \u2192 Battery \u2192 Battery in Menu Bar \u2192 Show energy mode",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Battery \u2192 Battery Options \u2192 Show energy mode",
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Battery \u2192 Battery in Menu Bar \u2192 Show energy mode"
+      }
+    ],
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension?options",
     "noise": false,
     "noise_reason": null,
@@ -7909,7 +7921,13 @@
     "source": "defaults",
     "value_type": "bool",
     "description": "Show the battery percentage in the menu bar next to the battery icon",
-    "ui_location": "System Settings \u2192 Battery \u2192 Battery in Menu Bar \u2192 Show percentage",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Battery \u2192 Battery Options \u2192 Show Percentage",
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Battery \u2192 Battery in Menu Bar \u2192 Show percentage"
+      }
+    ],
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension?options",
     "noise": false,
     "noise_reason": null,
