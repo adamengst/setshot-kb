@@ -12869,7 +12869,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.MobileSMS",
+    "icon_bundle_id": "com.apple.iChat",
     "id": "messages-smart-quotes",
     "key": "automaticQuoteSubstitutionEnabled",
     "description": "Messages: Smart Quotes in the message compose field",
@@ -12886,7 +12886,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.MobileSMS",
+    "icon_bundle_id": "com.apple.iChat",
     "id": "messages-smart-dashes",
     "key": "automaticDashSubstitutionEnabled",
     "description": "Messages: Smart Dashes in the message compose field",
@@ -12903,7 +12903,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.MobileSMS",
+    "icon_bundle_id": "com.apple.iChat",
     "id": "messages-smart-links",
     "key": "automaticLinkDetectionEnabled",
     "description": "Messages: Smart Links in the message compose field",
@@ -12920,7 +12920,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.MobileSMS",
+    "icon_bundle_id": "com.apple.iChat",
     "id": "messages-data-detectors",
     "key": "automaticDataDetectionEnabled",
     "description": "Messages: Data Detectors in the message compose field",
@@ -12937,7 +12937,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.MobileSMS",
+    "icon_bundle_id": "com.apple.iChat",
     "id": "messages-emoji-substitution",
     "key": "automaticEmojiSubstitutionEnabled",
     "description": "Messages: Emoji Recognition in the message compose field",
@@ -12954,7 +12954,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.MobileSMS",
+    "icon_bundle_id": "com.apple.iChat",
     "id": "messages-text-replacement",
     "key": "automaticTextReplacementEnabled",
     "description": "Messages: Text Replacement in the message compose field",
@@ -12971,7 +12971,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.MobileSMS",
+    "icon_bundle_id": "com.apple.iChat",
     "id": "messages-spell-check",
     "key": "continuousSpellCheckingEnabled",
     "description": "Messages: Check Spelling While Typing in the message compose field",
@@ -12988,7 +12988,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.MobileSMS",
+    "icon_bundle_id": "com.apple.iChat",
     "id": "messages-grammar-check",
     "key": "grammarCheckingEnabled",
     "description": "Messages: Check Grammar With Spelling in the message compose field",
@@ -13005,7 +13005,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.MobileSMS",
+    "icon_bundle_id": "com.apple.iChat",
     "id": "messages-autocorrect",
     "key": "automaticSpellingCorrectionEnabled",
     "description": "Messages: Correct Spelling Automatically in the message compose field",
@@ -13022,7 +13022,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.MobileSMS",
+    "icon_bundle_id": "com.apple.iChat",
     "id": "messages-smart-insert-delete",
     "key": "smartInsertDeleteEnabled",
     "description": "Messages: Smart Copy/Paste in the message compose field",
@@ -22787,7 +22787,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": null
+    "icon_bundle_id": "com.apple.iChat"
   },
   {
     "id": "ichatInputLine.automaticDashSubstitutionEnabled",
@@ -22805,7 +22805,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": null
+    "icon_bundle_id": "com.apple.iChat"
   },
   {
     "id": "ichatInputLine.automaticLinkDetectionEnabled",
@@ -22823,7 +22823,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": null
+    "icon_bundle_id": "com.apple.iChat"
   },
   {
     "id": "ichatInputLine.automaticDataDetectionEnabled",
@@ -22841,7 +22841,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": null
+    "icon_bundle_id": "com.apple.iChat"
   },
   {
     "id": "ichatInputLine.automaticEmojiSubstitutionEnabled",
@@ -22859,7 +22859,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": null
+    "icon_bundle_id": "com.apple.iChat"
   },
   {
     "id": "ichatInputLine.automaticTextReplacementEnabled",
@@ -22877,7 +22877,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": null
+    "icon_bundle_id": "com.apple.iChat"
   },
   {
     "id": "ichatInputLine.continuousSpellCheckingEnabled",
@@ -22895,7 +22895,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": null
+    "icon_bundle_id": "com.apple.iChat"
   },
   {
     "id": "ichatInputLine.grammarCheckingEnabled",
@@ -22913,7 +22913,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": null
+    "icon_bundle_id": "com.apple.iChat"
   },
   {
     "id": "ichatInputLine.automaticSpellingCorrectionEnabled",
@@ -22931,7 +22931,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": null
+    "icon_bundle_id": "com.apple.iChat"
   },
   {
     "id": "ichatInputLine.smartInsertDeleteEnabled",
@@ -22949,7 +22949,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": null
+    "icon_bundle_id": "com.apple.iChat"
   },
   {
     "id": "audio-accessory-low-battery-devices",
@@ -23240,5 +23240,115 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 73
+  },
+  {
+    "id": "imagecapture.loggingLevel",
+    "domain": "com.apple.imagecapture",
+    "key": "loggingLevel",
+    "source": "plist",
+    "value_type": "integer",
+    "description": null,
+    "ui_location": null,
+    "ui_location_overrides": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Internal Image Capture logging level; not user-configurable",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 80,
+    "value_map": null,
+    "key_prefix": null,
+    "icon_bundle_id": null,
+    "implicit_default": null,
+    "requires_hardware": null
+  },
+  {
+    "id": "imdpersistence.LogAllIOErrors",
+    "domain": "com.apple.imdpersistence.IMDPersistenceAgent",
+    "key": "LogAllIOErrors",
+    "source": "plist",
+    "value_type": "boolean",
+    "description": null,
+    "ui_location": null,
+    "ui_location_overrides": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Internal iMessage persistence agent logging flag; not user-configurable",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 80,
+    "value_map": null,
+    "key_prefix": null,
+    "icon_bundle_id": null,
+    "implicit_default": null,
+    "requires_hardware": null
+  },
+  {
+    "id": "ipTelephony.ImsLoggingEnabled",
+    "domain": "com.apple.ipTelephony",
+    "key": "ImsLoggingEnabled",
+    "source": "plist",
+    "value_type": "boolean",
+    "description": null,
+    "ui_location": null,
+    "ui_location_overrides": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Internal FaceTime/IP telephony logging flag; not user-configurable",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 80,
+    "value_map": null,
+    "key_prefix": null,
+    "icon_bundle_id": null,
+    "implicit_default": null,
+    "requires_hardware": null
+  },
+  {
+    "id": "messages-critical-storage.StorageVersion",
+    "domain": "com.apple.messages.critical-messaging.storage",
+    "key": "StorageVersion",
+    "source": "plist",
+    "value_type": "string",
+    "description": null,
+    "ui_location": null,
+    "ui_location_overrides": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Internal Messages storage schema version; not user-configurable",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 80,
+    "value_map": null,
+    "key_prefix": null,
+    "icon_bundle_id": null,
+    "implicit_default": null,
+    "requires_hardware": null
+  },
+  {
+    "id": "menuextra-clock.ShowAMPM",
+    "domain": "com.apple.menuextra.clock",
+    "key": "ShowAMPM",
+    "source": "plist",
+    "value_type": "boolean",
+    "description": "Clock: Show AM/PM in menu bar clock",
+    "ui_location": "Control Center \u2192 Clock",
+    "ui_location_overrides": null,
+    "settings_url": null,
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 79,
+    "value_map": null,
+    "key_prefix": null,
+    "icon_bundle_id": null,
+    "implicit_default": null,
+    "requires_hardware": null
   }
 ]
