@@ -12869,7 +12869,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.iChat",
+    "icon_bundle_id": "com.apple.MobileSMS",
     "id": "messages-smart-quotes",
     "key": "automaticQuoteSubstitutionEnabled",
     "description": "Messages: Smart Quotes in the message compose field",
@@ -12886,7 +12886,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.iChat",
+    "icon_bundle_id": "com.apple.MobileSMS",
     "id": "messages-smart-dashes",
     "key": "automaticDashSubstitutionEnabled",
     "description": "Messages: Smart Dashes in the message compose field",
@@ -12903,7 +12903,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.iChat",
+    "icon_bundle_id": "com.apple.MobileSMS",
     "id": "messages-smart-links",
     "key": "automaticLinkDetectionEnabled",
     "description": "Messages: Smart Links in the message compose field",
@@ -12920,7 +12920,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.iChat",
+    "icon_bundle_id": "com.apple.MobileSMS",
     "id": "messages-data-detectors",
     "key": "automaticDataDetectionEnabled",
     "description": "Messages: Data Detectors in the message compose field",
@@ -12937,7 +12937,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.iChat",
+    "icon_bundle_id": "com.apple.MobileSMS",
     "id": "messages-emoji-substitution",
     "key": "automaticEmojiSubstitutionEnabled",
     "description": "Messages: Emoji Recognition in the message compose field",
@@ -12954,7 +12954,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.iChat",
+    "icon_bundle_id": "com.apple.MobileSMS",
     "id": "messages-text-replacement",
     "key": "automaticTextReplacementEnabled",
     "description": "Messages: Text Replacement in the message compose field",
@@ -12971,7 +12971,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.iChat",
+    "icon_bundle_id": "com.apple.MobileSMS",
     "id": "messages-spell-check",
     "key": "continuousSpellCheckingEnabled",
     "description": "Messages: Check Spelling While Typing in the message compose field",
@@ -12988,7 +12988,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.iChat",
+    "icon_bundle_id": "com.apple.MobileSMS",
     "id": "messages-grammar-check",
     "key": "grammarCheckingEnabled",
     "description": "Messages: Check Grammar With Spelling in the message compose field",
@@ -13005,7 +13005,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.iChat",
+    "icon_bundle_id": "com.apple.MobileSMS",
     "id": "messages-autocorrect",
     "key": "automaticSpellingCorrectionEnabled",
     "description": "Messages: Correct Spelling Automatically in the message compose field",
@@ -13022,7 +13022,7 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.iChat",
+    "icon_bundle_id": "com.apple.MobileSMS",
     "id": "messages-smart-insert-delete",
     "key": "smartInsertDeleteEnabled",
     "description": "Messages: Smart Copy/Paste in the message compose field",
@@ -22787,7 +22787,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": "com.apple.iChat"
+    "icon_bundle_id": "com.apple.MobileSMS"
   },
   {
     "id": "ichatInputLine.automaticDashSubstitutionEnabled",
@@ -22805,7 +22805,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": "com.apple.iChat"
+    "icon_bundle_id": "com.apple.MobileSMS"
   },
   {
     "id": "ichatInputLine.automaticLinkDetectionEnabled",
@@ -22823,7 +22823,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": "com.apple.iChat"
+    "icon_bundle_id": "com.apple.MobileSMS"
   },
   {
     "id": "ichatInputLine.automaticDataDetectionEnabled",
@@ -22841,7 +22841,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": "com.apple.iChat"
+    "icon_bundle_id": "com.apple.MobileSMS"
   },
   {
     "id": "ichatInputLine.automaticEmojiSubstitutionEnabled",
@@ -22859,7 +22859,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": "com.apple.iChat"
+    "icon_bundle_id": "com.apple.MobileSMS"
   },
   {
     "id": "ichatInputLine.automaticTextReplacementEnabled",
@@ -22877,7 +22877,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": "com.apple.iChat"
+    "icon_bundle_id": "com.apple.MobileSMS"
   },
   {
     "id": "ichatInputLine.continuousSpellCheckingEnabled",
@@ -22895,7 +22895,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": "com.apple.iChat"
+    "icon_bundle_id": "com.apple.MobileSMS"
   },
   {
     "id": "ichatInputLine.grammarCheckingEnabled",
@@ -22913,7 +22913,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": "com.apple.iChat"
+    "icon_bundle_id": "com.apple.MobileSMS"
   },
   {
     "id": "ichatInputLine.automaticSpellingCorrectionEnabled",
@@ -22931,7 +22931,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": "com.apple.iChat"
+    "icon_bundle_id": "com.apple.MobileSMS"
   },
   {
     "id": "ichatInputLine.smartInsertDeleteEnabled",
@@ -22949,7 +22949,7 @@
     "ai_generated": false,
     "contributed_by_issue": 55,
     "value_map": null,
-    "icon_bundle_id": "com.apple.iChat"
+    "icon_bundle_id": "com.apple.MobileSMS"
   },
   {
     "id": "audio-accessory-low-battery-devices",
