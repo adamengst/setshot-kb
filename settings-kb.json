@@ -2458,26 +2458,17 @@
     "key": "NewWindowTarget",
     "source": "defaults",
     "value_type": "string",
-    "description": "Folder shown when a new Finder window is opened",
-    "ui_location": "Finder → Settings → General → New Finder windows show",
+    "description": null,
+    "ui_location": null,
     "settings_url": null,
-    "noise": false,
-    "noise_reason": null,
+    "noise": true,
+    "noise_reason": "Finder new window target; PfHm (Home) is the default and indistinguishable between users, and custom folder values appear as opaque folder names rather than readable paths.",
     "min_macos": "13.0",
-    "notes": "Known Pf* codes: PfVo=Computer, PfHm=Home, PfDe=Desktop, PfDo=Documents, PfDi=Downloads, PfRe=Recents, PfCo=iCloud Drive, PfAF=Other…. When a custom folder is chosen via drag-and-drop, the value may appear as the folder name or a file:// URL rather than a Pf* code.",
+    "notes": null,
     "ai_generated": true,
     "contributed_by_issue": 97,
-    "icon_bundle_id": "com.apple.finder",
-    "value_map": {
-      "PfVo": "Computer (My Mac)",
-      "PfHm": "Home",
-      "PfDe": "Desktop",
-      "PfDo": "Documents",
-      "PfDi": "Downloads",
-      "PfRe": "Recents",
-      "PfCo": "iCloud Drive",
-      "PfAF": "Other…"
-    }
+    "icon_bundle_id": null,
+    "value_map": null
   },
   {
     "id": "finder.FXEnableExtensionChangeWarning",
