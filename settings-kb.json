@@ -2477,8 +2477,28 @@
       "PfDi": "Downloads",
       "PfRe": "Recents",
       "PfCo": "iCloud Drive",
-      "PfAF": "Other…"
+      "PfLo": "Custom folder",
+      "PfOt": "Custom folder",
+      "PfAF": "AirDrop"
     }
+  },
+  {
+    "id": "finder.NewWindowTargetPath",
+    "domain": "com.apple.finder",
+    "key": "NewWindowTargetPath",
+    "source": "defaults",
+    "value_type": "string",
+    "description": "Path of the custom folder shown when a new Finder window is opened",
+    "ui_location": "Finder → Settings → General → New Finder windows show",
+    "settings_url": null,
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Companion key to NewWindowTarget; set when the user chooses Other… and picks a folder. Stored as a file:// URL; the app strips it to the folder name.",
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "icon_bundle_id": "com.apple.finder",
+    "value_map": null
   },
   {
     "id": "finder.FXEnableExtensionChangeWarning",
