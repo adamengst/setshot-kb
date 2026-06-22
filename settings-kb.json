@@ -1658,7 +1658,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "macOS 15 (Sequoia) renamed all alert sounds in the UI while keeping the original filenames on disk. The value_map translates the stored (legacy) filename to the current display name shown in System Settings. The sound 'notification' is a WAV file and was not renamed.",
+    "notes": "Stored value is a full path, e.g. /System/Library/Sounds/Morse.aiff. macOS 15 (Sequoia) renamed alert sounds in the UI while keeping original filenames on disk. The value_map keys are the bare filename stems (without path or .aiff extension) and translate to the current UI display names.",
     "value_map": {
       "Tink": "Boop",
       "Blow": "Breeze",
