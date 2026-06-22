@@ -1900,7 +1900,7 @@
     "key": "idleTime",
     "source": "defaults",
     "value_type": "int",
-    "description": "How many seconds of inactivity before the screen saver starts. 0 = never",
+    "description": "How long the display must be inactive before the screen saver starts",
     "ui_location": "System Settings → Screen Saver → Start after",
     "settings_url": "x-apple.systempreferences:com.apple.ScreenSaver-Settings.extension",
     "noise": false,
@@ -1908,7 +1908,17 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": 106,
+    "value_map": {
+      "0": "Never",
+      "60": "1 minute",
+      "120": "2 minutes",
+      "300": "5 minutes",
+      "600": "10 minutes",
+      "1200": "20 minutes",
+      "1800": "30 minutes",
+      "3600": "1 hour"
+    }
   },
   {
     "id": "screensaver.showClock",
@@ -3659,7 +3669,7 @@
     "key": "RetriesUntilHint",
     "source": "defaults",
     "value_type": "int",
-    "description": "Number of failed password attempts before a password hint is shown. 0 = never show hints",
+    "description": "Number of failed password attempts before a password hint is shown",
     "ui_location": "System Settings → Lock Screen → Show password hints after",
     "settings_url": "x-apple.systempreferences:com.apple.Users-Groups-Settings.extension",
     "noise": false,
@@ -3667,7 +3677,7 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": 107
   },
   {
     "id": "loginwindow.GuestEnabled",
@@ -5297,7 +5307,9 @@
       "60": "1 hour",
       "120": "2 hours",
       "180": "3 hours"
-    }
+    },
+    "icon_bundle_id": "com.apple.Lock-Screen-Settings.extension",
+    "contributed_by_issue": 105
   },
   {
     "id": "PowerManagement-BatterySystemSleep",
@@ -18628,12 +18640,12 @@
     },
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 99,
+    "contributed_by_issue": 103,
     "id": "com.apple.mediaaccessibility.public.macaptiondisplaytype",
     "source": "defaults",
     "value_type": "string",
     "ai_generated": false,
-    "icon_bundle_id": "com.apple.preferences.universalaccess"
+    "icon_bundle_id": "com.apple.Accessibility-Settings.extension"
   },
   {
     "domain": "com.apple.mediaaccessibility.public",
@@ -18645,12 +18657,12 @@
     "value_map": null,
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 98,
+    "contributed_by_issue": 104,
     "id": "com.apple.mediaaccessibility.public.macaptionpreferredlanguages",
     "source": "defaults",
     "value_type": "string",
     "ai_generated": false,
-    "icon_bundle_id": "com.apple.preferences.universalaccess"
+    "icon_bundle_id": "com.apple.Accessibility-Settings.extension"
   },
   {
     "domain": "com.apple.SpeechRecognitionCore",
