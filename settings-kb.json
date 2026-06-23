@@ -5293,7 +5293,7 @@
     "min_macos": "13.0",
     "notes": "On laptops this also appears in Battery → Options → Turn display off on power adapter when inactive. On desktop Macs the Energy pane labels this simply 'Turn display off when inactive' with no AC/battery qualifier.",
     "ai_generated": false,
-    "contributed_by_issue": 111,
+    "contributed_by_issue": 105,
     "value_map": {
       "0": "Never",
       "1": "1 minute",
@@ -5308,8 +5308,7 @@
       "120": "2 hours",
       "180": "3 hours"
     },
-    "icon_bundle_id": "com.apple.Lock-Screen-Settings.extension",
-    "contributed_by_issue": 105
+    "icon_bundle_id": "com.apple.Lock-Screen-Settings.extension"
   },
   {
     "id": "PowerManagement-BatterySystemSleep",
@@ -5350,7 +5349,7 @@
     "key": "AC Power.System Sleep Timer",
     "source": "plist",
     "value_type": "integer",
-    "description": "System sleep timer on AC power; on desktop Macs controls whether the system sleeps when the display is off",
+    "description": "Energy: prevent automatic sleeping when the display is off",
     "ui_location": "System Settings → Battery → Options (laptops) / Energy → Prevent automatic sleeping when the display is off (desktop Macs)",
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension?options",
     "noise": false,
@@ -5358,7 +5357,7 @@
     "min_macos": "13.0",
     "notes": "On laptops, value is in minutes (0 = Never). On Tahoe desktop Macs, Apple repurposed this key as the toggle for 'Prevent automatic sleeping when the display is off' in System Settings → Energy.",
     "ai_generated": false,
-    "contributed_by_issue": 109,
+    "contributed_by_issue": 148,
     "value_map": {
       "0": "Never",
       "1": "1 minute",
@@ -5380,7 +5379,7 @@
     "key": "AC Power.Disk Sleep Timer",
     "source": "plist",
     "value_type": "integer",
-    "description": "Hard disk sleep timer on AC power; on desktop Macs controls whether hard disks sleep when possible",
+    "description": "Energy: put hard disks to sleep when possible",
     "ui_location": "System Settings → Battery → Options (laptops) / Energy → Put hard disks to sleep when possible (desktop Macs)",
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension?options",
     "noise": false,
@@ -5388,7 +5387,7 @@
     "min_macos": "13.0",
     "notes": "On laptops, value is in minutes (0 = disabled). On Tahoe desktop Macs, Apple repurposed this key as the toggle for 'Put hard disks to sleep when possible' in System Settings → Energy.",
     "ai_generated": false,
-    "contributed_by_issue": 110,
+    "contributed_by_issue": 145,
     "value_map": {
       "0": "Never (disabled)",
       "1": "1 minute",
@@ -5410,15 +5409,15 @@
     "key": "AC Power.DarkWakeBackgroundTasks",
     "source": "plist",
     "value_type": "integer",
-    "description": "Wake for network access / Power Nap on AC power",
-    "ui_location": "System Settings → Battery / Energy → Options → Enable Power Nap",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension?options",
+    "description": "Energy: enable Power Nap",
+    "ui_location": "System Settings → Energy → Enable Power Nap",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null,
+    "contributed_by_issue": 146,
     "value_map": {
       "0": "Disabled",
       "1": "Enabled"
@@ -7380,7 +7379,7 @@
     "key": "MADisplayFilterGrayscaleCorrectionIntensity",
     "source": "defaults",
     "value_type": "float",
-    "description": "Grayscale color filter intensity from 0.0 to 1.0",
+    "description": "Grayscale color filter intensity (0%–100%)",
     "ui_location": "System Settings → Accessibility → Display → Color Filters",
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
@@ -7388,7 +7387,13 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": 123,
+    "value_map": {
+      "0": "0% (off)",
+      "0.0": "0% (off)",
+      "1": "100%",
+      "1.0": "100%"
+    }
   },
   {
     "id": "NSGlobalDomain-LiveText",
@@ -10340,15 +10345,15 @@
     "key_prefix": null,
     "source": "defaults",
     "value_type": "integer",
-    "description": "Wake for network access on AC power",
-    "ui_location": "System Settings → Battery / Energy → Options",
+    "description": "Wake for network access",
+    "ui_location": "System Settings → Energy → Wake for network access",
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null,
+    "contributed_by_issue": 147,
     "value_map": {
       "0": "Off",
       "1": "On"
@@ -15605,8 +15610,8 @@
     "min_macos": "15.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": 11,
-    "icon_bundle_id": "com.apple.Screenshot",
+    "contributed_by_issue": 139,
+    "icon_bundle_id": "com.apple.Sound-Settings.extension",
     "value_map": {
       "BuiltInMicrophoneDevice": "Built-in Microphone"
     }
@@ -15821,12 +15826,13 @@
     "min_macos": null,
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": 11,
+    "contributed_by_issue": 126,
     "value_map": {
       "0": "Sleep in RAM only",
       "3": "Safe sleep (default)",
       "25": "Hibernate to disk only"
-    }
+    },
+    "icon_bundle_id": "com.apple.Battery-Settings.extension"
   },
   {
     "id": "power-battery-hibernate-mode",
@@ -18242,13 +18248,17 @@
   {
     "domain": "com.apple.mail-shared",
     "key": "AddressDisplayMode",
-    "description": "Mail: how email addresses are displayed — name only, email only, or both",
+    "description": "Mail: how email addresses are displayed",
     "ui_location": "Mail → Settings → Viewing",
     "settings_url": null,
-    "value_map": null,
+    "value_map": {
+      "0": "Name only",
+      "1": "Email address only",
+      "2": "Name and email address"
+    },
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 66,
+    "contributed_by_issue": 121,
     "id": "com.apple.mail-shared.addressdisplaymode",
     "source": "defaults",
     "value_type": "string",
@@ -18353,11 +18363,12 @@
     "value_map": null,
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 16,
+    "contributed_by_issue": 136,
     "id": "com.apple.applemultitouchtrackpad.trackpadthreefingersrightclick",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "icon_bundle_id": "com.apple.Trackpad-Settings.extension"
   },
   {
     "domain": "com.apple.AppleMultitouchTrackpad",
@@ -18374,11 +18385,12 @@
     },
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 15,
+    "contributed_by_issue": 137,
     "id": "com.apple.applemultitouchtrackpad.actuationstrength",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "icon_bundle_id": "com.apple.Trackpad-Settings.extension"
   },
   {
     "domain": "com.apple.AppleMultitouchTrackpad",
@@ -18393,11 +18405,12 @@
     },
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 15,
+    "contributed_by_issue": 135,
     "id": "com.apple.applemultitouchtrackpad.hidscrollzoommodifiermask",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "icon_bundle_id": "com.apple.Trackpad-Settings.extension"
   },
   {
     "domain": "com.apple.driver.AppleBluetoothMultitouch.trackpad",
@@ -18473,11 +18486,12 @@
     },
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 18,
+    "contributed_by_issue": 138,
     "id": "com.apple.driver.applebluetoothmultitouch.trackpad.hidscrollzoommodifiermask",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "icon_bundle_id": "com.apple.Accessibility-Settings.extension"
   },
   {
     "domain": "com.apple.generativepartnerservicesettings",
@@ -18569,11 +18583,12 @@
     "value_map": null,
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 68,
+    "contributed_by_issue": 140,
     "id": "com.apple.speech.synthesis.general.prefs.timeannouncementprefs.timeannouncementsenabled",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "icon_bundle_id": "com.apple.ControlCenter-Settings.extension"
   },
   {
     "domain": "com.apple.speech.synthesis.general.prefs",
@@ -18588,11 +18603,12 @@
     },
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 68,
+    "contributed_by_issue": 141,
     "id": "com.apple.speech.synthesis.general.prefs.timeannouncementprefs.timeannouncementsintervalidentifier",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "icon_bundle_id": "com.apple.ControlCenter-Settings.extension"
   },
   {
     "domain": "com.apple.speech.synthesis.general.prefs",
@@ -18606,11 +18622,12 @@
     },
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 68,
+    "contributed_by_issue": 143,
     "id": "com.apple.speech.synthesis.general.prefs.timeannouncementprefs.timeannouncementsphraseidentifier",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "icon_bundle_id": "com.apple.ControlCenter-Settings.extension"
   },
   {
     "domain": "com.apple.speech.synthesis.general.prefs",
@@ -18621,11 +18638,12 @@
     "value_map": null,
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 68,
+    "contributed_by_issue": 142,
     "id": "com.apple.speech.synthesis.general.prefs.timeannouncementprefs.timeannouncementsvoicesettings.customvolume",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "icon_bundle_id": "com.apple.ControlCenter-Settings.extension"
   },
   {
     "domain": "com.apple.mediaaccessibility.public",
@@ -18688,11 +18706,12 @@
     "value_map": null,
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 17,
+    "contributed_by_issue": 130,
     "id": "com.apple.screensharingshareddefaults.allowonlycontacts",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "icon_bundle_id": "com.apple.ScreenSharing"
   },
   {
     "domain": "com.apple.ScreenSharingSharedDefaults",
@@ -18703,11 +18722,12 @@
     "value_map": null,
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 17,
+    "contributed_by_issue": 129,
     "id": "com.apple.screensharingshareddefaults.blockallinviters",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "icon_bundle_id": "com.apple.ScreenSharing"
   },
   {
     "domain": "com.apple.FindMyMac",
@@ -18801,11 +18821,12 @@
     },
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 18,
+    "contributed_by_issue": 127,
     "id": "com.apple.webfoundation.nshttpacceptcookies",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "icon_bundle_id": "com.apple.Safari"
   },
   {
     "domain": "com.apple.shortcuts",
@@ -18906,11 +18927,12 @@
     },
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 15,
+    "contributed_by_issue": 128,
     "id": "com.apple.screensaver.ilifeslideshows.stylekey",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "icon_bundle_id": "com.apple.ScreenSaver-Settings.extension"
   },
   {
     "domain": "com.apple.menuextra.battery",
@@ -18947,11 +18969,12 @@
     },
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 21,
+    "contributed_by_issue": 131,
     "id": "com.apple.screencapture.target",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "icon_bundle_id": "com.apple.Screenshot"
   },
   {
     "domain": "com.apple.screencapture",
@@ -18977,11 +19000,12 @@
     "value_map": null,
     "noise": false,
     "noise_reason": null,
-    "contributed_by_issue": 20,
+    "contributed_by_issue": 125,
     "id": "com.apple.lookup.shared.lookupsuggestionsdisabled",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "icon_bundle_id": "com.apple.Siri-Settings.extension"
   },
   {
     "domain": "com.apple.pipagent",
@@ -21676,9 +21700,9 @@
     "min_macos": null,
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": 25,
+    "contributed_by_issue": 124,
     "value_map": null,
-    "icon_bundle_id": null
+    "icon_bundle_id": "com.apple.Image_Capture"
   },
   {
     "id": "keyboard-preferences.ismixmojisuggesionsenabled",
@@ -21999,12 +22023,12 @@
     "min_macos": "13.0",
     "notes": "Set via Terminal: defaults write com.apple.screencapture disable-shadow -bool true",
     "ai_generated": false,
-    "contributed_by_issue": 44,
+    "contributed_by_issue": 133,
     "value_map": {
       "True": "No shadow",
       "False": "Drop shadow (default)"
     },
-    "icon_bundle_id": null
+    "icon_bundle_id": "com.apple.Screenshot"
   },
   {
     "id": "screencapture.include-date",
@@ -22041,7 +22065,7 @@
     "min_macos": "13.0",
     "notes": "Configurable via Screenshot app (⌘⇧5) Options menu or Terminal",
     "ai_generated": false,
-    "contributed_by_issue": 44,
+    "contributed_by_issue": 132,
     "value_map": {
       "png": "PNG",
       "jpg": "JPG",
@@ -22049,7 +22073,7 @@
       "pdf": "PDF",
       "tiff": "TIFF"
     },
-    "icon_bundle_id": null
+    "icon_bundle_id": "com.apple.Screenshot"
   },
   {
     "id": "airport.AllowLegacyNetworks",
@@ -22129,15 +22153,15 @@
     "key": "AC Power.Automatic Restart On Power Loss",
     "source": "plist",
     "value_type": "bool",
-    "description": "Energy: restart automatically after a power failure while on AC power",
-    "ui_location": "System Settings → Energy → Options → Start up automatically after a power failure",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension?options",
+    "description": "Energy: restart automatically after a power failure",
+    "ui_location": "System Settings → Energy → Start up automatically after a power failure",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": 45,
+    "contributed_by_issue": 144,
     "value_map": {
       "True": "Restart automatically",
       "False": "Don't restart automatically"
@@ -22241,12 +22265,12 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": 45,
+    "contributed_by_issue": 134,
     "value_map": {
       "True": "Automatically using location",
       "False": "Manually"
     },
-    "icon_bundle_id": null
+    "icon_bundle_id": "com.apple.Date-Time-Settings.extension"
   },
   {
     "id": "universalaccess.slowKeyBeepOn",
