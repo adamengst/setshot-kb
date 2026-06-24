@@ -17443,15 +17443,15 @@
     "key": "sleep",
     "source": "pmset",
     "value_type": "int",
-    "description": "Computer sleep timer: minutes of inactivity before the computer sleeps (0 = Never)",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Enable Power Nap",
+    "description": "Computer sleep timer: minutes of inactivity before the computer sleeps",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options",
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "0 = Never. Set via System Settings > Battery (or Energy Saver on older Macs).",
+    "notes": "Value is in minutes. 0 = Never. No direct slider in macOS 14+ System Settings; set via pmset.",
     "ai_generated": true,
-    "contributed_by_issue": 150,
+    "contributed_by_issue": 151,
     "value_map": {
       "0": "Never"
     }
@@ -24249,5 +24249,39 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 115
+  },
+  {
+    "id": "TimeMachine.SuspendHelperActivityTimeStamp",
+    "domain": "com.apple.TimeMachine",
+    "key": "SuspendHelperActivityTimeStamp",
+    "source": "plist",
+    "value_type": "integer",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Internal Time Machine timestamp tracking when a helper activity was suspended. Not a user-configurable setting.",
+    "min_macos": null,
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 153,
+    "value_map": null
+  },
+  {
+    "id": "pmset.powermode",
+    "domain": "pmset",
+    "key": "powermode",
+    "source": "pmset",
+    "value_type": "int",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Derived effective value from pmset 'Currently in use' section. The user-set Low Power Mode preference is already tracked via pmset.lowpowermode. Appearing as '0' from absent is macOS initializing the default, not a user action.",
+    "min_macos": null,
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 152,
+    "value_map": null
   }
 ]
