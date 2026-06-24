@@ -17441,6 +17441,261 @@
     "contributed_by_issue": null
   },
   {
+    "id": "pmset.sleep",
+    "domain": "pmset",
+    "key": "sleep",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Computer sleep timer: minutes of inactivity before the computer sleeps (0 = Never)",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Enable Power Nap",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Never. Set via System Settings > Battery (or Energy Saver on older Macs).",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Never"
+    }
+  },
+  {
+    "id": "pmset.displaysleep",
+    "domain": "pmset",
+    "key": "displaysleep",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Display sleep timer: minutes of inactivity before the display turns off (0 = Never)",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Turn display off on battery/Power Adapter after",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Never.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Never"
+    }
+  },
+  {
+    "id": "pmset.disksleep",
+    "domain": "pmset",
+    "key": "disksleep",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Hard disk sleep: puts spinning hard drives to sleep when inactive (0 = disabled)",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Put hard disks to sleep when possible",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = disabled. Primarily affects Macs with spinning hard drives.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.standby",
+    "domain": "pmset",
+    "key": "standby",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Standby mode: Mac enters a lower-power state after sleeping for an extended period",
+    "ui_location": "System Settings \u2192 Battery",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On. Duration controlled by standbydelay/standbydelaylow/standbydelayhigh.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.powernap",
+    "domain": "pmset",
+    "key": "powernap",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Power Nap: Mac periodically wakes during sleep to fetch mail, calendar updates, and iCloud sync",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Enable Power Nap",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.networkoversleep",
+    "domain": "pmset",
+    "key": "networkoversleep",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Wake for network access: allows wake-on-LAN and network requests while sleeping",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Wake for network access",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On. See also womp (Ethernet-specific wake on LAN).",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.womp",
+    "domain": "pmset",
+    "key": "womp",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Wake on LAN: allows the Mac to wake when it receives a magic packet over Ethernet",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Wake for network access",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On. Ethernet-specific counterpart to networkoversleep.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.tcpkeepalive",
+    "domain": "pmset",
+    "key": "tcpkeepalive",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "TCP keepalive: maintains TCP connections (for iCloud, push notifications, etc.) while the Mac is asleep",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Enable Power Nap",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On. Typically enabled alongside Power Nap.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.ttyskeepawake",
+    "domain": "pmset",
+    "key": "ttyskeepawake",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Terminal sessions keep awake: active SSH or terminal sessions prevent the Mac from sleeping",
+    "ui_location": "System Settings \u2192 Battery",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.lowpowermode",
+    "domain": "pmset",
+    "key": "lowpowermode",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Low Power Mode: reduces performance and energy use to extend battery life",
+    "ui_location": "System Settings \u2192 Battery \u2192 Low Power Mode",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.hibernatemode",
+    "domain": "pmset",
+    "key": "hibernatemode",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Hibernate mode: controls how the Mac saves memory state when sleeping",
+    "ui_location": "System Settings \u2192 Battery",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Not directly exposed in the UI; changes via pmset. 0 = no image (RAM powered), 3 = safe sleep (RAM + disk image, default on laptops), 25 = hibernate only (disk, no RAM power).",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "No safe sleep (RAM powered)",
+      "3": "Safe sleep (RAM + disk image)",
+      "25": "Hibernate only (disk, no RAM)"
+    }
+  },
+  {
+    "id": "pmset.SleepOnPowerButton",
+    "domain": "pmset",
+    "key": "Sleep On Power Button",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Sleep on power button press: pressing the power button sleeps the Mac instead of showing a dialog",
+    "ui_location": "System Settings \u2192 Battery",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off (shows dialog), 1 = On (sleeps immediately). Apple Silicon Macs only.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.hibernatefile",
+    "domain": "pmset",
+    "key": "hibernatefile",
+    "source": "pmset",
+    "value_type": "string",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "System-managed path to the sleep image file; always /var/vm/sleepimage and not user-settable.",
+    "min_macos": null,
+    "notes": null,
+    "ai_generated": true,
+    "contributed_by_issue": 150
+  },
+  {
     "id": "pm.ac.autoPowerOffEnabled",
     "domain": "com.apple.PowerManagement",
     "key": "AC Power.AutoPowerOff Enabled",
