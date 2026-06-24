@@ -17524,19 +17524,16 @@
     "key": "powernap",
     "source": "pmset",
     "value_type": "int",
-    "description": "Power Nap: Mac periodically wakes during sleep to fetch mail, calendar updates, and iCloud sync",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Enable Power Nap",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "The pmset 'Currently in use' powernap key is a derived effective value, not a stored user preference. The actual Power Nap preference is already tracked via com.apple.PowerManagement.plist :: AC Power.DarkWakeBackgroundTasks. On Macs where Power Nap has no System Settings UI, this key also appears and disappears based on power state without user action.",
     "min_macos": "13.0",
-    "notes": "0 = Off, 1 = On.",
+    "notes": null,
     "ai_generated": true,
     "contributed_by_issue": 150,
-    "value_map": {
-      "0": "Off",
-      "1": "On"
-    }
+    "value_map": null
   },
   {
     "id": "pmset.networkoversleep",
