@@ -294,19 +294,16 @@
     "key": "ActivityReceivingAllowed",
     "source": "plist",
     "value_type": "bool",
-    "description": "Allow Handoff: this Mac accepts Handoff activities from nearby Apple devices signed in to the same Apple Account",
-    "ui_location": "System Settings \u2192 General \u2192 AirDrop & Handoff \u2192 Allow Handoff between this Mac and your iCloud devices",
-    "settings_url": "x-apple.systempreferences:com.apple.AirDrop-Handoff-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Always toggles in lockstep with ActivityAdvertisingAllowed; suppressed to avoid showing Allow Handoff twice.",
     "min_macos": "13.0",
     "notes": "Stored in a ByHost plist keyed by the network interface UUID. Toggles together with ActivityAdvertisingAllowed.",
     "ai_generated": true,
     "contributed_by_issue": null,
-    "value_map": {
-      "True": "On",
-      "False": "Off"
-    }
+    "value_map": null
   },
   {
     "id": "chronod.remoteWidgetsEnabled",
