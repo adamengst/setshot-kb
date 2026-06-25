@@ -880,7 +880,7 @@
     "key": "AppleIconAppearanceTheme",
     "source": "defaults",
     "value_type": "string",
-    "description": "App icon style: colorful, tinted, or monochrome",
+    "description": "App icon style",
     "ui_location": "System Settings → Appearance → Icon style",
     "settings_url": "x-apple.systempreferences:com.apple.Appearance-Settings.extension",
     "noise": false,
@@ -888,7 +888,14 @@
     "min_macos": "26.0",
     "notes": "Values: 'Default', 'TintedLight', 'TintedDark'.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": 154,
+    "value_map": {
+      "Default": "Default",
+      "Dark": "Dark",
+      "Clear": "Clear",
+      "TintedLight": "Tinted",
+      "TintedDark": "Tinted"
+    }
   },
   {
     "id": "globaldomain.AppleIconAppearanceTintColor",
