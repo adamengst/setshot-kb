@@ -1,5 +1,37 @@
 [
   {
+    "id": "system.macOSVersion",
+    "domain": "system",
+    "key": "macOSVersion",
+    "source": "system",
+    "value_type": "string",
+    "description": "macOS version",
+    "ui_location": "System Settings → General → Software Update",
+    "settings_url": "x-apple.systempreferences:com.apple.Software-Update-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": null,
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null
+  },
+  {
+    "id": "system.macOSBuild",
+    "domain": "system",
+    "key": "macOSBuild",
+    "source": "system",
+    "value_type": "string",
+    "description": "macOS build number",
+    "ui_location": "System Settings → General → Software Update",
+    "settings_url": "x-apple.systempreferences:com.apple.Software-Update-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": null,
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null
+  },
+  {
     "id": "globaldomain.swipescrolldirection",
     "domain": "NSGlobalDomain",
     "key": "com.apple.swipescrolldirection",
