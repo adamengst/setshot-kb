@@ -25058,5 +25058,40 @@
     "ai_generated": false,
     "contributed_by_issue": 158,
     "value_map": null
+  },
+  {
+    "id": "homeenergyd.NextPollDate",
+    "domain": "com.apple.homeenergyd",
+    "key": "NextPollDate",
+    "source": "plist",
+    "value_type": "string",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Internal scheduling timestamp for when the Home Energy daemon should next poll for data",
+    "min_macos": null,
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 159,
+    "value_map": null
+  },
+  {
+    "id": "useractivityd.dynamicuseractivites.kUADynamicUserActivitiesKey",
+    "domain": "com.apple.coreservices.useractivityd.dynamicuseractivites",
+    "key": "",
+    "key_prefix": "kUADynamicUserActivitiesKey.",
+    "source": "plist",
+    "value_type": "string",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Ephemeral Handoff/Continuity session activity records; keys contain volatile per-session hex IDs and values are transient UUIDs that appear and disappear as Handoff sessions start and end",
+    "min_macos": null,
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 160,
+    "value_map": null
   }
 ]
