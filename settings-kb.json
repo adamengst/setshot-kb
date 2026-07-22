@@ -856,7 +856,7 @@
     "key": "dnd_prefs.dndDisplaySleep",
     "source": "defaults",
     "value_type": "bool",
-    "description": "Controls whether notifications are suppressed when the display is sleeping",
+    "description": "Whether notifications are allowed while the display is sleeping",
     "ui_location": "System Settings \u2192 Notifications \u2192 Allow notifications when the display is sleeping",
     "settings_url": "x-apple.systempreferences:com.apple.Notifications-Settings.extension",
     "noise": false,
@@ -864,7 +864,13 @@
     "min_macos": "12.0",
     "notes": "Stored as a nested binary plist under dnd_prefs. True = suppress (show nothing), False = allow notifications.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": 162,
+    "value_map": {
+      "True": "Off",
+      "1": "Off",
+      "False": "On",
+      "0": "On"
+    }
   },
   {
     "id": "ncprefs.dndDisplayLock",
@@ -2092,7 +2098,13 @@
     "min_macos": "13.0",
     "notes": "1/True = Selected Sound Output Device; 0/False = Speakers.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": 163,
+    "value_map": {
+      "True": "Selected Sound Output Device",
+      "1": "Selected Sound Output Device",
+      "False": "Internal Speakers",
+      "0": "Internal Speakers"
+    }
   },
   {
     "id": "nvram.StartupMute",
@@ -7719,7 +7731,7 @@
     "key": "MADisplayFilterGrayscaleCorrectionIntensity",
     "source": "defaults",
     "value_type": "float",
-    "description": "Grayscale color filter intensity (0%\u2013100%)",
+    "description": "Grayscale color filter intensity",
     "ui_location": "System Settings \u2192 Accessibility \u2192 Display \u2192 Color Filters",
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
@@ -25092,6 +25104,23 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 160,
+    "value_map": null
+  },
+  {
+    "id": "configurationprofiles.PollTimer_NextFireDate",
+    "domain": "com.apple.configurationprofiles.user",
+    "key": "PollTimer_NextFireDate",
+    "source": "plist",
+    "value_type": "string",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Internal MDM/configuration-profile poll timer bookkeeping value that updates on its own schedule; not a user-facing setting.",
+    "min_macos": null,
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 165,
     "value_map": null
   }
 ]
