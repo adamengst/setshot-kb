@@ -4895,7 +4895,13 @@
     "min_macos": "13.0",
     "notes": "0=None, 262144=Control, 524288=Option, 786432=Control+Option.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": 167,
+    "value_map": {
+      "0": "None",
+      "262144": "Control",
+      "524288": "Option",
+      "786432": "Control + Option"
+    }
   },
   {
     "id": "universalaccess.closeViewHotkeysEnabled",
@@ -17756,7 +17762,7 @@
     "key": "disksleep",
     "source": "pmset",
     "value_type": "int",
-    "description": "Hard disk sleep: puts spinning hard drives to sleep when inactive (0 = disabled)",
+    "description": "Hard disk sleep: puts spinning hard drives to sleep when inactive (0 = disabled). This and other Battery \u2192 Options settings can differ between running on battery and being plugged in, so switching power sources between snapshots can make this look like it changed even though you didn't touch it.",
     "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Put hard disks to sleep when possible",
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
     "noise": false,
@@ -18999,22 +19005,18 @@
   {
     "domain": "com.apple.AppleMultitouchTrackpad",
     "key": "HIDScrollZoomModifierMask",
-    "description": "Trackpad: Modifier key used for scroll-to-zoom",
-    "ui_location": "Accessibility \u2192 Zoom \u2192 Use scroll gesture with modifier keys",
-    "settings_url": "x-apple.systempreferences:com.apple.preference.universalaccess?Zoom",
-    "value_map": {
-      "262144": "Control",
-      "524288": "Option",
-      "786432": "Control + Option"
-    },
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "value_map": null,
+    "noise": true,
+    "noise_reason": "Mirrors com.apple.universalaccess :: closeViewScrollWheelModifiersInt, which macOS writes to even on Macs without a physical trackpad (e.g. iMacs). See that entry instead.",
     "contributed_by_issue": 135,
     "id": "com.apple.applemultitouchtrackpad.hidscrollzoommodifiermask",
     "source": "defaults",
     "value_type": "string",
     "ai_generated": false,
-    "icon_bundle_id": "com.apple.Trackpad-Settings.extension"
+    "icon_bundle_id": null
   },
   {
     "domain": "com.apple.driver.AppleBluetoothMultitouch.trackpad",
@@ -25121,6 +25123,23 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 165,
+    "value_map": null
+  },
+  {
+    "id": "accessibility.KeyRepeatDelay",
+    "domain": "com.apple.Accessibility",
+    "key": "KeyRepeatDelay",
+    "source": "plist",
+    "value_type": "float",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Accessibility subsystem's own internal copy of key-repeat timing; observed changing to non-round computed values with no corresponding user action.",
+    "min_macos": null,
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 166,
     "value_map": null
   }
 ]
