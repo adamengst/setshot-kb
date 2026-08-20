@@ -442,13 +442,17 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "12.0",
-    "notes": "Stored in the ByHost plist (domain normalises to com.apple.controlcenter). Values: 2 = in menu bar, 8 = in Control Center only, 16 = always show.",
+    "notes": "Stored in the ByHost plist (domain normalises to com.apple.controlcenter). Older values (pre-macOS 15.7.9): 2 = in menu bar, 8 = in Control Center only, 16 = always show. Starting macOS 15.7.9, Show in Menu Bar and Show in Control Center became independent checkboxes and the value also shifts when Show Percentage is toggled: confirmed 12 (both off) -> 9 (Menu Bar on) -> 6 (+ Control Center on) -> 3 (- percentage). Other combinations in this newer encoding haven't been confirmed.",
     "ai_generated": true,
-    "contributed_by_issue": null,
+    "contributed_by_issue": 182,
     "value_map": {
       "2": "Show in Menu Bar",
       "8": "Don't Show in Menu Bar",
-      "16": "Always Show in Menu Bar"
+      "16": "Always Show in Menu Bar",
+      "12": "Don't Show in Menu Bar or Control Center",
+      "9": "Show in Menu Bar Only",
+      "6": "Show in Menu Bar and Control Center",
+      "3": "Show in Menu Bar and Control Center (percentage hidden)"
     },
     "icon_bundle_id": "com.apple.Battery-Settings.extension",
     "requires_hardware": [
@@ -8337,7 +8341,10 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 25,
-    "value_map": null,
+    "value_map": {
+      "True": "Always",
+      "False": "When Active"
+    },
     "icon_bundle_id": "com.apple.Battery-Settings.extension",
     "requires_hardware": [
       "battery"
