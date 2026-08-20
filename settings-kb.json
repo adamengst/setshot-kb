@@ -1326,7 +1326,12 @@
     "min_macos": "13.0",
     "notes": "Values: 'Maximize', 'Minimize', 'None'. Overrides AppleMiniaturizeOnDoubleClick when set.",
     "ai_generated": true,
-    "contributed_by_issue": 40
+    "contributed_by_issue": 40,
+    "value_map": {
+      "None": "Do Nothing",
+      "Maximize": "Zoom",
+      "Minimize": "Minimize"
+    }
   },
   {
     "id": "globaldomain.AppleMiniaturizeOnDoubleClick",
