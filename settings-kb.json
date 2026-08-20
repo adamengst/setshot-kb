@@ -488,12 +488,13 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "12.0",
-    "notes": "Stored in the ByHost plist. Values: 2 = in menu bar, 8 = in Control Center only.",
+    "notes": "Stored in the ByHost plist. Values: 2 = in menu bar, 8 or 24 = in Control Center only (24 seen starting macOS 15.7.9).",
     "ai_generated": true,
-    "contributed_by_issue": null,
+    "contributed_by_issue": 175,
     "value_map": {
       "2": "Show in Menu Bar",
-      "8": "Don't Show in Menu Bar"
+      "8": "Don't Show in Menu Bar",
+      "24": "Don't Show in Menu Bar"
     },
     "icon_bundle_id": "com.apple.BluetoothSettings"
   },
@@ -736,12 +737,13 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "12.0",
-    "notes": "Stored in the ByHost plist. Values: 2 = in menu bar, 8 = in Control Center only.",
+    "notes": "Stored in the ByHost plist. Values: 2 = in menu bar, 8 = in Control Center only, 18 = always show.",
     "ai_generated": true,
-    "contributed_by_issue": null,
+    "contributed_by_issue": 176,
     "value_map": {
       "2": "Show in Menu Bar",
-      "8": "Don't Show in Menu Bar"
+      "8": "Don't Show in Menu Bar",
+      "18": "Always Show in Menu Bar"
     }
   },
   {
@@ -16224,7 +16226,7 @@
     "key_prefix": null,
     "source": "plist",
     "value_type": "bool",
-    "description": "Prioritize network reachability over sleep on AC power",
+    "description": "Whether the Mac prioritizes staying reachable on the network over going to sleep, while on AC power. Distinct from Wake for Network Access / Wake On LAN (a separate setting); doesn't appear to correspond to a direct checkbox in System Settings on all Mac models.",
     "ui_location": "System Settings \u2192 Battery / Energy \u2192 Options",
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
     "noise": false,
@@ -16232,7 +16234,7 @@
     "min_macos": null,
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": 11
+    "contributed_by_issue": 178
   },
   {
     "id": "power-ac-tcp-keepalive",
@@ -17724,7 +17726,7 @@
     "key": "sleep",
     "source": "pmset",
     "value_type": "int",
-    "description": "Computer sleep timer: minutes of inactivity before the computer sleeps. This can differ between running on battery and being plugged in, so switching power sources between snapshots can make it look like it changed even though nothing was set differently.",
+    "description": "Computer sleep timer: minutes of inactivity before the computer sleeps (may show as On/Off rather than a number on some configurations). This can differ between running on battery and being plugged in, so switching power sources between snapshots can make it look like it changed even though nothing was set differently.",
     "ui_location": "System Settings \u2192 Battery \u2192 Options",
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
     "noise": false,
@@ -17732,7 +17734,7 @@
     "min_macos": "13.0",
     "notes": "Value is in minutes. 0 = Never. No direct slider in macOS 14+ System Settings; set via pmset.",
     "ai_generated": true,
-    "contributed_by_issue": 151,
+    "contributed_by_issue": 173,
     "value_map": {
       "0": "Never"
     }
@@ -25211,5 +25213,27 @@
     "ai_generated": false,
     "contributed_by_issue": 171,
     "value_map": null
+  },
+  {
+    "id": "multitouch.TrackpadThreeFingerTapGesture",
+    "domain": "com.apple.AppleMultitouchTrackpad",
+    "key": "TrackpadThreeFingerTapGesture",
+    "source": "plist",
+    "value_type": "integer",
+    "description": "Look up & data detectors: use a three-finger tap on the built-in trackpad to look up words or data detectors",
+    "ui_location": "System Settings \u2192 Trackpad \u2192 Point & Click \u2192 Look up & data detectors",
+    "settings_url": "x-apple.systempreferences:com.apple.Trackpad-Settings.extension?PointAndClick",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Encoding has changed across macOS versions: 0/2 = off/on on older releases, True/False on newer ones (seen going 2\u2192False between snapshots on macOS 26.5.2).",
+    "ai_generated": false,
+    "contributed_by_issue": 177,
+    "value_map": {
+      "0": "Off",
+      "2": "On",
+      "False": "Off",
+      "True": "On"
+    }
   }
 ]
