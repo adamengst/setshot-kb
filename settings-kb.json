@@ -8621,25 +8621,6 @@
     "icon_bundle_id": null
   },
   {
-    "id": "xpc-activity2-product-build-version",
-    "domain": "com.apple.xpc.activity2",
-    "key": "ProductBuildVersion",
-    "key_prefix": null,
-    "source": "plist",
-    "value_type": "string",
-    "description": "Current macOS build number",
-    "ui_location": null,
-    "settings_url": null,
-    "noise": false,
-    "noise_reason": null,
-    "min_macos": "13.0",
-    "notes": null,
-    "ai_generated": false,
-    "contributed_by_issue": null,
-    "value_map": null,
-    "icon_bundle_id": null
-  },
-  {
     "id": "escrow-alert.esa-health-sample",
     "domain": "com.apple.EscrowSecurityAlert",
     "key": "",
