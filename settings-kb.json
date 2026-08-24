@@ -816,7 +816,12 @@
     "min_macos": "10.15",
     "notes": "Key name contains spaces. Values: 1 = opted in (sharing on), 2 or 3 = opted out.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "1": "Opted in",
+      "2": "Opted out",
+      "3": "Opted out"
+    }
   },
   {
     "id": "ncprefs.content_visibility",
@@ -854,7 +859,11 @@
     "min_macos": "12.0",
     "notes": "Values: 0 = By recency, 1 = By app.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "By recency",
+      "1": "By app"
+    }
   },
   {
     "id": "ncprefs.dndDisplaySleep",
@@ -1465,7 +1474,16 @@
     "min_macos": "13.0",
     "notes": "Values: 1=Sunday, 2=Monday, 7=Saturday.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "1": "Sunday",
+      "2": "Monday",
+      "3": "Tuesday",
+      "4": "Wednesday",
+      "5": "Thursday",
+      "6": "Friday",
+      "7": "Saturday"
+    }
   },
   {
     "id": "globaldomain.AppleTemperatureUnit",
@@ -1659,7 +1677,12 @@
     "min_macos": "13.0",
     "notes": "0=Light, 1=Medium, 2=Firm.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Light",
+      "1": "Medium",
+      "2": "Firm"
+    }
   },
   {
     "id": "multitouch.SecondClickThreshold",
@@ -1831,7 +1854,15 @@
     "min_macos": "13.0",
     "notes": "0=Off, 1=Control\u00d72, 2=Globe\u00d72, 3=Right Cmd\u00d72, 4=Left Cmd\u00d72, 5=Either Cmd\u00d72.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Off",
+      "1": "Press Control twice",
+      "2": "Press Globe twice",
+      "3": "Press Right Command twice",
+      "4": "Press Left Command twice",
+      "5": "Press Either Command twice"
+    }
   },
   {
     "id": "hitoolbox.AppleFnUsageType",
@@ -1901,7 +1932,12 @@
     "min_macos": "13.0",
     "notes": "2 or 3 = All controls (Full Keyboard Access); 0 or absent = Text fields and lists only.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Text fields and lists only",
+      "2": "All controls",
+      "3": "All controls"
+    }
   },
   {
     "id": "globaldomain.NSAutomaticPeriodSubstitution",
@@ -1997,7 +2033,11 @@
     "min_macos": "13.0",
     "notes": "0=Family name first, 1=Given name first.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Family name first",
+      "1": "Given name first"
+    }
   },
   {
     "id": "globaldomain.beepSound",
@@ -2723,7 +2763,11 @@
     "min_macos": "13.0",
     "notes": "1=Together, 0=Separate.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Separate",
+      "1": "Together"
+    }
   },
   {
     "id": "windowmanager.EnableStandardClickToShowDesktop",
@@ -3218,7 +3262,11 @@
     "min_macos": "13.0",
     "notes": "0='Hey Siri', 1='Siri'.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Hey Siri",
+      "1": "Siri"
+    }
   },
   {
     "id": "siri.backedup.responses",
@@ -3254,7 +3302,12 @@
     "min_macos": "15.0",
     "notes": "Tahoe/usernoted format. 1=Never, 2=When Unlocked, 3=Always. Different encoding from ncprefs.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "1": "Never",
+      "2": "When Unlocked",
+      "3": "Always"
+    }
   },
   {
     "id": "usernoted.sortOrder",
@@ -3270,7 +3323,11 @@
     "min_macos": "15.0",
     "notes": "0=By recency, 1=By app.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "By recency",
+      "1": "By app"
+    }
   },
   {
     "id": "usernoted.summarizePreviews",
@@ -3562,7 +3619,12 @@
     "min_macos": "13.0",
     "notes": "0=Everyone, 1=Contacts Only, 2=Contacts and groups.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Everyone",
+      "1": "Contacts Only",
+      "2": "Contacts and groups"
+    }
   },
   {
     "id": "screentimedx.commLimited",
@@ -3578,7 +3640,11 @@
     "min_macos": "13.0",
     "notes": "0=Everyone, 1=Specific contacts.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Everyone",
+      "1": "Specific contacts"
+    }
   },
   {
     "id": "screentimedx.commSafetyRecv",
@@ -4072,7 +4138,11 @@
     "min_macos": "13.0",
     "notes": "True/1 = name+password fields; False/0 = list of users.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "List of users",
+      "1": "Name and password fields"
+    }
   },
   {
     "id": "adlib.PersonalizedAds",
@@ -4156,7 +4226,12 @@
     "notes": "0=Name only, 1=Name and address, 2=Address only.",
     "ai_generated": true,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.mail"
+    "icon_bundle_id": "com.apple.mail",
+    "value_map": {
+      "0": "Name only",
+      "1": "Name and address",
+      "2": "Address only"
+    }
   },
   {
     "id": "controlcenter.AutoHideMenuBarOption",
@@ -4172,7 +4247,12 @@
     "min_macos": "13.0",
     "notes": "0=Always, 1=In Full Screen Only, 2=Never.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Always",
+      "1": "In Full Screen Only",
+      "2": "Never"
+    }
   },
   {
     "id": "controlcenter.AirplayReceiverEnabled",
@@ -4948,7 +5028,12 @@
     "min_macos": "13.0",
     "notes": "0=Continuous (follows pointer), 1=Edge only (pans at edges), 2=Centered.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Continuous (follows pointer)",
+      "1": "Edge only (pans at edges)",
+      "2": "Centered"
+    }
   },
   {
     "id": "universalaccess.closeViewZoomFollowsFocus",
@@ -5028,7 +5113,14 @@
     "min_macos": "13.0",
     "notes": "0=None, 1=Protanopia (red/green), 2=Deuteranopia (green/red), 3=Tritanopia (blue/yellow), 4=Grayscale.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "None",
+      "1": "Protanopia (red/green)",
+      "2": "Deuteranopia (green/red)",
+      "3": "Tritanopia (blue/yellow)",
+      "4": "Grayscale"
+    }
   },
   {
     "id": "mediaaccessibility.captionDisplayType",
@@ -5044,7 +5136,13 @@
     "min_macos": "13.0",
     "notes": "0=Off, 1=On, 2=Automatic (when audio is in a different language), 3=Always On.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Off",
+      "1": "On",
+      "2": "Automatic",
+      "3": "Always On"
+    }
   },
   {
     "id": "mediaaccessibility.captionPreferSDH",
