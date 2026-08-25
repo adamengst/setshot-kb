@@ -27780,5 +27780,41 @@
     "notes": "From the contents of /Library/Managed Preferences, which is readable without administrator rights.",
     "ai_generated": false,
     "contributed_by_issue": null
+  },
+  {
+    "id": "wallpaper.perDisplay",
+    "domain": "wallpaper",
+    "key": "",
+    "key_prefix": "Displays.",
+    "source": "plist-wallpaper",
+    "value_type": "string",
+    "description": "The wallpaper or screen saver set for one particular display. Turning off \u201cShow on all Spaces\u201d in Wallpaper settings lets each display have its own, so these can differ from the wallpaper reported for all displays.",
+    "ui_location": "System Settings \u2192 Wallpaper",
+    "settings_url": "x-apple.systempreferences:com.apple.Wallpaper-Settings.extension",
+    "value_map": null,
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "The key contains the display's UUID, which macOS assigns per physical display. Per-Space overrides are not reported \u2014 see the notes on the desktop wallpaper entry.",
+    "ai_generated": false,
+    "contributed_by_issue": null
+  },
+  {
+    "id": "finder-fk-defaultlistview-legacy",
+    "domain": "com.apple.finder",
+    "key": "",
+    "key_prefix": "FK_DefaultListViewSettings.",
+    "source": "defaults",
+    "value_type": "string",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "value_map": null,
+    "noise": true,
+    "noise_reason": "Legacy list view settings, superseded by FK_DefaultListViewSettingsV2. Finder writes these when a window's view changes and removes them again, so they show up as a burst of added keys that are gone by the next snapshot.",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 208
   }
 ]
