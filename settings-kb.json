@@ -25445,7 +25445,7 @@
     "key_prefix": "kTCCServiceSystemPolicyAllFiles/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps have Full Disk Access, letting them read every file on the Mac including other apps' data and the privacy databases themselves. The most powerful permission macOS grants, so an app appearing here unexpectedly is worth checking.",
+    "description": "Full Disk Access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Full Disk Access",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_AllFiles",
     "value_map": {
@@ -25468,7 +25468,7 @@
     "key_prefix": "kTCCServiceMediaLibrary/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read the Music, TV and Apple Music library, including playlists and listening history.",
+    "description": "Media & Apple Music access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Media & Apple Music",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Media",
     "value_map": {
@@ -25491,7 +25491,7 @@
     "key_prefix": "kTCCServiceCamera/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can use the camera.",
+    "description": "Camera access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Camera",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Camera",
     "value_map": {
@@ -25514,7 +25514,7 @@
     "key_prefix": "kTCCServiceMicrophone/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can use the microphone.",
+    "description": "Microphone access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Microphone",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Microphone",
     "value_map": {
@@ -25537,7 +25537,7 @@
     "key_prefix": "kTCCServiceAddressBook/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read Contacts.",
+    "description": "Contacts access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Contacts",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Contacts",
     "value_map": {
@@ -25560,7 +25560,7 @@
     "key_prefix": "kTCCServiceCalendar/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read and edit Calendar events.",
+    "description": "Calendar access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Calendar",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Calendars",
     "value_map": {
@@ -25583,7 +25583,7 @@
     "key_prefix": "kTCCServiceReminders/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read and edit Reminders.",
+    "description": "Reminders access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Reminders",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Reminders",
     "value_map": {
@@ -25606,7 +25606,7 @@
     "key_prefix": "kTCCServicePhotos/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read the Photos library.",
+    "description": "Photos access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Photos",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Photos",
     "value_map": {
@@ -25629,7 +25629,7 @@
     "key_prefix": "kTCCServiceScreenCapture/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can record the screen or capture system audio.",
+    "description": "Screen & System Audio Recording access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Screen & System Audio Recording",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_ScreenCapture",
     "value_map": {
@@ -25652,7 +25652,7 @@
     "key_prefix": "kTCCServiceAccessibility/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can control the Mac through the accessibility APIs \u2014 reading window contents and driving other apps.",
+    "description": "Accessibility access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Accessibility",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Accessibility",
     "value_map": {
@@ -25675,7 +25675,7 @@
     "key_prefix": "kTCCServicePostEvent/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can post synthetic keyboard and mouse events, driving the Mac as if someone were typing or clicking.",
+    "description": "Accessibility (synthetic events) access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Accessibility (synthetic events)",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Accessibility",
     "value_map": {
@@ -25698,7 +25698,7 @@
     "key_prefix": "kTCCServiceListenEvent/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can monitor keyboard and mouse input from other apps.",
+    "description": "Input Monitoring access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Input Monitoring",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_ListenEvent",
     "value_map": {
@@ -25721,7 +25721,7 @@
     "key_prefix": "kTCCServiceAppleEvents/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can control other apps through Apple Events and AppleScript.",
+    "description": "Automation access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Automation",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Automation",
     "value_map": {
@@ -25744,7 +25744,7 @@
     "key_prefix": "kTCCServiceDeveloperTool/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps are allowed to run software that bypasses Gatekeeper checks.",
+    "description": "Developer Tools access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Developer Tools",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_DevTools",
     "value_map": {
@@ -25767,7 +25767,7 @@
     "key_prefix": "kTCCServiceSystemPolicyDesktopFolder/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read the Desktop folder.",
+    "description": "Files and Folders \u2014 Desktop access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Files and Folders \u2014 Desktop",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
     "value_map": {
@@ -25790,7 +25790,7 @@
     "key_prefix": "kTCCServiceSystemPolicyDocumentsFolder/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read the Documents folder.",
+    "description": "Files and Folders \u2014 Documents access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Files and Folders \u2014 Documents",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
     "value_map": {
@@ -25813,7 +25813,7 @@
     "key_prefix": "kTCCServiceSystemPolicyDownloadsFolder/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read the Downloads folder.",
+    "description": "Files and Folders \u2014 Downloads access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Files and Folders \u2014 Downloads",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
     "value_map": {
@@ -25836,7 +25836,7 @@
     "key_prefix": "kTCCServiceSystemPolicyNetworkVolumes/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read files on network volumes.",
+    "description": "Files and Folders \u2014 Network volumes access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Files and Folders \u2014 Network volumes",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
     "value_map": {
@@ -25859,7 +25859,7 @@
     "key_prefix": "kTCCServiceSystemPolicyRemovableVolumes/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read files on removable volumes.",
+    "description": "Files and Folders \u2014 Removable volumes access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Files and Folders \u2014 Removable volumes",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
     "value_map": {
@@ -25882,7 +25882,7 @@
     "key_prefix": "kTCCServiceSystemPolicySysAdminFiles/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can modify system administration files.",
+    "description": "Administration files access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Administration files",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_AllFiles",
     "value_map": {
@@ -25905,7 +25905,7 @@
     "key_prefix": "kTCCServiceBluetoothAlways/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can use Bluetooth.",
+    "description": "Bluetooth access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Bluetooth",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Bluetooth",
     "value_map": {
@@ -25928,7 +25928,7 @@
     "key_prefix": "kTCCServiceMotion/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read motion and fitness data.",
+    "description": "Motion & Fitness access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Motion & Fitness",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Motion",
     "value_map": {
@@ -25951,7 +25951,7 @@
     "key_prefix": "kTCCServiceSpeechRecognition/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can send audio to Apple for speech recognition.",
+    "description": "Speech Recognition access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Speech Recognition",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_SpeechRecognition",
     "value_map": {
@@ -25974,7 +25974,7 @@
     "key_prefix": "kTCCServiceFileProviderDomain/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can access files managed by cloud storage providers.",
+    "description": "Files from cloud providers access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Files from cloud providers",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
     "value_map": {
@@ -25997,7 +25997,7 @@
     "key_prefix": "kTCCServiceSystemPolicyAllFiles/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps have Full Disk Access, letting them read every file on the Mac including other apps' data and the privacy databases themselves. The most powerful permission macOS grants, so an app appearing here unexpectedly is worth checking.",
+    "description": "Full Disk Access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Full Disk Access",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_AllFiles",
     "value_map": {
@@ -26020,7 +26020,7 @@
     "key_prefix": "kTCCServiceMediaLibrary/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read the Music, TV and Apple Music library, including playlists and listening history.",
+    "description": "Media & Apple Music access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Media & Apple Music",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Media",
     "value_map": {
@@ -26043,7 +26043,7 @@
     "key_prefix": "kTCCServiceCamera/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can use the camera.",
+    "description": "Camera access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Camera",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Camera",
     "value_map": {
@@ -26066,7 +26066,7 @@
     "key_prefix": "kTCCServiceMicrophone/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can use the microphone.",
+    "description": "Microphone access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Microphone",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Microphone",
     "value_map": {
@@ -26089,7 +26089,7 @@
     "key_prefix": "kTCCServiceAddressBook/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read Contacts.",
+    "description": "Contacts access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Contacts",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Contacts",
     "value_map": {
@@ -26112,7 +26112,7 @@
     "key_prefix": "kTCCServiceCalendar/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read and edit Calendar events.",
+    "description": "Calendar access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Calendar",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Calendars",
     "value_map": {
@@ -26135,7 +26135,7 @@
     "key_prefix": "kTCCServiceReminders/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read and edit Reminders.",
+    "description": "Reminders access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Reminders",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Reminders",
     "value_map": {
@@ -26158,7 +26158,7 @@
     "key_prefix": "kTCCServicePhotos/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read the Photos library.",
+    "description": "Photos access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Photos",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Photos",
     "value_map": {
@@ -26181,7 +26181,7 @@
     "key_prefix": "kTCCServiceScreenCapture/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can record the screen or capture system audio.",
+    "description": "Screen & System Audio Recording access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Screen & System Audio Recording",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_ScreenCapture",
     "value_map": {
@@ -26204,7 +26204,7 @@
     "key_prefix": "kTCCServiceAccessibility/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can control the Mac through the accessibility APIs \u2014 reading window contents and driving other apps.",
+    "description": "Accessibility access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Accessibility",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Accessibility",
     "value_map": {
@@ -26227,7 +26227,7 @@
     "key_prefix": "kTCCServicePostEvent/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can post synthetic keyboard and mouse events, driving the Mac as if someone were typing or clicking.",
+    "description": "Accessibility (synthetic events) access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Accessibility (synthetic events)",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Accessibility",
     "value_map": {
@@ -26250,7 +26250,7 @@
     "key_prefix": "kTCCServiceListenEvent/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can monitor keyboard and mouse input from other apps.",
+    "description": "Input Monitoring access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Input Monitoring",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_ListenEvent",
     "value_map": {
@@ -26273,7 +26273,7 @@
     "key_prefix": "kTCCServiceAppleEvents/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can control other apps through Apple Events and AppleScript.",
+    "description": "Automation access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Automation",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Automation",
     "value_map": {
@@ -26296,7 +26296,7 @@
     "key_prefix": "kTCCServiceDeveloperTool/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps are allowed to run software that bypasses Gatekeeper checks.",
+    "description": "Developer Tools access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Developer Tools",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_DevTools",
     "value_map": {
@@ -26319,7 +26319,7 @@
     "key_prefix": "kTCCServiceSystemPolicyDesktopFolder/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read the Desktop folder.",
+    "description": "Files and Folders \u2014 Desktop access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Files and Folders \u2014 Desktop",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
     "value_map": {
@@ -26342,7 +26342,7 @@
     "key_prefix": "kTCCServiceSystemPolicyDocumentsFolder/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read the Documents folder.",
+    "description": "Files and Folders \u2014 Documents access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Files and Folders \u2014 Documents",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
     "value_map": {
@@ -26365,7 +26365,7 @@
     "key_prefix": "kTCCServiceSystemPolicyDownloadsFolder/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read the Downloads folder.",
+    "description": "Files and Folders \u2014 Downloads access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Files and Folders \u2014 Downloads",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
     "value_map": {
@@ -26388,7 +26388,7 @@
     "key_prefix": "kTCCServiceSystemPolicyNetworkVolumes/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read files on network volumes.",
+    "description": "Files and Folders \u2014 Network volumes access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Files and Folders \u2014 Network volumes",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
     "value_map": {
@@ -26411,7 +26411,7 @@
     "key_prefix": "kTCCServiceSystemPolicyRemovableVolumes/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read files on removable volumes.",
+    "description": "Files and Folders \u2014 Removable volumes access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Files and Folders \u2014 Removable volumes",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
     "value_map": {
@@ -26434,7 +26434,7 @@
     "key_prefix": "kTCCServiceSystemPolicySysAdminFiles/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can modify system administration files.",
+    "description": "Administration files access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Administration files",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_AllFiles",
     "value_map": {
@@ -26457,7 +26457,7 @@
     "key_prefix": "kTCCServiceBluetoothAlways/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can use Bluetooth.",
+    "description": "Bluetooth access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Bluetooth",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Bluetooth",
     "value_map": {
@@ -26480,7 +26480,7 @@
     "key_prefix": "kTCCServiceMotion/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can read motion and fitness data.",
+    "description": "Motion & Fitness access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Motion & Fitness",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Motion",
     "value_map": {
@@ -26503,7 +26503,7 @@
     "key_prefix": "kTCCServiceSpeechRecognition/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can send audio to Apple for speech recognition.",
+    "description": "Speech Recognition access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Speech Recognition",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_SpeechRecognition",
     "value_map": {
@@ -26526,7 +26526,7 @@
     "key_prefix": "kTCCServiceFileProviderDomain/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Which apps can access files managed by cloud storage providers.",
+    "description": "Files from cloud providers access for {subject}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Files from cloud providers",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
     "value_map": {
