@@ -26580,7 +26580,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Placement: 1 = Fill Screen, 5 = Fit to Screen, 4 = Stretch to Fill Screen, 3 = Center \u2014 read off four snapshots taken one per change, and consistent with untouched displays sitting at 1, the macOS default. Tile has not been seen and shows as a raw number. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
+    "notes": "Placement: 1 = Fill Screen, 5 = Fit to Screen, 4 = Stretch to Fill Screen, 3 = Center \u2014 read off four snapshots taken one per change, and consistent with untouched displays sitting at 1, the macOS default. Those four are the whole set macOS now offers; Tile is gone from the Wallpaper pane. Any other value would show as a raw number. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
@@ -26625,7 +26625,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Placement: 1 = Fill Screen, 5 = Fit to Screen, 4 = Stretch to Fill Screen, 3 = Center \u2014 read off four snapshots taken one per change, and consistent with untouched displays sitting at 1, the macOS default. Tile has not been seen and shows as a raw number. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
+    "notes": "Placement: 1 = Fill Screen, 5 = Fit to Screen, 4 = Stretch to Fill Screen, 3 = Center \u2014 read off four snapshots taken one per change, and consistent with untouched displays sitting at 1, the macOS default. Those four are the whole set macOS now offers; Tile is gone from the Wallpaper pane. Any other value would show as a raw number. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
@@ -26688,7 +26688,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Placement: 1 = Fill Screen, 5 = Fit to Screen, 4 = Stretch to Fill Screen, 3 = Center \u2014 read off four snapshots taken one per change, and consistent with untouched displays sitting at 1, the macOS default. Tile has not been seen and shows as a raw number. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
+    "notes": "Placement: 1 = Fill Screen, 5 = Fit to Screen, 4 = Stretch to Fill Screen, 3 = Center \u2014 read off four snapshots taken one per change, and consistent with untouched displays sitting at 1, the macOS default. Those four are the whole set macOS now offers; Tile is gone from the Wallpaper pane. Any other value would show as a raw number. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
@@ -26733,7 +26733,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Placement: 1 = Fill Screen, 5 = Fit to Screen, 4 = Stretch to Fill Screen, 3 = Center \u2014 read off four snapshots taken one per change, and consistent with untouched displays sitting at 1, the macOS default. Tile has not been seen and shows as a raw number. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
+    "notes": "Placement: 1 = Fill Screen, 5 = Fit to Screen, 4 = Stretch to Fill Screen, 3 = Center \u2014 read off four snapshots taken one per change, and consistent with untouched displays sitting at 1, the macOS default. Those four are the whole set macOS now offers; Tile is gone from the Wallpaper pane. Any other value would show as a raw number. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
@@ -27840,7 +27840,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Placement: 1 = Fill Screen, 5 = Fit to Screen, 4 = Stretch to Fill Screen, 3 = Center \u2014 read off four snapshots taken one per change, and consistent with untouched displays sitting at 1, the macOS default. Tile has not been seen and shows as a raw number. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
+    "notes": "Placement: 1 = Fill Screen, 5 = Fit to Screen, 4 = Stretch to Fill Screen, 3 = Center \u2014 read off four snapshots taken one per change, and consistent with untouched displays sitting at 1, the macOS default. Those four are the whole set macOS now offers; Tile is gone from the Wallpaper pane. Any other value would show as a raw number. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
