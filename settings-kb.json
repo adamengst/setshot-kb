@@ -362,7 +362,7 @@
     "key": "GloballyEnabled",
     "source": "defaults",
     "value_type": "bool",
-    "description": "Master on/off switch for Stage Manager, which organises open windows into a focused set with other windows arranged in a strip on the left",
+    "description": "On/off switch for Stage Manager",
     "ui_location": "System Settings \u2192 Desktop & Dock \u2192 Stage Manager",
     "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension?Desktop",
     "noise": false,
@@ -370,7 +370,7 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": 217
   },
   {
     "id": "windowmanager.AutoHide",
@@ -26543,19 +26543,19 @@
     "key_prefix": null,
     "source": "tcc",
     "value_type": "int",
-    "description": "Whether SetShot can read the privacy permission databases. This requires Full Disk Access, so a change here means SetShot was granted or lost that permission \u2014 and that privacy permissions became visible or invisible to it, not that any of them changed.",
+    "description": "Full Disk Access for SetShot itself",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Full Disk Access",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_AllFiles",
     "value_map": {
-      "0": "Not readable",
-      "1": "Readable"
+      "0": "Off",
+      "1": "On"
     },
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
     "notes": "Emitted whether or not the databases are readable, so a comparison can distinguish a permission change from a change in what SetShot can see.",
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": 219
   },
   {
     "id": "wallpaper.desktop",
@@ -27536,7 +27536,7 @@
     "key_prefix": null,
     "source": "launchservices",
     "value_type": "string",
-    "description": "The app that opens https:// links. Normally the same as the http:// handler; the two differing usually means something set one without the other.",
+    "description": "Default Web browser",
     "ui_location": "System Settings \u2192 Desktop & Dock \u2192 Default web browser",
     "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension",
     "value_map": null,
@@ -27545,7 +27545,7 @@
     "min_macos": "13.0",
     "notes": "The value is the app's bundle identifier, as LaunchServices records it. Only reported when it disagrees with the http:// handler \u2014 System Settings sets both from one control, so they normally match and two rows would be one change reported twice.",
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": 218
   },
   {
     "id": "default-mail-client.handler",
