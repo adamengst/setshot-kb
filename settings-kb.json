@@ -26570,16 +26570,14 @@
     "value_map": {
       "com.apple.wallpaper.choice.image": "Picture",
       "com.apple.wallpaper.choice.screen-saver": "Screen saver",
-      "5": "Fill Screen",
-      "4": "Fit to Screen",
-      "3": "Stretch to Fill Screen",
       "individual": "Separate wallpaper and screen saver",
-      "linked": "Screen saver shows the wallpaper"
+      "linked": "Screen saver shows the wallpaper",
+      "3": "Center"
     },
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Placement values 5, 4 and 3 were read off a Mac while switching between Fill Screen, Fit to Screen and Stretch to Fill Screen. Center and the value 1, which other displays default to, are not yet identified and show as raw numbers. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
+    "notes": "Placement 3 is Center, confirmed against a Mac set that way. The values 5 and 4 were seen while switching between Fill Screen, Fit to Screen and Stretch to Fill Screen, but which is which is not pinned down, and 1 \u2014 where untouched displays sit \u2014 is unidentified. Those show as raw numbers rather than a guess. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
@@ -26614,16 +26612,14 @@
     "value_map": {
       "com.apple.wallpaper.choice.image": "Picture",
       "com.apple.wallpaper.choice.screen-saver": "Screen saver",
-      "5": "Fill Screen",
-      "4": "Fit to Screen",
-      "3": "Stretch to Fill Screen",
       "individual": "Separate wallpaper and screen saver",
-      "linked": "Screen saver shows the wallpaper"
+      "linked": "Screen saver shows the wallpaper",
+      "3": "Center"
     },
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Placement values 5, 4 and 3 were read off a Mac while switching between Fill Screen, Fit to Screen and Stretch to Fill Screen. Center and the value 1, which other displays default to, are not yet identified and show as raw numbers. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
+    "notes": "Placement 3 is Center, confirmed against a Mac set that way. The values 5 and 4 were seen while switching between Fill Screen, Fit to Screen and Stretch to Fill Screen, but which is which is not pinned down, and 1 \u2014 where untouched displays sit \u2014 is unidentified. Those show as raw numbers rather than a guess. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
@@ -26676,16 +26672,14 @@
     "value_map": {
       "com.apple.wallpaper.choice.image": "Picture",
       "com.apple.wallpaper.choice.screen-saver": "Screen saver",
-      "5": "Fill Screen",
-      "4": "Fit to Screen",
-      "3": "Stretch to Fill Screen",
       "individual": "Separate wallpaper and screen saver",
-      "linked": "Screen saver shows the wallpaper"
+      "linked": "Screen saver shows the wallpaper",
+      "3": "Center"
     },
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Placement values 5, 4 and 3 were read off a Mac while switching between Fill Screen, Fit to Screen and Stretch to Fill Screen. Center and the value 1, which other displays default to, are not yet identified and show as raw numbers. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
+    "notes": "Placement 3 is Center, confirmed against a Mac set that way. The values 5 and 4 were seen while switching between Fill Screen, Fit to Screen and Stretch to Fill Screen, but which is which is not pinned down, and 1 \u2014 where untouched displays sit \u2014 is unidentified. Those show as raw numbers rather than a guess. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
@@ -26720,16 +26714,14 @@
     "value_map": {
       "com.apple.wallpaper.choice.image": "Picture",
       "com.apple.wallpaper.choice.screen-saver": "Screen saver",
-      "5": "Fill Screen",
-      "4": "Fit to Screen",
-      "3": "Stretch to Fill Screen",
       "individual": "Separate wallpaper and screen saver",
-      "linked": "Screen saver shows the wallpaper"
+      "linked": "Screen saver shows the wallpaper",
+      "3": "Center"
     },
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Placement values 5, 4 and 3 were read off a Mac while switching between Fill Screen, Fit to Screen and Stretch to Fill Screen. Center and the value 1, which other displays default to, are not yet identified and show as raw numbers. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
+    "notes": "Placement 3 is Center, confirmed against a Mac set that way. The values 5 and 4 were seen while switching between Fill Screen, Fit to Screen and Stretch to Fill Screen, but which is which is not pinned down, and 1 \u2014 where untouched displays sit \u2014 is unidentified. Those show as raw numbers rather than a guess. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
@@ -27826,16 +27818,14 @@
     "value_map": {
       "com.apple.wallpaper.choice.image": "Picture",
       "com.apple.wallpaper.choice.screen-saver": "Screen saver",
-      "5": "Fill Screen",
-      "4": "Fit to Screen",
-      "3": "Stretch to Fill Screen",
       "individual": "Separate wallpaper and screen saver",
-      "linked": "Screen saver shows the wallpaper"
+      "linked": "Screen saver shows the wallpaper",
+      "3": "Center"
     },
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Placement values 5, 4 and 3 were read off a Mac while switching between Fill Screen, Fit to Screen and Stretch to Fill Screen. Center and the value 1, which other displays default to, are not yet identified and show as raw numbers. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
+    "notes": "Placement 3 is Center, confirmed against a Mac set that way. The values 5 and 4 were seen while switching between Fill Screen, Fit to Screen and Stretch to Fill Screen, but which is which is not pinned down, and 1 \u2014 where untouched displays sit \u2014 is unidentified. Those show as raw numbers rather than a guess. Of the three places macOS records a display's wallpaper, only Spaces.<space>.Displays.<display> stays current, so it is the one reported.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
