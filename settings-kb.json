@@ -27867,5 +27867,26 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 208
+  },
+  {
+    "id": "music.available",
+    "domain": "Music",
+    "key": "available",
+    "key_prefix": null,
+    "source": "tcc",
+    "value_type": "int",
+    "description": "Media & Apple Music access for SetShot itself",
+    "ui_location": "System Settings \u2192 Privacy & Security \u2192 Media & Apple Music",
+    "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Media",
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    },
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Recorded so a comparison can tell a Music or TV setting changing apart from SetShot losing the ability to read those domains, which skips roughly three hundred settings.",
+    "ai_generated": false,
+    "contributed_by_issue": null
   }
 ]
