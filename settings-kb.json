@@ -26571,7 +26571,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "The value is a file URL. When you choose your own picture, macOS copies it into ~/Library/Application Support/com.apple.desktop.photos and names it after the image's content, so a change reads as one long filename replacing another. Built-in wallpapers keep a readable /System/Library path.",
+    "notes": "The value is a file URL. When you choose your own picture, macOS copies it into ~/Library/Application Support/com.apple.desktop.photos and names it after the image's content, so a change reads as one long filename replacing another. Built-in wallpapers keep a readable /System/Library path. Per-Space and per-display overrides are not reported: they are keyed by Space and display UUIDs that macOS creates and destroys as Spaces come and go, and it materialises the whole tree the first time you open the Wallpaper pane \u2014 204 lines on a six-Space Mac, all restating the change reported here.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
@@ -26661,7 +26661,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "The value is a file URL. When you choose your own picture, macOS copies it into ~/Library/Application Support/com.apple.desktop.photos and names it after the image's content, so a change reads as one long filename replacing another. Built-in wallpapers keep a readable /System/Library path.",
+    "notes": "The value is a file URL. When you choose your own picture, macOS copies it into ~/Library/Application Support/com.apple.desktop.photos and names it after the image's content, so a change reads as one long filename replacing another. Built-in wallpapers keep a readable /System/Library path. Per-Space and per-display overrides are not reported: they are keyed by Space and display UUIDs that macOS creates and destroys as Spaces come and go, and it materialises the whole tree the first time you open the Wallpaper pane \u2014 204 lines on a six-Space Mac, all restating the change reported here.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
@@ -27507,7 +27507,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "The value is the app's bundle identifier, as LaunchServices records it.",
+    "notes": "The value is the app's bundle identifier, as LaunchServices records it. Only reported when it disagrees with the http:// handler \u2014 System Settings sets both from one control, so they normally match and two rows would be one change reported twice.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
