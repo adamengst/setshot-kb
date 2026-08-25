@@ -27518,7 +27518,7 @@
     "key_prefix": null,
     "source": "launchservices",
     "value_type": "string",
-    "description": "The app that opens http:// links \u2014 your default web browser. Worth noticing if it changes on its own, since installers sometimes switch it.",
+    "description": "Default Web browser",
     "ui_location": "System Settings \u2192 Desktop & Dock \u2192 Default web browser",
     "settings_url": "x-apple.systempreferences:com.apple.Desktop-Settings.extension",
     "value_map": null,
