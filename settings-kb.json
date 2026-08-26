@@ -27049,7 +27049,11 @@
     "description": "Whether every display and Space shares one wallpaper or each gets its own.",
     "ui_location": "System Settings \u2192 Wallpaper",
     "settings_url": "x-apple.systempreferences:com.apple.Wallpaper-Settings.extension",
-    "value_map": null,
+    "value_map": {
+      "linked": "Screen saver shows the wallpaper",
+      "individual": "Separate wallpaper and screen saver",
+      "desktop": "Wallpaper only"
+    },
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
@@ -27157,7 +27161,11 @@
     "description": "Whether the system default applies to every display and Space or each gets its own.",
     "ui_location": "System Settings \u2192 Wallpaper",
     "settings_url": "x-apple.systempreferences:com.apple.Wallpaper-Settings.extension",
-    "value_map": null,
+    "value_map": {
+      "linked": "Screen saver shows the wallpaper",
+      "individual": "Separate wallpaper and screen saver",
+      "desktop": "Wallpaper only"
+    },
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
@@ -28227,7 +28235,8 @@
       "1": "Fill Screen",
       "5": "Fit to Screen",
       "4": "Stretch to Fill Screen",
-      "3": "Center"
+      "3": "Center",
+      "desktop": "Wallpaper only"
     },
     "noise": false,
     "noise_reason": null,
