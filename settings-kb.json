@@ -28583,23 +28583,20 @@
     "contributed_by_issue": null
   },
   {
-    "id": "vpn.configuration",
-    "domain": "vpn",
+    "id": "netconnection.service",
+    "domain": "netconnection",
     "key": "",
     "key_prefix": "",
     "source": "scutil",
     "value_type": "string",
-    "description": "A VPN configuration, and whether it is switched on. A VPN that appears without you setting it up was installed by software on this Mac, and it can route your network traffic through itself.",
+    "description": "A network connection service \u2014 a VPN, or a dial-up, PPPoE or serial connection \u2014 and whether it is switched on. The kind is shown with the value. A VPN appearing that you did not set up was installed by software on this Mac, and it can route your network traffic through itself.",
     "ui_location": "System Settings \u2192 Network \u2192 VPN",
     "settings_url": "x-apple.systempreferences:com.apple.Network-Settings.extension",
-    "value_map": {
-      "enabled": "On",
-      "disabled": "Off"
-    },
+    "value_map": null,
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "From `scutil --nc list`; the key is the name shown in System Settings. Whether a VPN is connected right now is state rather than a setting and is not captured. Software that routes traffic without registering a VPN configuration \u2014 a `utun` interface brought up by a launch daemon, for one \u2014 does not appear here; the daemon itself shows under LAUNCH AGENTS & DAEMONS.",
+    "notes": "From `scutil --nc list`; the key is the name shown in System Settings and the kind in brackets is the service subtype scutil reports \u2014 PPP:Modem, PPP:L2TP, IPSec, VPN:<bundle id>. Not every service is a VPN: a 2020 iMac lists an ESP32 dev board as \"USB JTAG/serial debug unit\" [PPP:Modem]. Whether a service is connected right now is state rather than a setting and is not captured. Software that routes traffic without registering a connection service \u2014 a `utun` interface brought up by a launch daemon, for one \u2014 does not appear here; the daemon itself shows under LAUNCH AGENTS & DAEMONS.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
