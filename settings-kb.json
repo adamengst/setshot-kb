@@ -28130,5 +28130,41 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 216
+  },
+  {
+    "id": "sound.outputDevice",
+    "domain": "sound",
+    "key": "outputDevice",
+    "key_prefix": null,
+    "source": "system_profiler",
+    "value_type": "string",
+    "description": "The device sound is currently played through",
+    "ui_location": "System Settings \u2192 Sound \u2192 Output",
+    "settings_url": "x-apple.systempreferences:com.apple.Sound-Settings.extension",
+    "value_map": null,
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Read live from system_profiler. macOS keeps no record of the active device on disk \u2014 the audio preference files hold per-device settings but nothing naming the current one \u2014 so this changes whenever a device is connected or disconnected, not only when it is chosen deliberately.",
+    "ai_generated": false,
+    "contributed_by_issue": null
+  },
+  {
+    "id": "sound.inputDevice",
+    "domain": "sound",
+    "key": "inputDevice",
+    "key_prefix": null,
+    "source": "system_profiler",
+    "value_type": "string",
+    "description": "The device sound is currently recorded from",
+    "ui_location": "System Settings \u2192 Sound \u2192 Input",
+    "settings_url": "x-apple.systempreferences:com.apple.Sound-Settings.extension",
+    "value_map": null,
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Read live from system_profiler. macOS keeps no record of the active device on disk \u2014 the audio preference files hold per-device settings but nothing naming the current one \u2014 so this changes whenever a device is connected or disconnected, not only when it is chosen deliberately.",
+    "ai_generated": false,
+    "contributed_by_issue": null
   }
 ]
