@@ -137,7 +137,7 @@
     "key": "sleep",
     "source": "pmset",
     "value_type": "int",
-    "description": "Computer sleep timer: minutes of inactivity before the computer sleeps (may show as On/Off rather than a number on some configurations). This can differ between running on battery and being plugged in, so switching power sources between snapshots can make it look like it changed even though nothing was set differently.",
+    "description": "Computer sleep timer: minutes of inactivity before the computer sleeps. This can differ between running on battery and being plugged in, so switching power sources between snapshots can make it look like it changed even though nothing was set differently.",
     "ui_location": "System Settings \u2192 Battery \u2192 Options",
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
     "noise": false,
