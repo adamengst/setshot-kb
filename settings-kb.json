@@ -156,7 +156,7 @@
     "key": "displaysleep",
     "source": "pmset",
     "value_type": "int",
-    "description": "Display sleep timer: minutes of inactivity before the display turns off (0 = Never). This can differ between running on battery and being plugged in, so switching power sources between snapshots can make it look like it changed even though nothing was set differently.",
+    "description": "Display sleep timer: minutes of inactivity before the display turns off. This can differ between running on battery and being plugged in, so switching power sources between snapshots can make it look like it changed even though nothing was set differently.",
     "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Turn display off on battery/Power Adapter after",
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
     "noise": false,
@@ -164,7 +164,7 @@
     "min_macos": "13.0",
     "notes": "0 = Never. Kept for snapshots taken by SetShot 1.0b26 and earlier, which ran `pmset -g` and so recorded only the power profile in use, under the bare key. Newer snapshots use `pmset -g custom` and record both profiles under `AC Power.` and `Battery Power.` keys, which have their own entries.",
     "ai_generated": true,
-    "contributed_by_issue": 150,
+    "contributed_by_issue": 223,
     "value_map": {
       "0": "Never"
     }
@@ -28463,7 +28463,7 @@
     "key_prefix": "destination[",
     "source": "tmutil",
     "value_type": "string",
-    "description": "A Time Machine backup destination \u2014 its name, kind (local disk or network), mount point and identifier. A destination disappearing means backups stopped.",
+    "description": "A Time Machine backup destination \u2014 its name, kind (local disk or network) and identifier. A destination disappearing means it was removed from Time Machine; unplugging the drive leaves it listed.",
     "ui_location": "System Settings \u2192 General \u2192 Time Machine",
     "settings_url": "x-apple.systempreferences:com.apple.Time-Machine-Settings.extension",
     "value_map": null,
@@ -28472,7 +28472,7 @@
     "min_macos": "13.0",
     "notes": "From `tmutil destinationinfo`. Whether a backup is running right now is state, not a setting, and is deliberately not captured.",
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": 224
   },
   {
     "id": "systemextensions.installed",
