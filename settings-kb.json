@@ -1,12 +1,264 @@
 [
   {
-    "id": "pmset.halfdim",
+    "id": "pmset.ACPower.Displaysleep",
     "domain": "pmset",
-    "key": "halfdim",
+    "key": "AC Power.displaysleep",
     "source": "pmset",
     "value_type": "int",
-    "description": "Slightly dim the display before it sleeps. This can differ between running on battery and being plugged in, so switching power sources between snapshots can make it look like it changed even though nothing was set differently.",
+    "description": "Minutes of inactivity before the display turns off, on the power adapter",
+    "ui_location": "System Settings \u2192 Lock Screen \u2192 Turn display off on power adapter when inactive",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Value is in minutes. 0 = Never.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Never"
+    }
+  },
+  {
+    "id": "pmset.BatteryPower.Displaysleep",
+    "domain": "pmset",
+    "key": "Battery Power.displaysleep",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Minutes of inactivity before the display turns off, on battery",
+    "ui_location": "System Settings \u2192 Lock Screen \u2192 Turn display off on battery when inactive",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Value is in minutes. 0 = Never.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Never"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Sleep",
+    "domain": "pmset",
+    "key": "AC Power.sleep",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Minutes of inactivity before the computer sleeps, on the power adapter",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options (laptops) / Energy (desktop Macs)",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Value is in minutes. 0 = Never. No direct slider in macOS 14+ System Settings; set via pmset.",
+    "ai_generated": true,
+    "contributed_by_issue": 173,
+    "value_map": {
+      "0": "Never"
+    }
+  },
+  {
+    "id": "pmset.BatteryPower.Sleep",
+    "domain": "pmset",
+    "key": "Battery Power.sleep",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Minutes of inactivity before the computer sleeps, on battery",
     "ui_location": "System Settings \u2192 Battery \u2192 Options",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Value is in minutes. 0 = Never. No direct slider in macOS 14+ System Settings; set via pmset.",
+    "ai_generated": true,
+    "contributed_by_issue": 173,
+    "value_map": {
+      "0": "Never"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Disksleep",
+    "domain": "pmset",
+    "key": "AC Power.disksleep",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Minutes of inactivity before hard disks are put to sleep, on the power adapter",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options (laptops) / Energy \u2192 Put hard disks to sleep when possible (desktop Macs)",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Value is in minutes. 0 = Never. Primarily affects Macs with spinning hard drives.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Never"
+    }
+  },
+  {
+    "id": "pmset.BatteryPower.Disksleep",
+    "domain": "pmset",
+    "key": "Battery Power.disksleep",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Minutes of inactivity before hard disks are put to sleep, on battery",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Put hard disks to sleep when possible",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Value is in minutes. 0 = Never. Primarily affects Macs with spinning hard drives.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Never"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Womp",
+    "domain": "pmset",
+    "key": "AC Power.womp",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Wake on LAN, on the power adapter: the Mac wakes when it receives a magic packet over Ethernet",
+    "ui_location": "System Settings \u2192 Energy \u2192 Wake for network access",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On. Ethernet-specific counterpart to networkoversleep.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.BatteryPower.Womp",
+    "domain": "pmset",
+    "key": "Battery Power.womp",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Wake on LAN, on battery: the Mac wakes when it receives a magic packet over Ethernet",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Wake for network access",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On. Ethernet-specific counterpart to networkoversleep.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Networkoversleep",
+    "domain": "pmset",
+    "key": "AC Power.networkoversleep",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Wake for network access, on the power adapter",
+    "ui_location": "System Settings \u2192 Energy \u2192 Wake for network access",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On. See also womp (Ethernet-specific wake on LAN).",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.BatteryPower.Networkoversleep",
+    "domain": "pmset",
+    "key": "Battery Power.networkoversleep",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Wake for network access, on battery",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Wake for network access",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On. See also womp (Ethernet-specific wake on LAN).",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Lessbright",
+    "domain": "pmset",
+    "key": "AC Power.lessbright",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Slightly dim the display, on the power adapter",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options (laptops) / Energy (desktop Macs)",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On. macOS normally lists this only in the Battery Power profile.",
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.BatteryPower.Lessbright",
+    "domain": "pmset",
+    "key": "Battery Power.lessbright",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Slightly dim the display on battery",
+    "ui_location": "System Settings \u2192 Battery \u2192 Slightly dim the display on battery",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On. macOS normally lists this only in the Battery Power profile.",
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Halfdim",
+    "domain": "pmset",
+    "key": "AC Power.halfdim",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Dim the display before it sleeps, on the power adapter",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options (laptops) / Energy (desktop Macs)",
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -20,13 +272,495 @@
     }
   },
   {
-    "id": "pmset.proximitywake",
+    "id": "pmset.BatteryPower.Halfdim",
     "domain": "pmset",
-    "key": "proximitywake",
+    "key": "Battery Power.halfdim",
     "source": "pmset",
     "value_type": "int",
-    "description": "Allow nearby iPhone or Apple Watch to wake this Mac. This can differ between running on battery and being plugged in, so switching power sources between snapshots can make it look like it changed even though nothing was set differently.",
+    "description": "Dim the display before it sleeps, on battery",
     "ui_location": "System Settings \u2192 Battery \u2192 Options",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On.",
+    "ai_generated": false,
+    "contributed_by_issue": 155,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Standby",
+    "domain": "pmset",
+    "key": "AC Power.standby",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Standby, on the power adapter: the Mac enters a lower-power state after sleeping for an extended period",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options (laptops) / Energy (desktop Macs)",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On. Duration controlled by standbydelaylow and standbydelayhigh.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.BatteryPower.Standby",
+    "domain": "pmset",
+    "key": "Battery Power.standby",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Standby, on battery: the Mac enters a lower-power state after sleeping for an extended period",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On. Duration controlled by standbydelaylow and standbydelayhigh.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Standbydelaylow",
+    "domain": "pmset",
+    "key": "AC Power.standbydelaylow",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Seconds of sleep before entering standby when the battery is below the standby threshold, on the power adapter",
+    "ui_location": null,
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Configured only via 'sudo pmset'. Value in seconds. Used when battery % is below highstandbythreshold.",
+    "ai_generated": false,
+    "contributed_by_issue": 155,
+    "value_map": null
+  },
+  {
+    "id": "pmset.BatteryPower.Standbydelaylow",
+    "domain": "pmset",
+    "key": "Battery Power.standbydelaylow",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Seconds of sleep before entering standby when the battery is below the standby threshold, on battery",
+    "ui_location": null,
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Configured only via 'sudo pmset'. Value in seconds. Used when battery % is below highstandbythreshold.",
+    "ai_generated": false,
+    "contributed_by_issue": 155,
+    "value_map": null,
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Standbydelayhigh",
+    "domain": "pmset",
+    "key": "AC Power.standbydelayhigh",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Seconds of sleep before entering standby when the battery is above the standby threshold, on the power adapter",
+    "ui_location": null,
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Configured only via 'sudo pmset'. Value in seconds. Used when battery % is at or above highstandbythreshold.",
+    "ai_generated": false,
+    "contributed_by_issue": 155,
+    "value_map": null
+  },
+  {
+    "id": "pmset.BatteryPower.Standbydelayhigh",
+    "domain": "pmset",
+    "key": "Battery Power.standbydelayhigh",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Seconds of sleep before entering standby when the battery is above the standby threshold, on battery",
+    "ui_location": null,
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Configured only via 'sudo pmset'. Value in seconds. Used when battery % is at or above highstandbythreshold.",
+    "ai_generated": false,
+    "contributed_by_issue": 155,
+    "value_map": null,
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Highstandbythreshold",
+    "domain": "pmset",
+    "key": "AC Power.highstandbythreshold",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Battery percentage that decides which standby delay applies, on the power adapter",
+    "ui_location": null,
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Above this % uses standbydelayhigh; below uses standbydelaylow. Configured only via 'sudo pmset'.",
+    "ai_generated": false,
+    "contributed_by_issue": 155,
+    "value_map": null
+  },
+  {
+    "id": "pmset.BatteryPower.Highstandbythreshold",
+    "domain": "pmset",
+    "key": "Battery Power.highstandbythreshold",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Battery percentage that decides which standby delay applies, on battery",
+    "ui_location": null,
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Above this % uses standbydelayhigh; below uses standbydelaylow. Configured only via 'sudo pmset'.",
+    "ai_generated": false,
+    "contributed_by_issue": 155,
+    "value_map": null,
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Tcpkeepalive",
+    "domain": "pmset",
+    "key": "AC Power.tcpkeepalive",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Keep network connections alive during sleep, on the power adapter",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options (laptops) / Energy (desktop Macs)",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On. Keeps iCloud, push notifications and similar connections up while asleep. Typically enabled alongside Power Nap.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.BatteryPower.Tcpkeepalive",
+    "domain": "pmset",
+    "key": "Battery Power.tcpkeepalive",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Keep network connections alive during sleep, on battery",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On. Keeps iCloud, push notifications and similar connections up while asleep. Typically enabled alongside Power Nap.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Ttyskeepawake",
+    "domain": "pmset",
+    "key": "AC Power.ttyskeepawake",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Active SSH or Terminal sessions prevent sleep, on the power adapter",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options (laptops) / Energy (desktop Macs)",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.BatteryPower.Ttyskeepawake",
+    "domain": "pmset",
+    "key": "Battery Power.ttyskeepawake",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Active SSH or Terminal sessions prevent sleep, on battery",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Hibernatemode",
+    "domain": "pmset",
+    "key": "AC Power.hibernatemode",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "How the Mac saves memory state when sleeping, on the power adapter",
+    "ui_location": "Terminal: pmset hibernatemode",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Not exposed in System Settings; changes via pmset. 0 = no image (RAM powered), 3 = safe sleep (RAM + disk image, default on laptops), 25 = hibernate only (disk, no RAM power).",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "No safe sleep (RAM powered)",
+      "3": "Safe sleep (RAM + disk image)",
+      "25": "Hibernate only (disk, no RAM)"
+    }
+  },
+  {
+    "id": "pmset.BatteryPower.Hibernatemode",
+    "domain": "pmset",
+    "key": "Battery Power.hibernatemode",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "How the Mac saves memory state when sleeping, on battery",
+    "ui_location": "Terminal: pmset hibernatemode",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Not exposed in System Settings; changes via pmset. 0 = no image (RAM powered), 3 = safe sleep (RAM + disk image, default on laptops), 25 = hibernate only (disk, no RAM power).",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "No safe sleep (RAM powered)",
+      "3": "Safe sleep (RAM + disk image)",
+      "25": "Hibernate only (disk, no RAM)"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Powernap",
+    "domain": "pmset",
+    "key": "AC Power.powernap",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Power Nap, on the power adapter: the Mac checks for mail and other updates while asleep",
+    "ui_location": "System Settings \u2192 Energy \u2192 Enable Power Nap",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On.",
+    "ai_generated": false,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.BatteryPower.Powernap",
+    "domain": "pmset",
+    "key": "Battery Power.powernap",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Power Nap, on battery: the Mac checks for mail and other updates while asleep",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Enable Power Nap",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On.",
+    "ai_generated": false,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Powermode",
+    "domain": "pmset",
+    "key": "AC Power.powermode",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Energy mode on the power adapter",
+    "ui_location": "System Settings \u2192 Battery \u2192 Energy Mode (laptops) / Energy \u2192 Energy Mode (desktop Macs)",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Automatic, 1 = Low Power, 2 = High Power. High Power is offered only on some models.",
+    "ai_generated": false,
+    "contributed_by_issue": 152,
+    "value_map": {
+      "0": "Automatic",
+      "1": "Low Power",
+      "2": "High Power"
+    }
+  },
+  {
+    "id": "pmset.BatteryPower.Powermode",
+    "domain": "pmset",
+    "key": "Battery Power.powermode",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Energy mode on battery",
+    "ui_location": "System Settings \u2192 Battery \u2192 Energy Mode",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Automatic, 1 = Low Power, 2 = High Power. High Power is offered only on some models.",
+    "ai_generated": false,
+    "contributed_by_issue": 152,
+    "value_map": {
+      "0": "Automatic",
+      "1": "Low Power",
+      "2": "High Power"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Lowpowermode",
+    "domain": "pmset",
+    "key": "AC Power.lowpowermode",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Low Power Mode on the power adapter",
+    "ui_location": "System Settings \u2192 Battery \u2192 Low Power Mode",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On. Superseded by powermode on macOS versions that offer Energy Mode.",
+    "ai_generated": true,
+    "contributed_by_issue": 189,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.BatteryPower.Lowpowermode",
+    "domain": "pmset",
+    "key": "Battery Power.lowpowermode",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Low Power Mode on battery",
+    "ui_location": "System Settings \u2192 Battery \u2192 Low Power Mode",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On. Superseded by powermode on macOS versions that offer Energy Mode.",
+    "ai_generated": true,
+    "contributed_by_issue": 189,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.SleepOnPowerButton",
+    "domain": "pmset",
+    "key": "AC Power.Sleep On Power Button",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Pressing the power button sleeps the Mac rather than showing a dialog, on the power adapter",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options (laptops) / Energy (desktop Macs)",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off (shows dialog), 1 = On (sleeps immediately). Apple silicon Macs only.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    }
+  },
+  {
+    "id": "pmset.BatteryPower.SleepOnPowerButton",
+    "domain": "pmset",
+    "key": "Battery Power.Sleep On Power Button",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Pressing the power button sleeps the Mac rather than showing a dialog, on battery",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off (shows dialog), 1 = On (sleeps immediately). Apple silicon Macs only.",
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Autorestart",
+    "domain": "pmset",
+    "key": "AC Power.autorestart",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Restart automatically after a power failure, on the power adapter",
+    "ui_location": "System Settings \u2192 Energy \u2192 Start up automatically after a power failure",
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -40,13 +774,36 @@
     }
   },
   {
-    "id": "pmset.gpuswitch",
+    "id": "pmset.BatteryPower.Autorestart",
     "domain": "pmset",
-    "key": "gpuswitch",
+    "key": "Battery Power.autorestart",
     "source": "pmset",
     "value_type": "int",
-    "description": "GPU switching mode: automatic, integrated only, or discrete only (Macs with dual GPU). This can differ between running on battery and being plugged in, so switching power sources between snapshots can make it look like it changed even though nothing was set differently.",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Automatic graphics switching",
+    "description": "Restart automatically after a power failure, on battery",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "0 = Off, 1 = On.",
+    "ai_generated": false,
+    "contributed_by_issue": 155,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Gpuswitch",
+    "domain": "pmset",
+    "key": "AC Power.gpuswitch",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "Graphics switching mode on the power adapter",
+    "ui_location": "System Settings \u2192 Energy \u2192 Automatic graphics switching",
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -61,13 +818,37 @@
     }
   },
   {
-    "id": "pmset.autorestart",
+    "id": "pmset.BatteryPower.Gpuswitch",
     "domain": "pmset",
-    "key": "autorestart",
+    "key": "Battery Power.gpuswitch",
     "source": "pmset",
     "value_type": "int",
-    "description": "Restart automatically after a power failure. This can differ between running on battery and being plugged in, so switching power sources between snapshots can make it look like it changed even though nothing was set differently.",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options",
+    "description": "Graphics switching mode on battery",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Automatic graphics switching",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Only appears on Macs with both integrated and discrete GPUs.",
+    "ai_generated": false,
+    "contributed_by_issue": 155,
+    "value_map": {
+      "0": "Integrated only",
+      "1": "Discrete only",
+      "2": "Automatic"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Proximitywake",
+    "domain": "pmset",
+    "key": "AC Power.proximitywake",
+    "source": "pmset",
+    "value_type": "int",
+    "description": "A nearby iPhone or Apple Watch can wake this Mac, on the power adapter",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options (laptops) / Energy (desktop Macs)",
     "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -81,55 +862,64 @@
     }
   },
   {
-    "id": "pmset.standbydelayhigh",
+    "id": "pmset.BatteryPower.Proximitywake",
     "domain": "pmset",
-    "key": "standbydelayhigh",
+    "key": "Battery Power.proximitywake",
     "source": "pmset",
     "value_type": "int",
-    "description": "Seconds of sleep before entering standby mode when battery is above the standby threshold",
-    "ui_location": null,
-    "settings_url": null,
+    "description": "A nearby iPhone or Apple Watch can wake this Mac, on battery",
+    "ui_location": "System Settings \u2192 Battery \u2192 Options",
+    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Configured only via 'sudo pmset'. Value in seconds. Used when battery % is at or above highstandbythreshold.",
+    "notes": "0 = Off, 1 = On.",
     "ai_generated": false,
     "contributed_by_issue": 155,
+    "value_map": {
+      "0": "Off",
+      "1": "On"
+    },
+    "requires_hardware": [
+      "battery"
+    ]
+  },
+  {
+    "id": "pmset.ACPower.Hibernatefile",
+    "domain": "pmset",
+    "key": "AC Power.hibernatefile",
+    "source": "pmset",
+    "value_type": "string",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "System-managed path to the sleep image file; always /var/vm/sleepimage and not user-settable.",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": true,
+    "contributed_by_issue": 150,
     "value_map": null
   },
   {
-    "id": "pmset.highstandbythreshold",
+    "id": "pmset.BatteryPower.Hibernatefile",
     "domain": "pmset",
-    "key": "highstandbythreshold",
+    "key": "Battery Power.hibernatefile",
     "source": "pmset",
-    "value_type": "int",
-    "description": "Battery percentage threshold that determines which standby delay applies",
+    "value_type": "string",
+    "description": null,
     "ui_location": null,
     "settings_url": null,
-    "noise": false,
-    "noise_reason": null,
+    "noise": true,
+    "noise_reason": "System-managed path to the sleep image file; always /var/vm/sleepimage and not user-settable.",
     "min_macos": "13.0",
-    "notes": "Above this % uses standbydelayhigh; below uses standbydelaylow. Configured only via 'sudo pmset'.",
-    "ai_generated": false,
-    "contributed_by_issue": 155,
-    "value_map": null
-  },
-  {
-    "id": "pmset.standbydelaylow",
-    "domain": "pmset",
-    "key": "standbydelaylow",
-    "source": "pmset",
-    "value_type": "int",
-    "description": "Seconds of sleep before entering standby mode when battery is below the standby threshold",
-    "ui_location": null,
-    "settings_url": null,
-    "noise": false,
-    "noise_reason": null,
-    "min_macos": "13.0",
-    "notes": "Configured only via 'sudo pmset'. Value in seconds. Used when battery % is below highstandbythreshold.",
-    "ai_generated": false,
-    "contributed_by_issue": 155,
-    "value_map": null
+    "notes": null,
+    "ai_generated": true,
+    "contributed_by_issue": 150,
+    "value_map": null,
+    "requires_hardware": [
+      "battery"
+    ]
   },
   {
     "id": "com.apple.applemultitouchtrackpad.trackpadfourfingerhoriz\u200bswipegesture",
@@ -5726,29 +6516,16 @@
     "key": "Battery Power.Display Sleep Timer",
     "source": "plist",
     "value_type": "integer",
-    "description": "Display sleep timer on battery",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Turn display off on battery when inactive",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension?options",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.displaysleep, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "value_map": {
-      "0": "Never",
-      "1": "1 minute",
-      "2": "2 minutes",
-      "3": "3 minutes",
-      "5": "5 minutes",
-      "10": "10 minutes",
-      "15": "15 minutes",
-      "20": "20 minutes",
-      "25": "25 minutes",
-      "30": "30 minutes",
-      "45": "45 minutes",
-      "60": "1 hour"
-    },
+    "value_map": null,
     "requires_hardware": [
       "battery"
     ]
@@ -5759,29 +6536,16 @@
     "key": "AC Power.Display Sleep Timer",
     "source": "plist",
     "value_type": "integer",
-    "description": "How long the display must be inactive before it turns off",
-    "ui_location": "System Settings \u2192 Lock Screen \u2192 Turn display off when inactive",
-    "settings_url": "x-apple.systempreferences:com.apple.Lock-Screen-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.displaysleep, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": "On laptops this also appears in Battery \u2192 Options \u2192 Turn display off on power adapter when inactive. On desktop Macs the Energy pane labels this simply 'Turn display off when inactive' with no AC/battery qualifier.",
     "ai_generated": false,
     "contributed_by_issue": 105,
-    "value_map": {
-      "0": "Never",
-      "1": "1 minute",
-      "2": "2 minutes",
-      "3": "3 minutes",
-      "5": "5 minutes",
-      "10": "10 minutes",
-      "15": "15 minutes",
-      "20": "20 minutes",
-      "30": "30 minutes",
-      "60": "1 hour",
-      "120": "2 hours",
-      "180": "3 hours"
-    },
+    "value_map": null,
     "icon_bundle_id": "com.apple.Lock-Screen-Settings.extension"
   },
   {
@@ -5790,29 +6554,16 @@
     "key": "Battery Power.System Sleep Timer",
     "source": "plist",
     "value_type": "integer",
-    "description": "System sleep timer on battery, in minutes",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension?options",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.sleep, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "value_map": {
-      "0": "Never",
-      "1": "1 minute",
-      "2": "2 minutes",
-      "3": "3 minutes",
-      "5": "5 minutes",
-      "10": "10 minutes",
-      "15": "15 minutes",
-      "20": "20 minutes",
-      "30": "30 minutes",
-      "60": "1 hour",
-      "120": "2 hours",
-      "180": "3 hours"
-    },
+    "value_map": null,
     "requires_hardware": [
       "battery"
     ]
@@ -5823,29 +6574,16 @@
     "key": "AC Power.System Sleep Timer",
     "source": "plist",
     "value_type": "integer",
-    "description": "Energy: prevent automatic sleeping when the display is off",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options (laptops) / Energy \u2192 Prevent automatic sleeping when the display is off (desktop Macs)",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension?options",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.sleep, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": "On laptops, value is in minutes (0 = Never). On Tahoe desktop Macs, Apple repurposed this key as the toggle for 'Prevent automatic sleeping when the display is off' in System Settings \u2192 Energy.",
     "ai_generated": false,
     "contributed_by_issue": 148,
-    "value_map": {
-      "0": "Never",
-      "1": "1 minute",
-      "2": "2 minutes",
-      "3": "3 minutes",
-      "5": "5 minutes",
-      "10": "10 minutes",
-      "15": "15 minutes",
-      "20": "20 minutes",
-      "30": "30 minutes",
-      "60": "1 hour",
-      "120": "2 hours",
-      "180": "3 hours"
-    }
+    "value_map": null
   },
   {
     "id": "PowerManagement-ACDiskSleep",
@@ -5853,29 +6591,16 @@
     "key": "AC Power.Disk Sleep Timer",
     "source": "plist",
     "value_type": "integer",
-    "description": "Energy: put hard disks to sleep when possible",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options (laptops) / Energy \u2192 Put hard disks to sleep when possible (desktop Macs)",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension?options",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.disksleep, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": "On laptops, value is in minutes (0 = disabled). On Tahoe desktop Macs, Apple repurposed this key as the toggle for 'Put hard disks to sleep when possible' in System Settings \u2192 Energy.",
     "ai_generated": false,
     "contributed_by_issue": 145,
-    "value_map": {
-      "0": "Never (disabled)",
-      "1": "1 minute",
-      "2": "2 minutes",
-      "3": "3 minutes",
-      "5": "5 minutes",
-      "10": "10 minutes",
-      "15": "15 minutes",
-      "20": "20 minutes",
-      "30": "30 minutes",
-      "60": "1 hour",
-      "120": "2 hours",
-      "180": "3 hours"
-    }
+    "value_map": null
   },
   {
     "id": "PowerManagement-ACDarkWake",
@@ -5883,19 +6608,16 @@
     "key": "AC Power.DarkWakeBackgroundTasks",
     "source": "plist",
     "value_type": "integer",
-    "description": "Energy: enable Power Nap",
-    "ui_location": "System Settings \u2192 Energy \u2192 Enable Power Nap",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.powernap, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 146,
-    "value_map": {
-      "0": "Disabled",
-      "1": "Enabled"
-    }
+    "value_map": null
   },
   {
     "id": "PowerManagement-ACTTYSleep",
@@ -5903,19 +6625,16 @@
     "key": "AC Power.TTYSPreventSleep",
     "source": "plist",
     "value_type": "integer",
-    "description": "Prevent automatic sleeping when Terminal is active on AC power",
-    "ui_location": "System Settings \u2192 Battery / Energy \u2192 Options \u2192 Prevent automatic sleeping when the display is off",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension?options",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.ttyskeepawake, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "value_map": {
-      "0": "Disabled",
-      "1": "Enabled"
-    }
+    "value_map": null
   },
   {
     "id": "PowerManagement-ACStandby",
@@ -5923,19 +6642,16 @@
     "key": "AC Power.Standby Enabled",
     "source": "plist",
     "value_type": "integer",
-    "description": "Standby mode on AC power",
-    "ui_location": "System Settings \u2192 Battery / Energy \u2192 Options",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension?options",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.standby, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "value_map": {
-      "0": "Disabled",
-      "1": "Enabled"
-    }
+    "value_map": null
   },
   {
     "id": "PowerManagement-ACHighPower",
@@ -5943,19 +6659,16 @@
     "key": "AC Power.HighPowerMode",
     "source": "plist",
     "value_type": "integer",
-    "description": "High Power Mode on AC power",
-    "ui_location": "System Settings \u2192 Battery / Energy",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.powermode, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "value_map": {
-      "0": "Disabled",
-      "1": "Enabled"
-    }
+    "value_map": null
   },
   {
     "id": "PowerManagement-BatteryHighPower",
@@ -5963,19 +6676,16 @@
     "key": "Battery Power.HighPowerMode",
     "source": "plist",
     "value_type": "integer",
-    "description": "High Power Mode on battery",
-    "ui_location": "System Settings \u2192 Battery",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.powermode, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "value_map": {
-      "0": "Disabled",
-      "1": "Enabled"
-    },
+    "value_map": null,
     "requires_hardware": [
       "battery"
     ]
@@ -5986,19 +6696,16 @@
     "key": "AC Power.LowPowerMode",
     "source": "plist",
     "value_type": "integer",
-    "description": "Low Power Mode on AC power",
-    "ui_location": "System Settings \u2192 Battery / Energy \u2192 Low Power Mode",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.powermode, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "value_map": {
-      "0": "Disabled",
-      "1": "Enabled"
-    }
+    "value_map": null
   },
   {
     "id": "PowerManagement-BatteryLowPower",
@@ -6006,19 +6713,16 @@
     "key": "Battery Power.LowPowerMode",
     "source": "plist",
     "value_type": "integer",
-    "description": "Low Power Mode on battery",
-    "ui_location": "System Settings \u2192 Battery \u2192 Low Power Mode",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.powermode, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "value_map": {
-      "0": "Disabled",
-      "1": "Enabled"
-    },
+    "value_map": null,
     "requires_hardware": [
       "battery"
     ]
@@ -6029,19 +6733,16 @@
     "key": "Battery Power.ReduceBrightness",
     "source": "plist",
     "value_type": "integer",
-    "description": "Dim display slightly on battery",
-    "ui_location": "System Settings \u2192 Battery \u2192 Slightly dim the display on battery",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.lessbright, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "value_map": {
-      "0": "Disabled",
-      "1": "Enabled"
-    },
+    "value_map": null,
     "requires_hardware": [
       "battery"
     ]
@@ -10806,19 +11507,16 @@
     "key_prefix": null,
     "source": "defaults",
     "value_type": "integer",
-    "description": "Wake for network access",
-    "ui_location": "System Settings \u2192 Energy \u2192 Wake for network access",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.womp, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
     "contributed_by_issue": 147,
-    "value_map": {
-      "0": "Off",
-      "1": "On"
-    }
+    "value_map": null
   },
   {
     "id": "power-wake-on-lan-battery",
@@ -10827,19 +11525,16 @@
     "key_prefix": null,
     "source": "defaults",
     "value_type": "integer",
-    "description": "Wake for network access on battery",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.womp, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
     "contributed_by_issue": null,
-    "value_map": {
-      "0": "Off",
-      "1": "On"
-    },
+    "value_map": null,
     "requires_hardware": [
       "battery"
     ]
@@ -10851,29 +11546,16 @@
     "key_prefix": null,
     "source": "defaults",
     "value_type": "integer",
-    "description": "Put hard disks to sleep when possible on battery",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.disksleep, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
     "contributed_by_issue": null,
-    "value_map": {
-      "0": "Never",
-      "1": "1 minute",
-      "2": "2 minutes",
-      "3": "3 minutes",
-      "5": "5 minutes",
-      "10": "10 minutes",
-      "15": "15 minutes",
-      "20": "20 minutes",
-      "30": "30 minutes",
-      "60": "1 hour",
-      "120": "2 hours",
-      "180": "3 hours"
-    },
+    "value_map": null,
     "requires_hardware": [
       "battery"
     ]
@@ -10914,19 +11596,16 @@
     "key_prefix": null,
     "source": "defaults",
     "value_type": "integer",
-    "description": "Enable Power Nap while on battery power",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.powernap, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
     "contributed_by_issue": null,
-    "value_map": {
-      "0": "Off",
-      "1": "On"
-    },
+    "value_map": null,
     "requires_hardware": [
       "battery"
     ]
@@ -10938,15 +11617,16 @@
     "key_prefix": null,
     "source": "defaults",
     "value_type": "integer",
-    "description": "Sleep on power button press on AC power",
-    "ui_location": "System Settings \u2192 Battery / Energy \u2192 Options",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.Sleep On Power Button, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": null
   },
   {
     "id": "power-sleep-on-power-button-battery",
@@ -10955,18 +11635,19 @@
     "key_prefix": null,
     "source": "defaults",
     "value_type": "integer",
-    "description": "Sleep on power button press on battery",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.Sleep On Power Button, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
     "contributed_by_issue": null,
     "requires_hardware": [
       "battery"
-    ]
+    ],
+    "value_map": null
   },
   {
     "id": "power-current-caps",
@@ -16279,20 +16960,16 @@
     "key_prefix": null,
     "source": "plist",
     "value_type": "int",
-    "description": "Hibernate mode on AC power",
-    "ui_location": "Terminal: pmset hibernatemode",
+    "description": null,
+    "ui_location": null,
     "settings_url": null,
-    "noise": false,
-    "noise_reason": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.hibernatemode, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": null,
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 126,
-    "value_map": {
-      "0": "Sleep in RAM only",
-      "3": "Safe sleep (default)",
-      "25": "Hibernate to disk only"
-    },
+    "value_map": null,
     "icon_bundle_id": "com.apple.Battery-Settings.extension"
   },
   {
@@ -16302,20 +16979,16 @@
     "key_prefix": null,
     "source": "plist",
     "value_type": "int",
-    "description": "Hibernate mode on battery",
-    "ui_location": "Terminal: pmset hibernatemode",
+    "description": null,
+    "ui_location": null,
     "settings_url": null,
-    "noise": false,
-    "noise_reason": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.hibernatemode, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": null,
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 11,
-    "value_map": {
-      "0": "Sleep in RAM only",
-      "3": "Safe sleep (default)",
-      "25": "Hibernate to disk only"
-    },
+    "value_map": null,
     "requires_hardware": [
       "battery"
     ]
@@ -16344,15 +17017,16 @@
     "key_prefix": null,
     "source": "plist",
     "value_type": "bool",
-    "description": "Keep network connections alive during sleep on AC power",
-    "ui_location": "System Settings \u2192 Battery / Energy \u2192 Options",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.tcpkeepalive, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": null,
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": 11
+    "contributed_by_issue": 11,
+    "value_map": null
   },
   {
     "id": "power-battery-prioritize-network",
@@ -16381,18 +17055,19 @@
     "key_prefix": null,
     "source": "plist",
     "value_type": "bool",
-    "description": "Standby mode enabled on battery",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.standby, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": null,
     "notes": "When enabled, allows a deeper sleep state to conserve battery power.",
     "ai_generated": false,
     "contributed_by_issue": 11,
     "requires_hardware": [
       "battery"
-    ]
+    ],
+    "value_map": null
   },
   {
     "id": "power-battery-tcp-keepalive",
@@ -16401,18 +17076,19 @@
     "key_prefix": null,
     "source": "plist",
     "value_type": "bool",
-    "description": "Keep network connections alive during sleep on battery",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.tcpkeepalive, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": null,
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 11,
     "requires_hardware": [
       "battery"
-    ]
+    ],
+    "value_map": null
   },
   {
     "id": "power-battery-tty-prevent-sleep",
@@ -16421,18 +17097,19 @@
     "key_prefix": null,
     "source": "plist",
     "value_type": "bool",
-    "description": "Prevent automatic sleeping when Terminal is active on battery",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Prevent automatic sleeping when the display is off",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.ttyskeepawake, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": null,
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 11,
     "requires_hardware": [
       "battery"
-    ]
+    ],
+    "value_map": null
   },
   {
     "id": "power-battery-dark-wake",
@@ -16441,19 +17118,16 @@
     "key_prefix": null,
     "source": "plist",
     "value_type": "bool",
-    "description": "Wake for network access / Power Nap on battery",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Enable Power Nap",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.powernap, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": null,
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 11,
-    "value_map": {
-      "0": "Disabled",
-      "1": "Enabled"
-    },
+    "value_map": null,
     "requires_hardware": [
       "battery"
     ]
@@ -17822,258 +18496,6 @@
     "contributed_by_issue": null
   },
   {
-    "id": "pmset.sleep",
-    "domain": "pmset",
-    "key": "sleep",
-    "source": "pmset",
-    "value_type": "int",
-    "description": "Computer sleep timer: minutes of inactivity before the computer sleeps (may show as On/Off rather than a number on some configurations). This can differ between running on battery and being plugged in, so switching power sources between snapshots can make it look like it changed even though nothing was set differently.",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
-    "min_macos": "13.0",
-    "notes": "Value is in minutes. 0 = Never. No direct slider in macOS 14+ System Settings; set via pmset.",
-    "ai_generated": true,
-    "contributed_by_issue": 173,
-    "value_map": {
-      "0": "Never"
-    }
-  },
-  {
-    "id": "pmset.displaysleep",
-    "domain": "pmset",
-    "key": "displaysleep",
-    "source": "pmset",
-    "value_type": "int",
-    "description": "Display sleep timer: minutes of inactivity before the display turns off (0 = Never). This can differ between running on battery and being plugged in, so switching power sources between snapshots can make it look like it changed even though nothing was set differently.",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Turn display off on battery/Power Adapter after",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
-    "min_macos": "13.0",
-    "notes": "0 = Never.",
-    "ai_generated": true,
-    "contributed_by_issue": 150,
-    "value_map": {
-      "0": "Never"
-    }
-  },
-  {
-    "id": "pmset.disksleep",
-    "domain": "pmset",
-    "key": "disksleep",
-    "source": "pmset",
-    "value_type": "int",
-    "description": "Hard disk sleep: puts spinning hard drives to sleep when inactive (0 = disabled). This and other Battery \u2192 Options settings can differ between running on battery and being plugged in, so switching power sources between snapshots can make this look like it changed even though you didn't touch it.",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Put hard disks to sleep when possible",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
-    "min_macos": "13.0",
-    "notes": "0 = disabled. Primarily affects Macs with spinning hard drives.",
-    "ai_generated": true,
-    "contributed_by_issue": 150,
-    "value_map": {
-      "0": "Off",
-      "1": "On"
-    }
-  },
-  {
-    "id": "pmset.standby",
-    "domain": "pmset",
-    "key": "standby",
-    "source": "pmset",
-    "value_type": "int",
-    "description": "Standby mode: Mac enters a lower-power state after sleeping for an extended period",
-    "ui_location": "System Settings \u2192 Battery",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
-    "min_macos": "13.0",
-    "notes": "0 = Off, 1 = On. Duration controlled by standbydelay/standbydelaylow/standbydelayhigh.",
-    "ai_generated": true,
-    "contributed_by_issue": 150,
-    "value_map": {
-      "0": "Off",
-      "1": "On"
-    }
-  },
-  {
-    "id": "pmset.powernap",
-    "domain": "pmset",
-    "key": "powernap",
-    "source": "pmset",
-    "value_type": "int",
-    "description": null,
-    "ui_location": null,
-    "settings_url": null,
-    "noise": true,
-    "noise_reason": "The pmset 'Currently in use' powernap key is a derived effective value, not a stored user preference. The actual Power Nap preference is already tracked via com.apple.PowerManagement.plist :: AC Power.DarkWakeBackgroundTasks. On Macs where Power Nap has no System Settings UI, this key also appears and disappears based on power state without user action.",
-    "min_macos": "13.0",
-    "notes": null,
-    "ai_generated": true,
-    "contributed_by_issue": 150,
-    "value_map": null
-  },
-  {
-    "id": "pmset.networkoversleep",
-    "domain": "pmset",
-    "key": "networkoversleep",
-    "source": "pmset",
-    "value_type": "int",
-    "description": "Wake for network access: allows wake-on-LAN and network requests while sleeping. This can differ between running on battery and being plugged in, so switching power sources between snapshots can make it look like it changed even though nothing was set differently.",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Wake for network access",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
-    "min_macos": "13.0",
-    "notes": "0 = Off, 1 = On. See also womp (Ethernet-specific wake on LAN).",
-    "ai_generated": true,
-    "contributed_by_issue": 150,
-    "value_map": {
-      "0": "Off",
-      "1": "On"
-    }
-  },
-  {
-    "id": "pmset.womp",
-    "domain": "pmset",
-    "key": "womp",
-    "source": "pmset",
-    "value_type": "int",
-    "description": "Wake on LAN: allows the Mac to wake when it receives a magic packet over Ethernet. This can differ between running on battery and being plugged in, so switching power sources between snapshots can make it look like it changed even though nothing was set differently.",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Wake for network access",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
-    "min_macos": "13.0",
-    "notes": "0 = Off, 1 = On. Ethernet-specific counterpart to networkoversleep.",
-    "ai_generated": true,
-    "contributed_by_issue": 150,
-    "value_map": {
-      "0": "Off",
-      "1": "On"
-    }
-  },
-  {
-    "id": "pmset.tcpkeepalive",
-    "domain": "pmset",
-    "key": "tcpkeepalive",
-    "source": "pmset",
-    "value_type": "int",
-    "description": "TCP keepalive: maintains TCP connections (for iCloud, push notifications, etc.) while the Mac is asleep. This can differ between running on battery and being plugged in, so switching power sources between snapshots can make it look like it changed even though nothing was set differently.",
-    "ui_location": "System Settings \u2192 Battery \u2192 Options \u2192 Enable Power Nap",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
-    "min_macos": "13.0",
-    "notes": "0 = Off, 1 = On. Typically enabled alongside Power Nap.",
-    "ai_generated": true,
-    "contributed_by_issue": 150,
-    "value_map": {
-      "0": "Off",
-      "1": "On"
-    }
-  },
-  {
-    "id": "pmset.ttyskeepawake",
-    "domain": "pmset",
-    "key": "ttyskeepawake",
-    "source": "pmset",
-    "value_type": "int",
-    "description": "Terminal sessions keep awake: active SSH or terminal sessions prevent the Mac from sleeping",
-    "ui_location": "System Settings \u2192 Battery",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
-    "min_macos": "13.0",
-    "notes": "0 = Off, 1 = On.",
-    "ai_generated": true,
-    "contributed_by_issue": 150,
-    "value_map": {
-      "0": "Off",
-      "1": "On"
-    }
-  },
-  {
-    "id": "pmset.lowpowermode",
-    "domain": "pmset",
-    "key": "lowpowermode",
-    "source": "pmset",
-    "value_type": "int",
-    "description": "Low Power Mode: reduces performance and energy use to extend battery life. This can differ between running on battery and being plugged in, so switching power sources between snapshots can make it look like it changed even though nothing was set differently.",
-    "ui_location": "System Settings \u2192 Battery \u2192 Low Power Mode",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
-    "min_macos": "13.0",
-    "notes": "0 = Off, 1 = On.",
-    "ai_generated": true,
-    "contributed_by_issue": 189,
-    "value_map": {
-      "0": "Off",
-      "1": "On"
-    }
-  },
-  {
-    "id": "pmset.hibernatemode",
-    "domain": "pmset",
-    "key": "hibernatemode",
-    "source": "pmset",
-    "value_type": "int",
-    "description": "Hibernate mode: controls how the Mac saves memory state when sleeping",
-    "ui_location": "System Settings \u2192 Battery",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
-    "min_macos": "13.0",
-    "notes": "Not directly exposed in the UI; changes via pmset. 0 = no image (RAM powered), 3 = safe sleep (RAM + disk image, default on laptops), 25 = hibernate only (disk, no RAM power).",
-    "ai_generated": true,
-    "contributed_by_issue": 150,
-    "value_map": {
-      "0": "No safe sleep (RAM powered)",
-      "3": "Safe sleep (RAM + disk image)",
-      "25": "Hibernate only (disk, no RAM)"
-    }
-  },
-  {
-    "id": "pmset.SleepOnPowerButton",
-    "domain": "pmset",
-    "key": "Sleep On Power Button",
-    "source": "pmset",
-    "value_type": "int",
-    "description": "Sleep on power button press: pressing the power button sleeps the Mac instead of showing a dialog",
-    "ui_location": "System Settings \u2192 Battery",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
-    "min_macos": "13.0",
-    "notes": "0 = Off (shows dialog), 1 = On (sleeps immediately). Apple Silicon Macs only.",
-    "ai_generated": true,
-    "contributed_by_issue": 150,
-    "value_map": {
-      "0": "Off",
-      "1": "On"
-    }
-  },
-  {
-    "id": "pmset.hibernatefile",
-    "domain": "pmset",
-    "key": "hibernatefile",
-    "source": "pmset",
-    "value_type": "string",
-    "description": null,
-    "ui_location": null,
-    "settings_url": null,
-    "noise": true,
-    "noise_reason": "System-managed path to the sleep image file; always /var/vm/sleepimage and not user-settable.",
-    "min_macos": null,
-    "notes": null,
-    "ai_generated": true,
-    "contributed_by_issue": 150
-  },
-  {
     "id": "pm.ac.autoPowerOffEnabled",
     "domain": "com.apple.PowerManagement",
     "key": "AC Power.AutoPowerOff Enabled",
@@ -18114,15 +18536,16 @@
     "key": "AC Power.Display Sleep Uses Dim",
     "source": "pmset",
     "value_type": "int",
-    "description": "Dim the display before it goes to sleep on AC power",
+    "description": null,
     "ui_location": null,
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.halfdim, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": null
   },
   {
     "id": "pm.battery.displaySleepUsesDim",
@@ -18130,18 +18553,19 @@
     "key": "Battery Power.Display Sleep Uses Dim",
     "source": "pmset",
     "value_type": "int",
-    "description": "Dim the display before it goes to sleep on battery",
+    "description": null,
     "ui_location": null,
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.halfdim, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
     "requires_hardware": [
       "battery"
-    ]
+    ],
+    "value_map": null
   },
   {
     "id": "pm.ac.highStandbyDelay",
@@ -18149,24 +18573,16 @@
     "key": "AC Power.High Standby Delay",
     "source": "pmset",
     "value_type": "int",
-    "description": "Extended standby delay in seconds when battery is below the standby threshold on AC power",
+    "description": null,
     "ui_location": null,
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.standbydelayhigh, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "value_map": {
-      "3600": "1 hour",
-      "7200": "2 hours",
-      "10800": "3 hours",
-      "14400": "4 hours",
-      "28800": "8 hours",
-      "86400": "1 day",
-      "259200": "3 days"
-    }
+    "value_map": null
   },
   {
     "id": "pm.battery.highStandbyDelay",
@@ -18174,24 +18590,16 @@
     "key": "Battery Power.High Standby Delay",
     "source": "pmset",
     "value_type": "int",
-    "description": "Extended standby delay in seconds when battery is below the standby threshold on battery",
+    "description": null,
     "ui_location": null,
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.standbydelayhigh, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
-    "value_map": {
-      "3600": "1 hour",
-      "7200": "2 hours",
-      "10800": "3 hours",
-      "14400": "4 hours",
-      "28800": "8 hours",
-      "86400": "1 day",
-      "259200": "3 days"
-    },
+    "value_map": null,
     "requires_hardware": [
       "battery"
     ]
@@ -18202,15 +18610,16 @@
     "key": "AC Power.Standby Battery Threshold",
     "source": "pmset",
     "value_type": "int",
-    "description": "Battery percentage below which the Mac switches to a longer standby delay on AC power",
+    "description": null,
     "ui_location": null,
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.highstandbythreshold, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": null
   },
   {
     "id": "pm.battery.standbyBatteryThreshold",
@@ -18218,18 +18627,19 @@
     "key": "Battery Power.Standby Battery Threshold",
     "source": "pmset",
     "value_type": "int",
-    "description": "Battery percentage below which the Mac switches to a longer standby delay on battery",
+    "description": null,
     "ui_location": null,
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: Battery Power.highstandbythreshold, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null,
     "requires_hardware": [
       "battery"
-    ]
+    ],
+    "value_map": null
   },
   {
     "id": "pm.ac.standbyDelay",
@@ -22852,19 +23262,16 @@
     "key": "AC Power.Automatic Restart On Power Loss",
     "source": "plist",
     "value_type": "bool",
-    "description": "Energy: restart automatically after a power failure",
-    "ui_location": "System Settings \u2192 Energy \u2192 Start up automatically after a power failure",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.autorestart, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 144,
-    "value_map": {
-      "True": "Restart automatically",
-      "False": "Don't restart automatically"
-    },
+    "value_map": null,
     "icon_bundle_id": null
   },
   {
@@ -22873,20 +23280,16 @@
     "key": "AC Power.GPUSwitch",
     "source": "plist",
     "value_type": "int",
-    "description": "Energy: graphics switching mode on Macs with both integrated and discrete GPUs",
-    "ui_location": "System Settings \u2192 Energy \u2192 Graphics (Intel Macs only)",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension?options",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Duplicate of pmset :: AC Power.gpuswitch, which reports the same setting for the same power profile. pmset reports an effective value whether or not this plist key has ever been written, so it is the source of record and this key is suppressed to avoid reporting one change twice.",
     "min_macos": "13.0",
     "notes": "Relevant only on Intel Macs with dual GPU; not applicable to Apple Silicon",
     "ai_generated": false,
     "contributed_by_issue": 45,
-    "value_map": {
-      "0": "Integrated only",
-      "1": "Discrete GPU only",
-      "2": "Automatic"
-    },
+    "value_map": null,
     "icon_bundle_id": null
   },
   {
@@ -24635,23 +25038,6 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 153,
-    "value_map": null
-  },
-  {
-    "id": "pmset.powermode",
-    "domain": "pmset",
-    "key": "powermode",
-    "source": "pmset",
-    "value_type": "int",
-    "description": null,
-    "ui_location": null,
-    "settings_url": null,
-    "noise": true,
-    "noise_reason": "Derived effective value from pmset 'Currently in use' section. The user-set Low Power Mode preference is already tracked via pmset.lowpowermode. Appearing as '0' from absent is macOS initializing the default, not a user action.",
-    "min_macos": null,
-    "notes": null,
-    "ai_generated": false,
-    "contributed_by_issue": 152,
     "value_map": null
   },
   {
