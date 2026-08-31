@@ -6302,21 +6302,21 @@
     "key": "__Color__-MADisplayFilterType",
     "source": "plist",
     "value_type": "int",
-    "description": "Type of color filter applied to the display",
+    "description": "Which color filter is applied to the display. This only takes effect while Color Filters is switched on \u2014 turning it off leaves the last filter chosen recorded here, so a value alone does not mean a filter is active.",
     "ui_location": "System Settings \u2192 Accessibility \u2192 Display \u2192 Color filters \u2192 Filter type",
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "0=None, 1=Protanopia (red/green), 2=Deuteranopia (green/red), 3=Tritanopia (blue/yellow), 4=Grayscale.",
-    "ai_generated": true,
-    "contributed_by_issue": null,
+    "notes": "A bit field, not a sequential list. Read off macOS 15.7.9 by selecting each filter in turn and reading the key: Grayscale 1, Red/Green 2, Green/Red 4, Blue/Yellow 8, Color Tint 16. The earlier map (0 None, 1 Protanopia, 2 Deuteranopia, 3 Tritanopia, 4 Grayscale) was wrong for every value and named a filter one off from the truth. No 0 was observed; switching Color Filters off leaves the last type in place rather than zeroing it, so whether 0 ever appears is unknown and is deliberately unlabelled. Whether a filter is actually active is __Color__-MADisplayFilterCategoryEnabled, covered by mediaaccessibility.colorFilters. Contributed by issue 231.",
+    "ai_generated": false,
+    "contributed_by_issue": 231,
     "value_map": {
-      "0": "None",
-      "1": "Protanopia (red/green)",
-      "2": "Deuteranopia (green/red)",
-      "3": "Tritanopia (blue/yellow)",
-      "4": "Grayscale"
+      "1": "Grayscale",
+      "2": "Red/Green filter (Protanopia)",
+      "4": "Green/Red filter (Deuteranopia)",
+      "8": "Blue/Yellow filter (Tritanopia)",
+      "16": "Color Tint"
     }
   },
   {
