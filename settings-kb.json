@@ -27447,20 +27447,18 @@
     "key_prefix": "AllSpacesAndDisplays.Type",
     "source": "plist-wallpaper",
     "value_type": "string",
-    "description": "Whether every display and Space shares one wallpaper or each gets its own.",
+    "description": "Whether one wallpaper covers every display and Space, or each display has its own. macOS only records this while one wallpaper covers everything; giving each display its own removes it, which is why it can read as none.",
     "ui_location": "System Settings \u2192 Wallpaper",
     "settings_url": "x-apple.systempreferences:com.apple.Wallpaper-Settings.extension",
     "value_map": {
-      "linked": "Screen saver shows the wallpaper",
-      "individual": "Separate wallpaper and screen saver",
-      "desktop": "Wallpaper only"
+      "individual": "One wallpaper on all displays and Spaces"
     },
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
+    "notes": "Tested on macOS 15.7.9 across four states: each display with its own wallpaper (the key is absent entirely), one wallpaper across everything, that same state with Show as Screen Saver on, and again with a still picture rather than an aerial. Type read 'individual' in all three states where it existed and never moved, so it tracks the key's presence rather than anything about the value. The earlier labels 'linked' and 'desktop' claimed it described whether the screen saver shows the wallpaper; that did not survive the test and has been dropped. Contributed by issue 229.",
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": 229
   },
   {
     "id": "wallpaper.systemDefault.desktop",
