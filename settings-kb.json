@@ -28499,7 +28499,7 @@
     "key_prefix": "nameserver[",
     "source": "scutil",
     "value_type": "string",
-    "description": "A DNS server the Mac uses to look up domain names. These usually come from your router over DHCP, so one changing without you setting it is worth a look \u2014 it decides where every domain lookup goes.",
+    "description": "A DNS server the Mac uses to look up domain names. Your router usually hands these out over DHCP and can change them on its own, so this moving is often not worth attention \u2014 but a nameserver you did not set decides where every domain lookup goes, which is worth knowing about.",
     "ui_location": "System Settings \u2192 Network \u2192 (your connection) \u2192 Details \u2192 DNS",
     "settings_url": "x-apple.systempreferences:com.apple.Network-Settings.extension",
     "value_map": null,
@@ -28508,7 +28508,7 @@
     "min_macos": "13.0",
     "notes": "From resolver #1 of `scutil --dns`, the default resolver. Domain-scoped resolvers such as mDNS are not captured.",
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": 234
   },
   {
     "id": "dns.searchdomains",
@@ -28980,5 +28980,80 @@
     "notes": "Read live from system_profiler. macOS keeps no record of the active device on disk \u2014 the audio preference files hold per-device settings but nothing naming the current one \u2014 so this changes whenever a device is connected or disconnected, not only when it is chosen deliberately.",
     "ai_generated": false,
     "contributed_by_issue": null
+  },
+  {
+    "id": "spaces.appBindings",
+    "domain": "com.apple.spaces",
+    "key": "",
+    "source": "plist",
+    "value_type": "string",
+    "description": "Which desktop an app's windows appear on. \"All Desktops\" keeps the app on every Space so switching Spaces does not leave it behind.",
+    "ui_location": "Dock \u2192 right-click a running app \u2192 Options \u2192 Assign To",
+    "settings_url": null,
+    "value_map": {
+      "AllSpaces": "All Desktops"
+    },
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Assign To only appears when the Dock is on a display that has more than one Space, so a Mac with a single desktop per display never shows it. A value of AllSpaces is \"All Desktops\"; a bare UUID is one specific desktop, shown in the menu as \"Desktop on Display N\"; the key being absent is \"None\".",
+    "ai_generated": false,
+    "contributed_by_issue": 230,
+    "key_prefix": "app-bindings."
+  },
+  {
+    "id": "accessibility.KeyRepeatInterval",
+    "domain": "com.apple.Accessibility",
+    "key": "KeyRepeatInterval",
+    "source": "plist",
+    "value_type": "float",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "value_map": null,
+    "noise": true,
+    "noise_reason": "Accessibility subsystem's own internal copy of key-repeat timing; observed changing to non-round computed values with no corresponding user action. Sibling of KeyRepeatDelay.",
+    "min_macos": null,
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 232
+  },
+  {
+    "id": "finder.ShowSidebar",
+    "domain": "com.apple.finder",
+    "key": "ShowSidebar",
+    "source": "plist",
+    "value_type": "bool",
+    "description": "Whether Finder windows show the sidebar.",
+    "ui_location": "Finder \u2192 View \u2192 Show Sidebar (\u2325\u2318S)",
+    "settings_url": null,
+    "value_map": {
+      "True": "Shown",
+      "False": "Hidden"
+    },
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 232,
+    "icon_bundle_id": "com.apple.finder"
+  },
+  {
+    "id": "finder.SidebarWidth2",
+    "domain": "com.apple.finder",
+    "key": "SidebarWidth2",
+    "source": "plist",
+    "value_type": "int",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "value_map": null,
+    "noise": true,
+    "noise_reason": "Width of the Finder sidebar in points; window geometry that changes whenever the divider is dragged.",
+    "min_macos": null,
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 232
   }
 ]
