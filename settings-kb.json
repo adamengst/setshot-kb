@@ -28498,7 +28498,7 @@
     "key_prefix": "nameserver[",
     "source": "scutil",
     "value_type": "string",
-    "description": "A DNS server the Mac uses to look up domain names. Your router usually hands these out over DHCP and can change them on its own, so this moving is often not worth attention \u2014 but a nameserver you did not set decides where every domain lookup goes, which is worth knowing about.",
+    "description": "The {subject} DNS server the Mac uses to look up domain names, usually assigned dynamically via DHCP (the IP numbers will be grey). An app setting it manually (black IP numbers) could indicate malware, so it's worth checking.",
     "ui_location": "System Settings \u2192 Network \u2192 (your connection) \u2192 Details \u2192 DNS",
     "settings_url": "x-apple.systempreferences:com.apple.Network-Settings.extension",
     "value_map": null,
