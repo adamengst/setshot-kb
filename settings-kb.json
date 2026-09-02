@@ -29772,7 +29772,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Confirmed on 15.7.9 by toggling Show Script menu in menu bar and reading the key: checked writes 1, unchecked 0. The two settings beneath it in that pane -- Show Computer scripts, and whether application scripts appear at the top or bottom -- are separate; PutAppScriptsFirst in the same domain holds the second and is not yet described.",
+    "notes": "Confirmed on 15.7.9 by toggling Show Script menu in menu bar and reading the key: checked writes 1, unchecked 0. The two settings beneath it in that pane have their own entries: PutAppScriptsFirst and ShowLibraryScripts.",
     "ai_generated": false,
     "contributed_by_issue": 254,
     "icon_bundle_id": "com.apple.ScriptEditor2"
@@ -29930,5 +29930,47 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 258
+  },
+  {
+    "id": "scriptmenu.PutAppScriptsFirst",
+    "domain": "com.apple.scriptmenu",
+    "key": "PutAppScriptsFirst",
+    "source": "plist",
+    "value_type": "bool",
+    "description": "Whether application scripts appear at the top or the bottom of the Script menu",
+    "ui_location": "Script Editor \u2192 Settings \u2192 General \u2192 Script Menu",
+    "settings_url": null,
+    "value_map": {
+      "True": "At top",
+      "False": "At bottom"
+    },
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Both values seen on 15.7.9 by moving the radio and taking a snapshot each way: at top writes 1, at bottom 0. Only settable while the Script menu is shown.",
+    "ai_generated": false,
+    "contributed_by_issue": 258,
+    "icon_bundle_id": "com.apple.ScriptEditor2"
+  },
+  {
+    "id": "scriptmenu.ShowLibraryScripts",
+    "domain": "com.apple.scriptmenu",
+    "key": "ShowLibraryScripts",
+    "source": "plist",
+    "value_type": "bool",
+    "description": "Whether the Script menu lists the scripts shared by everyone on this Mac",
+    "ui_location": "Script Editor \u2192 Settings \u2192 General \u2192 Script Menu",
+    "settings_url": null,
+    "value_map": {
+      "True": "Shown",
+      "False": "Hidden"
+    },
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Script Editor calls these Computer scripts; the key calls them Library scripts, after the folder they live in. The key is absent until the box is unchecked, so absent means shown. Seen appearing as 0 on 15.7.9 when the box was unchecked.",
+    "ai_generated": false,
+    "contributed_by_issue": 258,
+    "icon_bundle_id": "com.apple.ScriptEditor2"
   }
 ]
