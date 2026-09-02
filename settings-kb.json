@@ -29443,16 +29443,14 @@
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
     "value_map": {
       "0": "Denied",
-      "1": "Unknown",
-      "2": "Allowed",
-      "3": "Limited"
+      "5": "Allowed"
     },
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "The 'would like to access data from other applications' prompt. Confirmed on 15.7.9 by matching the grants against the Files & Folders list: Terminal, Keyboard Maestro, Raycast, Cocktail and the rest appear there, SetShot among them and greyed out, matching its Denied value. Files & Folders aggregates several services; the Documents, Downloads, Desktop and removable-volume ones have their own entries.",
+    "notes": "The 'would like to access data from other applications' prompt. Confirmed on 15.7.9 by matching the grants against the Files & Folders list: Terminal, Keyboard Maestro, Raycast, Cocktail and the rest appear there, SetShot among them and greyed out, matching its Denied value. Files & Folders aggregates several services; the Documents, Downloads, Desktop and removable-volume ones have their own entries.\n\nThis service uses 5 for a granted permission where every other TCC service on the same Mac uses 2 -- 417 grants across 28 other services were all 0 or 2, while all ten holders of this one read 5. Those ten show as enabled in the Files & Folders list and the single 0 shows greyed out, which is what 5 and 0 mean here. The values this service does not use are left out rather than carried over from the other TCC entries; 1 (Unknown) and 3 (Limited) were never seen for it. Reported as a bare 5 in a comparison, issue 257.",
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": 257
   },
   {
     "id": "tcc.system.SystemPolicyAppData",
@@ -29466,16 +29464,14 @@
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
     "value_map": {
       "0": "Denied",
-      "1": "Unknown",
-      "2": "Allowed",
-      "3": "Limited"
+      "5": "Allowed"
     },
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "The 'would like to access data from other applications' prompt. Confirmed on 15.7.9 by matching the grants against the Files & Folders list: Terminal, Keyboard Maestro, Raycast, Cocktail and the rest appear there, SetShot among them and greyed out, matching its Denied value. Files & Folders aggregates several services; the Documents, Downloads, Desktop and removable-volume ones have their own entries.",
+    "notes": "The 'would like to access data from other applications' prompt. Confirmed on 15.7.9 by matching the grants against the Files & Folders list: Terminal, Keyboard Maestro, Raycast, Cocktail and the rest appear there, SetShot among them and greyed out, matching its Denied value. Files & Folders aggregates several services; the Documents, Downloads, Desktop and removable-volume ones have their own entries.\n\nThis service uses 5 for a granted permission where every other TCC service on the same Mac uses 2 -- 417 grants across 28 other services were all 0 or 2, while all ten holders of this one read 5. Those ten show as enabled in the Files & Folders list and the single 0 shows greyed out, which is what 5 and 0 mean here. The values this service does not use are left out rather than carried over from the other TCC entries; 1 (Unknown) and 3 (Limited) were never seen for it. Reported as a bare 5 in a comparison, issue 257.",
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": 257
   },
   {
     "id": "tcc.user.WebBrowserPublicKeyCredential",
