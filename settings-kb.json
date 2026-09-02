@@ -15878,10 +15878,10 @@
     "ui_location": null,
     "settings_url": null,
     "noise": true,
-    "noise_reason": "Script Editor save panel and window state; UI state",
+    "noise_reason": "Script Editor save panel, toolbar and window state. This is a whole-domain default with an empty prefix, so anything in the domain without an entry of its own lands here. The real settings from Script Editor's General pane have their own entries and override it -- an exact key always beats a prefix rule.",
     "min_macos": null,
     "notes": null,
-    "ai_generated": true,
+    "ai_generated": false,
     "contributed_by_issue": null
   },
   {
@@ -29971,6 +29971,47 @@
     "notes": "Script Editor calls these Computer scripts; the key calls them Library scripts, after the folder they live in. The key is absent until the box is unchecked, so absent means shown. Seen appearing as 0 on 15.7.9 when the box was unchecked.",
     "ai_generated": false,
     "contributed_by_issue": 258,
+    "icon_bundle_id": "com.apple.ScriptEditor2"
+  },
+  {
+    "id": "scripteditor.DefaultLanguageType",
+    "domain": "com.apple.ScriptEditor2",
+    "key": "DefaultLanguageType",
+    "source": "plist",
+    "value_type": "int",
+    "description": "The scripting language new Script Editor documents start in",
+    "ui_location": "Script Editor \u2192 Settings \u2192 General \u2192 Default Language",
+    "settings_url": null,
+    "value_map": {
+      "1785946994": "JavaScript"
+    },
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Stored as a four-character code packed into an integer: 1785946994 is 0x6A736372, which is 'jscr'. Only JavaScript has been seen; AppleScript is presumably 'ascr' (1634952050) but has not been observed, so it is not labelled. Seen on 15.7.9.",
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "icon_bundle_id": "com.apple.ScriptEditor2"
+  },
+  {
+    "id": "scripteditor.OSAShowInheritedInfoInDictionary",
+    "domain": "com.apple.ScriptEditor2",
+    "key": "OSAShowInheritedInfoInDictionary",
+    "source": "plist",
+    "value_type": "bool",
+    "description": "Whether the dictionary viewer shows items a class inherits from its parents",
+    "ui_location": "Script Editor \u2192 Settings \u2192 General \u2192 Dictionary Viewer \u2192 Show inherited items",
+    "settings_url": null,
+    "value_map": {
+      "True": "Shown",
+      "False": "Hidden"
+    },
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": null,
     "icon_bundle_id": "com.apple.ScriptEditor2"
   }
 ]
