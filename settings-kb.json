@@ -29783,16 +29783,19 @@
     "key": "MouseTwoFingerDoubleTapGesture",
     "source": "plist",
     "value_type": "integer",
-    "description": "Magic Mouse two-finger double-tap gesture action",
-    "ui_location": "System Settings \u2192 Mouse \u2192 More Gestures",
-    "settings_url": "x-apple.systempreferences:com.apple.Mouse-Settings.extension",
+    "description": "Magic Mouse Mission Control gesture: double-tap with two fingers to open Mission Control",
+    "ui_location": "System Settings \u2192 Mouse \u2192 More Gestures \u2192 Mission Control",
+    "settings_url": "x-apple.systempreferences:com.apple.Mouse-Settings.extension?MoreGestures",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Described here rather than on com.apple.driver.AppleBluetoothMultitouch.mouse, matching how the trackpad pair is handled. Both domains hold the same value.",
+    "notes": "Described here rather than on com.apple.driver.AppleBluetoothMultitouch.mouse, matching how the trackpad pair is handled. Both domains hold the same value. Values confirmed on 15.7.9 by toggling the Mission Control checkbox: on = 3, off = 0.",
     "ai_generated": false,
     "contributed_by_issue": 258,
-    "value_map": null
+    "value_map": {
+      "0": "Off",
+      "3": "On"
+    }
   },
   {
     "id": "AppleMultitouchMouse.MouseTwoFingerHorizSwipeGesture",
