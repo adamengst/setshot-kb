@@ -5787,9 +5787,23 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Values: UICTContentSizeCategoryS/M/L/XL/... and UICTContentSizeCategoryAccessibilityM/L/XL/...",
+    "notes": "Read off macOS 15.7.9 by stepping through every mark on the Text size slider and reading the key back. Twelve categories in this order, the names switching to an Accessibility prefix for the largest five. Large is the position the slider labels Default. The slider shows point sizes rather than these names, so a comparison otherwise reported a change between two identifiers a reader has no way to connect to what they moved.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "value_map": {
+      "UICTContentSizeCategoryXS": "Extra small",
+      "UICTContentSizeCategoryS": "Small",
+      "UICTContentSizeCategoryM": "Medium",
+      "UICTContentSizeCategoryL": "Large \u2014 the default",
+      "UICTContentSizeCategoryXL": "Extra large",
+      "UICTContentSizeCategoryXXL": "Extra extra large",
+      "UICTContentSizeCategoryXXXL": "Extra extra extra large",
+      "UICTContentSizeCategoryAccessibilityM": "Accessibility medium",
+      "UICTContentSizeCategoryAccessibilityL": "Accessibility large",
+      "UICTContentSizeCategoryAccessibilityXL": "Accessibility extra large",
+      "UICTContentSizeCategoryAccessibilityXXL": "Accessibility extra extra large",
+      "UICTContentSizeCategoryAccessibilityXXXL": "Accessibility extra extra extra large"
+    }
   },
   {
     "id": "universalaccess.showWindowTitlebarIcons",
