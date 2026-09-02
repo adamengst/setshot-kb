@@ -29759,5 +29759,26 @@
     "notes": "The domain the setting is actually written to. universalaccess.DifferentiateWithoutColor was added for the same setting and guessed the wrong domain: com.apple.universalaccess is captured -- 222 lines on the Mac this was checked on -- and has never held this key, while com.apple.Accessibility does. A submission caught it moving here.",
     "ai_generated": false,
     "contributed_by_issue": 251
+  },
+  {
+    "id": "scriptmenu.ScriptMenuEnabled",
+    "domain": "com.apple.scriptmenu",
+    "key": "ScriptMenuEnabled",
+    "source": "plist",
+    "value_type": "bool",
+    "description": "Whether the Script menu appears in the menu bar",
+    "ui_location": "Script Editor \u2192 Settings \u2192 General \u2192 Script Menu",
+    "settings_url": null,
+    "value_map": {
+      "True": "Shown",
+      "False": "Hidden"
+    },
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Confirmed on 15.7.9 by toggling Show Script menu in menu bar and reading the key: checked writes 1, unchecked 0. The two settings beneath it in that pane -- Show Computer scripts, and whether application scripts appear at the top or bottom -- are separate; PutAppScriptsFirst in the same domain holds the second and is not yet described.",
+    "ai_generated": false,
+    "contributed_by_issue": 254,
+    "icon_bundle_id": "com.apple.ScriptEditor2"
   }
 ]
