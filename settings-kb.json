@@ -29438,9 +29438,9 @@
     "key_prefix": "kTCCServiceSystemPolicyAppData/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Access to other apps' data folders for {subject}",
-    "ui_location": "System Settings \u2192 Privacy & Security \u2192 Files & Folders",
-    "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
+    "description": "Access to other apps' data folders for {subject} \u2014 the \u201cwould like to access data from other applications\u201d prompt",
+    "ui_location": null,
+    "settings_url": null,
     "value_map": {
       "0": "Denied",
       "5": "Allowed"
@@ -29448,7 +29448,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "The 'would like to access data from other applications' prompt. Confirmed on 15.7.9 by matching the grants against the Files & Folders list: Terminal, Keyboard Maestro, Raycast, Cocktail and the rest appear there, SetShot among them and greyed out, matching its Denied value. Files & Folders aggregates several services; the Documents, Downloads, Desktop and removable-volume ones have their own entries.\n\nThis service uses 5 for a granted permission where every other TCC service on the same Mac uses 2 -- 417 grants across 28 other services were all 0 or 2, while all ten holders of this one read 5. Those ten show as enabled in the Files & Folders list and the single 0 shows greyed out, which is what 5 and 0 mean here. The values this service does not use are left out rather than carried over from the other TCC entries; 1 (Unknown) and 3 (Limited) were never seen for it. Reported as a bare 5 in a comparison, issue 257.",
+    "notes": "No pane in System Settings shows this permission. It was briefly given Files & Folders as its location on the strength of the apps holding it also appearing in that pane -- which they do, for their Desktop and Documents grants, not for this one. Switching off every toggle Files & Folders offers for an app moved its three SystemPolicy folder grants and its three FileProviderDomain grants from Allowed to Denied and left this one at 5, untouched.\n\nKept rather than suppressed, unlike the other permissions with no interface: an app reading another app's data is worth reporting even where it cannot be undone from a pane, and the value itself is accurate. `tccutil reset SystemPolicyAppData` is the only way found to clear it.\n\nThis service uses 5 for a granted permission where every other TCC service on the same Mac uses 2 -- 417 grants across 28 other services were all 0 or 2, while all ten holders of this one read 5. 1 (Unknown) and 3 (Limited) were never seen for it and are deliberately unlabelled. Issues 257 and this correction.",
     "ai_generated": false,
     "contributed_by_issue": 257
   },
@@ -29459,9 +29459,9 @@
     "key_prefix": "kTCCServiceSystemPolicyAppData/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Access to other apps' data folders for {subject}",
-    "ui_location": "System Settings \u2192 Privacy & Security \u2192 Files & Folders",
-    "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
+    "description": "Access to other apps' data folders for {subject} \u2014 the \u201cwould like to access data from other applications\u201d prompt",
+    "ui_location": null,
+    "settings_url": null,
     "value_map": {
       "0": "Denied",
       "5": "Allowed"
@@ -29469,7 +29469,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "The 'would like to access data from other applications' prompt. Confirmed on 15.7.9 by matching the grants against the Files & Folders list: Terminal, Keyboard Maestro, Raycast, Cocktail and the rest appear there, SetShot among them and greyed out, matching its Denied value. Files & Folders aggregates several services; the Documents, Downloads, Desktop and removable-volume ones have their own entries.\n\nThis service uses 5 for a granted permission where every other TCC service on the same Mac uses 2 -- 417 grants across 28 other services were all 0 or 2, while all ten holders of this one read 5. Those ten show as enabled in the Files & Folders list and the single 0 shows greyed out, which is what 5 and 0 mean here. The values this service does not use are left out rather than carried over from the other TCC entries; 1 (Unknown) and 3 (Limited) were never seen for it. Reported as a bare 5 in a comparison, issue 257.",
+    "notes": "No pane in System Settings shows this permission. It was briefly given Files & Folders as its location on the strength of the apps holding it also appearing in that pane -- which they do, for their Desktop and Documents grants, not for this one. Switching off every toggle Files & Folders offers for an app moved its three SystemPolicy folder grants and its three FileProviderDomain grants from Allowed to Denied and left this one at 5, untouched.\n\nKept rather than suppressed, unlike the other permissions with no interface: an app reading another app's data is worth reporting even where it cannot be undone from a pane, and the value itself is accurate. `tccutil reset SystemPolicyAppData` is the only way found to clear it.\n\nThis service uses 5 for a granted permission where every other TCC service on the same Mac uses 2 -- 417 grants across 28 other services were all 0 or 2, while all ten holders of this one read 5. 1 (Unknown) and 3 (Limited) were never seen for it and are deliberately unlabelled. Issues 257 and this correction.",
     "ai_generated": false,
     "contributed_by_issue": 257
   },
