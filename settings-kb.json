@@ -26505,7 +26505,7 @@
     "key_prefix": "kTCCServiceAppleEvents/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Automation access for {subject}",
+    "description": "Automation access for {subject} to control {target}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Automation",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Automation",
     "value_map": {
@@ -26517,7 +26517,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "per-user grant. The key is the requesting app's bundle ID or executable path. Requires Full Disk Access for SetShot to read.",
+    "notes": "One grant per controlled app. The capture records both apps from b28; before that it recorded only the app holding the permission, and six grants for one app were indistinguishable.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
@@ -26758,7 +26758,7 @@
     "key_prefix": "kTCCServiceFileProviderDomain/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Files from cloud providers access for {subject}",
+    "description": "Access for {subject} to files in {target}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Files from cloud providers",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
     "value_map": {
@@ -26770,7 +26770,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "per-user grant. The key is the requesting app's bundle ID or executable path. Requires Full Disk Access for SetShot to read.",
+    "notes": "One grant per cloud provider \u2014 iCloud Drive, Dropbox, Google Drive. The provider is named by its file provider extension rather than by the name shown in Finder, and a per-install identifier on the end of the key is left out of the description.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
@@ -27057,7 +27057,7 @@
     "key_prefix": "kTCCServiceAppleEvents/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Automation access for {subject}",
+    "description": "Automation access for {subject} to control {target}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Automation",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Automation",
     "value_map": {
@@ -27069,7 +27069,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "system-wide grant. The key is the requesting app's bundle ID or executable path. Requires Full Disk Access for SetShot to read.",
+    "notes": "One grant per controlled app. The capture records both apps from b28; before that it recorded only the app holding the permission, and six grants for one app were indistinguishable.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
@@ -27310,7 +27310,7 @@
     "key_prefix": "kTCCServiceFileProviderDomain/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Files from cloud providers access for {subject}",
+    "description": "Access for {subject} to files in {target}",
     "ui_location": "System Settings \u2192 Privacy & Security \u2192 Files from cloud providers",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_FilesAndFolders",
     "value_map": {
@@ -27322,7 +27322,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "system-wide grant. The key is the requesting app's bundle ID or executable path. Requires Full Disk Access for SetShot to read.",
+    "notes": "One grant per cloud provider \u2014 iCloud Drive, Dropbox, Google Drive. The provider is named by its file provider extension rather than by the name shown in Finder, and a per-install identifier on the end of the key is left out of the description.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
