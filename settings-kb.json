@@ -2424,7 +2424,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Values: 1=Small, 2=Medium, 3=Large. The value 1 may appear as True in some plist readers.",
+    "notes": "Confirmed on 15.7.9 by taking a snapshot at each of the three positions: Small writes True, Medium 2, Large 3. Small is stored as a boolean, which is why the map carries both True and 1.\n\nThe key can also be absent, which is not the same as any of the three -- none of them deletes it. Absent was seen once after changing the system text size, with the key going from 3 to gone, so a comparison read it as Large \u2192 (none). Whether the text size control clears it is unestablished: an app was rebuilt in the same window. Worth pinning down if it recurs, since a setting being cleared by an unrelated control is worth saying out loud.",
     "ai_generated": true,
     "contributed_by_issue": 87,
     "value_map": {
