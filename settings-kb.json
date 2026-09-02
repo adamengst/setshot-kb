@@ -5701,13 +5701,13 @@
     "key": "DifferentiateWithoutColor",
     "source": "defaults",
     "value_type": "bool",
-    "description": "Differentiate Without Color: add shapes or patterns alongside color indicators",
-    "ui_location": "System Settings \u2192 Accessibility \u2192 Display \u2192 Differentiate without color",
-    "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Not written on macOS 15.7.9 or 26.6.2. The setting lives in com.apple.Accessibility, covered by accessibility.DifferentiateWithoutColor; this entry guessed the domain and was never matched by a real key. Kept as noise rather than deleted in case an older macOS did write it, where it would be the same setting reported twice.",
     "min_macos": "13.0",
-    "notes": null,
+    "notes": "Superseded by accessibility.DifferentiateWithoutColor. Issue 251.",
     "ai_generated": true,
     "contributed_by_issue": 117
   },
@@ -29742,5 +29742,22 @@
     "notes": "The lower of the two lists in that pane, for apps allowed to record system audio but not the screen. tcc.*.ScreenCapture covers the upper list, which grants both. Confirmed on 15.7.9: the only holder of this grant is the only app shown under System Audio Recording Only.",
     "ai_generated": false,
     "contributed_by_issue": null
+  },
+  {
+    "id": "accessibility.DifferentiateWithoutColor",
+    "domain": "com.apple.Accessibility",
+    "key": "DifferentiateWithoutColor",
+    "source": "plist",
+    "value_type": "bool",
+    "description": "Differentiate Without Color: add shapes or patterns alongside colour so meaning does not depend on colour alone",
+    "ui_location": "System Settings \u2192 Accessibility \u2192 Display \u2192 Differentiate without color",
+    "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
+    "value_map": null,
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "The domain the setting is actually written to. universalaccess.DifferentiateWithoutColor was added for the same setting and guessed the wrong domain: com.apple.universalaccess is captured -- 222 lines on the Mac this was checked on -- and has never held this key, while com.apple.Accessibility does. A submission caught it moving here.",
+    "ai_generated": false,
+    "contributed_by_issue": 251
   }
 ]
