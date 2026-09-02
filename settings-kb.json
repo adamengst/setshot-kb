@@ -27448,16 +27448,18 @@
     "key_prefix": "AllSpacesAndDisplays.Type",
     "source": "plist-wallpaper",
     "value_type": "string",
-    "description": "Whether one wallpaper covers every display and Space, or each display has its own. macOS only records this while one wallpaper covers everything; giving each display its own removes it, which is why it can read as none.",
+    "description": "Whether the wallpaper is also shown as the screen saver, across every display and Space.",
     "ui_location": "System Settings \u2192 Wallpaper",
     "settings_url": "x-apple.systempreferences:com.apple.Wallpaper-Settings.extension",
     "value_map": {
-      "individual": "One wallpaper on all displays and Spaces"
+      "linked": "Screen saver shows the wallpaper",
+      "individual": "Separate wallpaper and screen saver",
+      "desktop": "Wallpaper only"
     },
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Tested on macOS 15.7.9 across four states: each display with its own wallpaper (the key is absent entirely), one wallpaper across everything, that same state with Show as Screen Saver on, and again with a still picture rather than an aerial. Type read 'individual' in all three states where it existed and never moved, so it tracks the key's presence rather than anything about the value. The earlier labels 'linked' and 'desktop' claimed it described whether the screen saver shows the wallpaper; that did not survive the test and has been dropped. Contributed by issue 229.",
+    "notes": "Values match wallpaper.systemDefault.displayScope, which is the same Type field in the SystemDefault branch of the same file. Note the description here is not what users see: rowDescription builds its own text for the wallpaper domain through wallpaperDescription(), so editing this field changes nothing on screen.\n\nIssue 229 asked whether an absent value should read \"Off\". It should not -- the key is absent, not switched off; macOS records it only while one wallpaper covers every display and Space, and giving each display its own removes it. Four states tested on 15.7.9 read 'individual' every time the key existed, including with the screen saver linked, which does not fit these labels; on that basis the labels were briefly dropped in v167 and restored in v174 after a baseline captured on a fresh Tahoe VM was seen holding 'linked', with the default wallpaper shown as the screen saver. Why the value did not move during that testing is unresolved.",
     "ai_generated": false,
     "contributed_by_issue": 229
   },
