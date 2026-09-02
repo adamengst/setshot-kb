@@ -29686,5 +29686,51 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": null
+  },
+  {
+    "id": "tcc.user.AudioCapture",
+    "domain": "TCC-user",
+    "key": "",
+    "key_prefix": "kTCCServiceAudioCapture/",
+    "source": "tcc",
+    "value_type": "int",
+    "description": "System audio recording for {subject}",
+    "ui_location": "System Settings \u2192 Privacy & Security \u2192 Screen & System Audio Recording \u2192 System Audio Recording Only",
+    "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_ScreenCapture",
+    "value_map": {
+      "0": "Denied",
+      "1": "Unknown",
+      "2": "Allowed",
+      "3": "Limited"
+    },
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "The lower of the two lists in that pane, for apps allowed to record system audio but not the screen. tcc.*.ScreenCapture covers the upper list, which grants both. Confirmed on 15.7.9: the only holder of this grant is the only app shown under System Audio Recording Only.",
+    "ai_generated": false,
+    "contributed_by_issue": null
+  },
+  {
+    "id": "tcc.system.AudioCapture",
+    "domain": "TCC-system",
+    "key": "",
+    "key_prefix": "kTCCServiceAudioCapture/",
+    "source": "tcc",
+    "value_type": "int",
+    "description": "System audio recording for {subject}",
+    "ui_location": "System Settings \u2192 Privacy & Security \u2192 Screen & System Audio Recording \u2192 System Audio Recording Only",
+    "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_ScreenCapture",
+    "value_map": {
+      "0": "Denied",
+      "1": "Unknown",
+      "2": "Allowed",
+      "3": "Limited"
+    },
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "The lower of the two lists in that pane, for apps allowed to record system audio but not the screen. tcc.*.ScreenCapture covers the upper list, which grants both. Confirmed on 15.7.9: the only holder of this grant is the only app shown under System Audio Recording Only.",
+    "ai_generated": false,
+    "contributed_by_issue": null
   }
 ]
