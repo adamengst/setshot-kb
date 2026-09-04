@@ -2942,9 +2942,13 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
-    "ai_generated": true,
-    "contributed_by_issue": null
+    "notes": "Labels 0 and 1 as themselves. The snapshot writes integer and floating-point 0 and 1 as False and True, so a tracking speed set to exactly 1 was being shown as 'On' next to the number it changed from. Mapping the two ends keeps them numbers. Issue 266.",
+    "ai_generated": false,
+    "contributed_by_issue": 266,
+    "value_map": {
+      "0": "0",
+      "1": "1"
+    }
   },
   {
     "id": "globaldomain.scrollwheelScaling",
@@ -27460,7 +27464,8 @@
     "value_map": {
       "linked": "Screen saver shows the wallpaper",
       "individual": "Separate wallpaper and screen saver",
-      "desktop": "Wallpaper only"
+      "desktop": "Wallpaper only",
+      "idle": "Screen saver only"
     },
     "noise": false,
     "noise_reason": null,
@@ -28662,7 +28667,8 @@
       "5": "Fit to Screen",
       "4": "Stretch to Fill Screen",
       "3": "Center",
-      "desktop": "Wallpaper only"
+      "desktop": "Wallpaper only",
+      "idle": "Screen saver only"
     },
     "noise": false,
     "noise_reason": null,
@@ -29803,15 +29809,35 @@
     "key": "MouseTwoFingerHorizSwipeGesture",
     "source": "plist",
     "value_type": "integer",
-    "description": "Magic Mouse two-finger horizontal swipe gesture for navigating between pages or spaces",
+    "description": "Which finger gesture swipes between pages with a Magic Mouse",
     "ui_location": "System Settings \u2192 Mouse \u2192 More Gestures \u2192 Swipe between pages",
-    "settings_url": "x-apple.systempreferences:com.apple.Mouse-Settings.extension",
+    "settings_url": "x-apple.systempreferences:com.apple.Mouse-Settings.extension?MoreGestures",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Described here rather than on com.apple.driver.AppleBluetoothMultitouch.mouse, matching how the trackpad pair is handled. Both domains hold the same value.",
+    "notes": "Which gesture, not whether the gesture is on: turning Swipe between pages off writes NSGlobalDomain AppleEnableMouseSwipeNavigateWithScrolls and leaves this key alone. Values confirmed on 15.7.9 by choosing each option in turn. The third option in the pop-up menu has not been recorded yet, so it shows as its number.",
     "ai_generated": false,
     "contributed_by_issue": 258,
+    "value_map": {
+      "1": "Swipe with two fingers",
+      "2": "Scroll left or right with one finger"
+    }
+  },
+  {
+    "id": "globaldomain.AppleEnableMouseSwipeNavigateWithScrolls",
+    "domain": "NSGlobalDomain",
+    "key": "AppleEnableMouseSwipeNavigateWithScrolls",
+    "source": "defaults",
+    "value_type": "bool",
+    "description": "Whether swiping on a Magic Mouse moves between pages",
+    "ui_location": "System Settings \u2192 Mouse \u2192 More Gestures \u2192 Swipe between pages",
+    "settings_url": "x-apple.systempreferences:com.apple.Mouse-Settings.extension?MoreGestures",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "The checkbox. Which gesture does the swiping is a separate setting, com.apple.AppleMultitouchMouse MouseTwoFingerHorizSwipeGesture, which keeps its value while the checkbox is off. Confirmed on 15.7.9.",
+    "ai_generated": false,
+    "contributed_by_issue": 265,
     "value_map": null
   },
   {
@@ -29986,12 +30012,13 @@
     "ui_location": "Script Editor \u2192 Settings \u2192 General \u2192 Default Language",
     "settings_url": null,
     "value_map": {
-      "1785946994": "JavaScript"
+      "1785946994": "JavaScript",
+      "1634952050": "AppleScript"
     },
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Stored as a four-character code packed into an integer: 1785946994 is 0x6A736372, which is 'jscr'. Only JavaScript has been seen; AppleScript is presumably 'ascr' (1634952050) but has not been observed, so it is not labelled. Seen on 15.7.9.",
+    "notes": "Stored as a four-character code packed into an integer: 1785946994 is 0x6A736372 ('jscr') and 1634952050 is 0x61736372 ('ascr'). Both observed on 15.7.9 by switching Default Language in Script Editor's settings.",
     "ai_generated": false,
     "contributed_by_issue": null,
     "icon_bundle_id": "com.apple.ScriptEditor2"
