@@ -2942,13 +2942,10 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Labels 0 and 1 as themselves. The snapshot writes integer and floating-point 0 and 1 as False and True, so a tracking speed set to exactly 1 was being shown as 'On' next to the number it changed from. Mapping the two ends keeps them numbers. Issue 266.",
+    "notes": "A magnitude, not a switch. The value_type is what keeps it from being shown as On when the speed lands on exactly 1 \u2014 every floating-point setting is a measurement of something. Issue 266.",
     "ai_generated": false,
     "contributed_by_issue": 266,
-    "value_map": {
-      "0": "0",
-      "1": "1"
-    }
+    "value_map": null
   },
   {
     "id": "globaldomain.scrollwheelScaling",
