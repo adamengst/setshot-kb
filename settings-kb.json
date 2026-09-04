@@ -30043,5 +30043,23 @@
     "ai_generated": false,
     "contributed_by_issue": null,
     "icon_bundle_id": "com.apple.ScriptEditor2"
+  },
+  {
+    "id": "remindd-babysitter-noise",
+    "domain": "com.apple.remindd.babysitter",
+    "key": "",
+    "key_prefix": "",
+    "source": "plist",
+    "value_type": "string",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Bookkeeping for the daemon that retries failed Reminders sync operations. FailedWaiters records which sync request is waiting on a push notification and clears once it arrives, so it changes whenever Reminders syncs. Nothing in it is set from any interface.",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 260,
+    "value_map": null
   }
 ]
