@@ -2985,15 +2985,19 @@
     "key": "com.apple.mouse.linear",
     "source": "defaults",
     "value_type": "bool",
-    "description": "Disable mouse pointer acceleration. When ON, pointer speed is constant regardless of movement speed",
-    "ui_location": "System Settings \u2192 Mouse \u2192 Natural scrolling",
-    "settings_url": "x-apple.systempreferences:com.apple.Mouse-Settings.extension?PointAndClick",
+    "description": "Pointer acceleration: whether the pointer travels further for a fast movement than for a slow one",
+    "ui_location": "System Settings \u2192 Mouse \u2192 Advanced \u2192 Pointer acceleration",
+    "settings_url": "x-apple.systempreferences:com.apple.Mouse-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "1/True = acceleration OFF (linear); 0/False or absent = acceleration ON (default).",
-    "ai_generated": true,
-    "contributed_by_issue": null
+    "notes": "The key is the opposite of the switch: it records whether pointer movement is linear, so 1 is Pointer acceleration turned off and 0 is the default of it being on. Mapped to read the way the switch does. Confirmed on 15.7.9 by diffing the whole global domain either side of the switch, which moved this and nothing else.",
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "On",
+      "1": "Off"
+    }
   },
   {
     "id": "globaldomain.mouseSwapButtons",
