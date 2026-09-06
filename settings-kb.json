@@ -408,7 +408,7 @@
     "value_type": "int",
     "description": "Minutes of inactivity before the display turns off, on the power adapter",
     "ui_location": "System Settings \u2192 Lock Screen \u2192 Turn display off on power adapter when inactive",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "settings_url": "x-apple.systempreferences:com.apple.Lock-Screen-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
@@ -427,7 +427,7 @@
     "value_type": "int",
     "description": "Minutes of inactivity before the display turns off, on battery",
     "ui_location": "System Settings \u2192 Lock Screen \u2192 Turn display off on battery when inactive",
-    "settings_url": "x-apple.systempreferences:com.apple.Battery-Settings.extension",
+    "settings_url": "x-apple.systempreferences:com.apple.Lock-Screen-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
@@ -2526,13 +2526,14 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Values: 'Maximize', 'Minimize', 'None'. Overrides AppleMiniaturizeOnDoubleClick when set.",
-    "ai_generated": true,
+    "notes": "Fill was added in macOS 15 and was missing from the map, so a Mac set to it showed the raw value. Observed on 15.7.9.",
+    "ai_generated": false,
     "contributed_by_issue": 40,
     "value_map": {
       "None": "Do Nothing",
       "Maximize": "Zoom",
-      "Minimize": "Minimize"
+      "Minimize": "Minimize",
+      "Fill": "Fill"
     }
   },
   {
@@ -5276,7 +5277,7 @@
     "value_type": "bool",
     "description": "Hide the Sleep, Restart, and Shut Down buttons on the login window",
     "ui_location": "System Settings \u2192 Lock Screen \u2192 Show sleep, restart, and shut down buttons",
-    "settings_url": "x-apple.systempreferences:com.apple.Users-Groups-Settings.extension",
+    "settings_url": "x-apple.systempreferences:com.apple.Lock-Screen-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
@@ -11225,6 +11226,24 @@
     "notes": null,
     "ai_generated": true,
     "contributed_by_issue": null,
+    "icon_bundle_id": "com.apple.Music"
+  },
+  {
+    "id": "music-sound-enhancer-amount",
+    "domain": "com.apple.Music",
+    "key": "soundEnhancerAmount",
+    "source": "plist",
+    "value_type": "int",
+    "description": "How much the Sound Enhancer widens the stereo effect",
+    "ui_location": "Music \u2192 Settings \u2192 Playback \u2192 Sound Enhancer",
+    "settings_url": null,
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "The slider beside the Sound Enhancer checkbox. com.apple.Music is suppressed as a domain because most of it is library and window state, and that was hiding this alongside it while the checkbox next to it was described.",
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": null,
     "icon_bundle_id": "com.apple.Music"
   },
   {
