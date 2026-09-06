@@ -29810,20 +29810,19 @@
     "key": "MouseTwoFingerHorizSwipeGesture",
     "source": "plist",
     "value_type": "integer",
-    "description": "Which two-finger horizontal swipes a Magic Mouse performs",
+    "description": "What a two-finger horizontal swipe on a Magic Mouse does",
     "ui_location": "System Settings \u2192 Mouse \u2192 More Gestures",
     "settings_url": "x-apple.systempreferences:com.apple.Mouse-Settings.extension?MoreGestures",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Two controls share this key, one bit each: 1 is Swipe between pages set to a two-finger swipe, 2 is the Swipe between full-screen applications switch. Measured on 15.7.9 by setting each in turn \u2014 1 and 2 on their own, 0 with both off. 3 is the two together.\n\nSwipe between pages is a four-item pop-up menu that this key only half describes; the one-finger choices are carried by NSGlobalDomain AppleEnableMouseSwipeNavigateWithScrolls. Off is both keys 0, Scroll Left or Right with One Finger is that key alone, Swipe Left or Right with Two Fingers is this key's 1 alone, and Swipe with One or Two Fingers is both.",
+    "notes": "Two controls in More Gestures write this one key and only one of them can hold it, since a two-finger horizontal swipe can either turn a page or change full-screen app. Measured on 15.7.9: 1 with Swipe between pages set to a two-finger option, 2 with Swipe between full-screen applications on, 0 with both off. Setting the second while the first held it produced 1 rather than any combined value, and the trackpad's equivalent key maps the same three values with no fourth.\n\nSwipe between pages is a four-item pop-up menu this key only half describes; the one-finger choices are carried by NSGlobalDomain AppleEnableMouseSwipeNavigateWithScrolls. Off is both keys 0, Scroll Left or Right with One Finger is that key alone, Swipe Left or Right with Two Fingers is this key's 1 alone, and Swipe with One or Two Fingers is both.",
     "ai_generated": false,
     "contributed_by_issue": 258,
     "value_map": {
       "0": "Off",
       "1": "Swipe between pages",
-      "2": "Swipe between full-screen applications",
-      "3": "Swipe between pages and between full-screen applications"
+      "2": "Swipe between full-screen applications"
     }
   },
   {
