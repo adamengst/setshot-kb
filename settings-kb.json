@@ -29806,18 +29806,20 @@
     "key": "MouseTwoFingerHorizSwipeGesture",
     "source": "plist",
     "value_type": "integer",
-    "description": "Which finger gesture swipes between pages with a Magic Mouse",
-    "ui_location": "System Settings \u2192 Mouse \u2192 More Gestures \u2192 Swipe between pages",
+    "description": "Which two-finger horizontal swipes a Magic Mouse performs",
+    "ui_location": "System Settings \u2192 Mouse \u2192 More Gestures",
     "settings_url": "x-apple.systempreferences:com.apple.Mouse-Settings.extension?MoreGestures",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Which gesture, not whether the gesture is on: turning Swipe between pages off writes NSGlobalDomain AppleEnableMouseSwipeNavigateWithScrolls and leaves this key alone. Values confirmed on 15.7.9 by choosing each option in turn. The third option in the pop-up menu has not been recorded yet, so it shows as its number.",
+    "notes": "Two controls share this key, one bit each: 1 is Swipe between pages set to a two-finger swipe, 2 is the Swipe between full-screen applications switch. Measured on 15.7.9 by setting each in turn \u2014 1 and 2 on their own, 0 with both off. 3 is the two together.\n\nSwipe between pages is a four-item pop-up menu that this key only half describes; the one-finger choices are carried by NSGlobalDomain AppleEnableMouseSwipeNavigateWithScrolls. Off is both keys 0, Scroll Left or Right with One Finger is that key alone, Swipe Left or Right with Two Fingers is this key's 1 alone, and Swipe with One or Two Fingers is both.",
     "ai_generated": false,
     "contributed_by_issue": 258,
     "value_map": {
-      "1": "Swipe with two fingers",
-      "2": "Scroll left or right with one finger"
+      "0": "Off",
+      "1": "Swipe between pages",
+      "2": "Swipe between full-screen applications",
+      "3": "Swipe between pages and between full-screen applications"
     }
   },
   {
@@ -29826,13 +29828,13 @@
     "key": "AppleEnableMouseSwipeNavigateWithScrolls",
     "source": "defaults",
     "value_type": "bool",
-    "description": "Whether swiping on a Magic Mouse moves between pages",
+    "description": "Whether a one-finger swipe on a Magic Mouse moves between pages",
     "ui_location": "System Settings \u2192 Mouse \u2192 More Gestures \u2192 Swipe between pages",
     "settings_url": "x-apple.systempreferences:com.apple.Mouse-Settings.extension?MoreGestures",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "The checkbox. Which gesture does the swiping is a separate setting, com.apple.AppleMultitouchMouse MouseTwoFingerHorizSwipeGesture, which keeps its value while the checkbox is off. Confirmed on 15.7.9.",
+    "notes": "One of the two keys behind the Swipe between pages pop-up menu. This one carries the one-finger choices: it is on for Scroll Left or Right with One Finger and for Swipe with One or Two Fingers, off for Off and for Swipe Left or Right with Two Fingers. The two-finger half is com.apple.AppleMultitouchMouse MouseTwoFingerHorizSwipeGesture, which the Swipe between full-screen applications switch also writes. Measured on 15.7.9 by choosing each menu item in turn.",
     "ai_generated": false,
     "contributed_by_issue": 265,
     "value_map": null
