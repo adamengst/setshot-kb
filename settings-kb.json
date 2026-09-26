@@ -2145,14 +2145,24 @@
     "source": "defaults",
     "value_type": "bool",
     "description": "Master on/off switch for Siri",
-    "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Ask Siri",
+    "ui_location": "System Settings \u2192 Siri \u2192 Ask Siri",
     "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "10.12",
     "notes": "Key name contains a space. 1 = Siri enabled, 0 = disabled.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Ask Siri"
+      },
+      {
+        "before_macos_major": 27,
+        "ui_location": "System Settings \u2192 Apple Intelligence & Siri \u2192 Ask Siri"
+      }
+    ]
   },
   {
     "id": "siri.VoiceTriggerUserEnabled",
@@ -2161,14 +2171,24 @@
     "source": "defaults",
     "value_type": "bool",
     "description": "Enables Hey Siri voice activation, allowing Siri to be invoked hands-free",
-    "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Listen for",
+    "ui_location": "System Settings \u2192 Siri \u2192 Listen for",
     "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "10.15",
     "notes": "Requires T2 chip or Apple silicon. 0 = off, 1 = on.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Listen for"
+      },
+      {
+        "before_macos_major": 27,
+        "ui_location": "System Settings \u2192 Apple Intelligence & Siri \u2192 Listen for"
+      }
+    ]
   },
   {
     "id": "assistant.support.SiriDataSharing",
@@ -6592,14 +6612,20 @@
     "source": "defaults",
     "value_type": "bool",
     "description": "Include clipboard history in Spotlight results",
-    "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Spotlight \u2192 Search Results \u2192 Results from Clipboard",
+    "ui_location": "System Settings \u2192 Spotlight \u2192 Search Results \u2192 Results from Clipboard",
     "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "15.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Spotlight \u2192 Search Results \u2192 Results from Clipboard"
+      }
+    ]
   },
   {
     "id": "diag.AutoSubmit",
@@ -8723,14 +8749,24 @@
     "source": "defaults",
     "value_type": "bool",
     "description": "Hey Siri: listen for Hey Siri",
-    "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Ask Siri \u2192 Listen for",
+    "ui_location": "System Settings \u2192 Siri \u2192 Ask Siri \u2192 Listen for",
     "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Ask Siri \u2192 Listen for"
+      },
+      {
+        "before_macos_major": 27,
+        "ui_location": "System Settings \u2192 Apple Intelligence & Siri \u2192 Ask Siri \u2192 Listen for"
+      }
+    ]
   },
   {
     "id": "Siri-atypicalSpeech",
@@ -8739,14 +8775,24 @@
     "source": "defaults",
     "value_type": "bool",
     "description": "Siri: listen for atypical speech patterns",
-    "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Siri Voice",
+    "ui_location": "System Settings \u2192 Siri \u2192 Siri Voice",
     "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Siri Voice"
+      },
+      {
+        "before_macos_major": 27,
+        "ui_location": "System Settings \u2192 Apple Intelligence & Siri \u2192 Siri Voice"
+      }
+    ]
   },
   {
     "id": "loginwindow-VoiceOverAtLogin",
@@ -9928,7 +9974,7 @@
     "source": "plist",
     "value_type": "bool",
     "description": "Enables or disables the keyboard shortcut to invoke Siri",
-    "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Keyboard Shortcut",
+    "ui_location": "System Settings \u2192 Siri \u2192 Keyboard Shortcut",
     "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -9936,7 +9982,17 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 29,
-    "icon_bundle_id": "com.apple.Siri-Settings.extension"
+    "icon_bundle_id": "com.apple.Siri-Settings.extension",
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Keyboard Shortcut"
+      },
+      {
+        "before_macos_major": 27,
+        "ui_location": "System Settings \u2192 Apple Intelligence & Siri \u2192 Keyboard Shortcut"
+      }
+    ]
   },
   {
     "id": "siri.KeyboardShortcutSAE.value.parameters",
@@ -12358,14 +12414,24 @@
     "source": "defaults",
     "value_type": "string",
     "description": "Siri voice name",
-    "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Siri Voice",
+    "ui_location": "System Settings \u2192 Siri \u2192 Siri Voice",
     "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Siri Voice"
+      },
+      {
+        "before_macos_major": 27,
+        "ui_location": "System Settings \u2192 Apple Intelligence & Siri \u2192 Siri Voice"
+      }
+    ]
   },
   {
     "id": "assistant-backedup-output-voice-locale",
@@ -12375,14 +12441,24 @@
     "source": "defaults",
     "value_type": "string",
     "description": "Siri voice locale",
-    "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Siri Voice",
+    "ui_location": "System Settings \u2192 Siri \u2192 Siri Voice",
     "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Siri Voice"
+      },
+      {
+        "before_macos_major": 27,
+        "ui_location": "System Settings \u2192 Apple Intelligence & Siri \u2192 Siri Voice"
+      }
+    ]
   },
   {
     "id": "assistant-backedup-state",
@@ -14565,14 +14641,20 @@
     "source": "defaults",
     "value_type": "string",
     "description": "Spotlight search result categories and their order",
-    "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Spotlight",
+    "ui_location": "System Settings \u2192 Spotlight",
     "settings_url": "x-apple.systempreferences:com.apple.Spotlight-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Spotlight"
+      }
+    ]
   },
   {
     "id": "spotlight-use-count",
@@ -14997,14 +15079,20 @@
     "source": "defaults",
     "value_type": "bool",
     "description": "\"Hey Siri\" recognizes your voice",
-    "ui_location": "System Settings \u2192 Apple Intelligence & Siri \u2192 Listen for",
+    "ui_location": "System Settings \u2192 Siri \u2192 Listen for",
     "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 27,
+        "ui_location": "System Settings \u2192 Apple Intelligence & Siri \u2192 Listen for"
+      }
+    ]
   },
   {
     "id": "assistant-backedup-cloud-sync",
@@ -15014,14 +15102,20 @@
     "source": "defaults",
     "value_type": "bool",
     "description": "Sync Siri settings across devices",
-    "ui_location": "System Settings \u2192 Apple Intelligence & Siri",
+    "ui_location": "System Settings \u2192 Siri",
     "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 27,
+        "ui_location": "System Settings \u2192 Apple Intelligence & Siri"
+      }
+    ]
   },
   {
     "id": "audiomidisetup-reopen-audio",
@@ -20283,7 +20377,7 @@
     "domain": "com.apple.generativepartnerservicesettings",
     "key": "selectedLLMId",
     "description": "Apple Intelligence: Selected AI extension",
-    "ui_location": "System Settings \u2192 Apple Intelligence & Siri \u2192 Extensions",
+    "ui_location": "System Settings \u2192 Siri \u2192 Extensions",
     "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "value_map": {
       "com.apple.openai.chatgpt": "ChatGPT"
@@ -20295,13 +20389,19 @@
     "source": "defaults",
     "value_type": "string",
     "ai_generated": false,
-    "notes": "The key that says which extension is chosen, and the one to read rather than AllLLMUISettings.<provider>.enablementCount, which counts how many times an extension has been switched on. Had no settings URL, so it drew no icon \u2014 the same complaint as issue 301, which was filed against the counter."
+    "notes": "The key that says which extension is chosen, and the one to read rather than AllLLMUISettings.<provider>.enablementCount, which counts how many times an extension has been switched on. Had no settings URL, so it drew no icon \u2014 the same complaint as issue 301, which was filed against the counter.",
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 27,
+        "ui_location": "System Settings \u2192 Apple Intelligence & Siri \u2192 Extensions"
+      }
+    ]
   },
   {
     "domain": "com.apple.generativepartnerservicesettings",
     "key": "useConfirmationPrompts",
     "description": "Apple Intelligence: Confirm before sending requests to AI extension",
-    "ui_location": "System Settings \u2192 Apple Intelligence & Siri \u2192 Extensions",
+    "ui_location": "System Settings \u2192 Siri \u2192 Extensions",
     "settings_url": null,
     "value_map": null,
     "noise": false,
@@ -20310,7 +20410,13 @@
     "id": "com.apple.generativepartnerservicesettings.useconfirmationprompts",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 27,
+        "ui_location": "System Settings \u2192 Apple Intelligence & Siri \u2192 Extensions"
+      }
+    ]
   },
   {
     "domain": "com.apple.menuextra.clock",
