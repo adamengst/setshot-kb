@@ -9845,10 +9845,22 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "14.0",
-    "notes": "Observed value 12; full value map not yet known.",
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
     "ai_generated": false,
     "contributed_by_issue": 25,
-    "value_map": null,
+    "value_map": {
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
+    },
     "icon_bundle_id": "com.apple.Siri-Settings.extension",
     "ui_location_overrides": [
       {
@@ -9856,6 +9868,42 @@
         "ui_location": "System Settings \u2192 Control Center \u2192 Music Recognition"
       }
     ]
+  },
+  {
+    "id": "controlcenter.AccessibilityShortcuts",
+    "domain": "com.apple.controlcenter",
+    "key": "AccessibilityShortcuts",
+    "source": "plist",
+    "value_type": "int",
+    "description": "Where the Accessibility Shortcuts control appears",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Accessibility Shortcuts",
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Accessibility Shortcuts"
+      }
+    ],
+    "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
+    },
+    "icon_bundle_id": null
   },
   {
     "id": "siri.StatusMenuVisible",
