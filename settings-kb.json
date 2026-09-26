@@ -2150,12 +2150,12 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "10.12",
-    "notes": "Key name contains a space. 1 = Siri enabled, 0 = disabled.",
+    "notes": "Key name contains a space. 1 = Siri enabled, 0 = disabled.\n\nOn a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present.",
     "ai_generated": true,
     "contributed_by_issue": null,
     "ui_location_overrides": [
       {
-        "before_macos_major": 26,
+        "before_macos_major": 15,
         "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Ask Siri"
       },
       {
@@ -2176,12 +2176,12 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "10.15",
-    "notes": "Requires T2 chip or Apple silicon. 0 = off, 1 = on.",
+    "notes": "Requires T2 chip or Apple silicon. 0 = off, 1 = on.\n\nOn a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present.",
     "ai_generated": true,
     "contributed_by_issue": null,
     "ui_location_overrides": [
       {
-        "before_macos_major": 26,
+        "before_macos_major": 15,
         "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Listen for"
       },
       {
@@ -2212,7 +2212,7 @@
     },
     "ui_location_overrides": [
       {
-        "before_macos_major": 26,
+        "before_macos_major": 15,
         "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Improve Siri & Dictation"
       }
     ]
@@ -6622,7 +6622,7 @@
     "contributed_by_issue": null,
     "ui_location_overrides": [
       {
-        "before_macos_major": 26,
+        "before_macos_major": 15,
         "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Spotlight \u2192 Search Results \u2192 Results from Clipboard"
       }
     ]
@@ -8754,12 +8754,12 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
+    "notes": "On a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present.",
     "ai_generated": false,
     "contributed_by_issue": null,
     "ui_location_overrides": [
       {
-        "before_macos_major": 26,
+        "before_macos_major": 15,
         "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Ask Siri \u2192 Listen for"
       },
       {
@@ -8780,12 +8780,12 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
+    "notes": "On a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present.",
     "ai_generated": false,
     "contributed_by_issue": null,
     "ui_location_overrides": [
       {
-        "before_macos_major": 26,
+        "before_macos_major": 15,
         "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Siri Voice"
       },
       {
@@ -9979,13 +9979,13 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
+    "notes": "On a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present.",
     "ai_generated": false,
     "contributed_by_issue": 29,
     "icon_bundle_id": "com.apple.Siri-Settings.extension",
     "ui_location_overrides": [
       {
-        "before_macos_major": 26,
+        "before_macos_major": 15,
         "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Keyboard Shortcut"
       },
       {
@@ -12419,12 +12419,12 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": null,
-    "notes": null,
+    "notes": "On a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present.",
     "ai_generated": true,
     "contributed_by_issue": null,
     "ui_location_overrides": [
       {
-        "before_macos_major": 26,
+        "before_macos_major": 15,
         "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Siri Voice"
       },
       {
@@ -12446,12 +12446,12 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": null,
-    "notes": null,
+    "notes": "On a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present.",
     "ai_generated": true,
     "contributed_by_issue": null,
     "ui_location_overrides": [
       {
-        "before_macos_major": 26,
+        "before_macos_major": 15,
         "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Siri Voice"
       },
       {
@@ -14651,7 +14651,7 @@
     "contributed_by_issue": null,
     "ui_location_overrides": [
       {
-        "before_macos_major": 26,
+        "before_macos_major": 15,
         "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Spotlight"
       }
     ]
@@ -15084,7 +15084,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": null,
-    "notes": null,
+    "notes": "On a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present.",
     "ai_generated": true,
     "contributed_by_issue": null,
     "ui_location_overrides": [
@@ -15107,7 +15107,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": null,
-    "notes": null,
+    "notes": "On a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present.",
     "ai_generated": true,
     "contributed_by_issue": null,
     "ui_location_overrides": [
@@ -20389,7 +20389,7 @@
     "source": "defaults",
     "value_type": "string",
     "ai_generated": false,
-    "notes": "The key that says which extension is chosen, and the one to read rather than AllLLMUISettings.<provider>.enablementCount, which counts how many times an extension has been switched on. Had no settings URL, so it drew no icon \u2014 the same complaint as issue 301, which was filed against the counter.",
+    "notes": "The key that says which extension is chosen, and the one to read rather than AllLLMUISettings.<provider>.enablementCount, which counts how many times an extension has been switched on. Had no settings URL, so it drew no icon \u2014 the same complaint as issue 301, which was filed against the counter.\n\nOn a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present.",
     "ui_location_overrides": [
       {
         "before_macos_major": 27,
@@ -20416,7 +20416,8 @@
         "before_macos_major": 27,
         "ui_location": "System Settings \u2192 Apple Intelligence & Siri \u2192 Extensions"
       }
-    ]
+    ],
+    "notes": "On a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present."
   },
   {
     "domain": "com.apple.menuextra.clock",
