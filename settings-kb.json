@@ -4629,18 +4629,19 @@
     "key": "Use device speaker for TTS",
     "source": "defaults",
     "value_type": "int",
-    "description": "Siri: Voice Feedback",
-    "ui_location": "System Settings \u2192 Siri \u2192 Siri Responses",
-    "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
+    "description": "Spoken Responses: whether Siri speaks its answers back or shows them on screen",
+    "ui_location": "System Settings \u2192 Accessibility \u2192 Siri \u2192 Spoken Responses",
+    "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
+    "notes": "Measured on 27.0 in Accessibility \u2192 Siri: Always Silent writes 3 and Speak Back for Voice Input writes 2. The pane has those two choices only; 1 is kept with the label the older three-option control used, unverified.\n\nThe entry had 3 unmapped \u2014 the value this Mac was holding \u2014 and pointed at Siri \u2192 Siri Responses, which is not where the control is.",
     "ai_generated": false,
     "contributed_by_issue": null,
     "value_map": {
       "1": "Automatic (only speaks with Hey Siri)",
-      "2": "Always speaks (Voice Feedback on)"
+      "2": "Speak Back for Voice Input",
+      "3": "Always Silent"
     }
   },
   {
@@ -8774,13 +8775,13 @@
     "key": "Use Atypical Speech Model",
     "source": "defaults",
     "value_type": "bool",
-    "description": "Siri: listen for atypical speech patterns",
-    "ui_location": "System Settings \u2192 Siri \u2192 Siri Voice",
-    "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
+    "description": "Listen for atypical speech: expands the speech patterns Siri listens for, to help it recognise you",
+    "ui_location": "System Settings \u2192 Accessibility \u2192 Siri \u2192 Listen for atypical speech",
+    "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "On a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present.\n\nFiled under the wrong domain until now, so the entry never matched and the setting was reported as an unrecognized change. The key is in com.apple.assistant.backedup in the Sequoia, Tahoe and macOS 27 baselines alike, so it was never a migration. It named com.apple.assistant.support.",
+    "notes": "On a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present.\n\nFiled under the wrong domain until now, so the entry never matched and the setting was reported as an unrecognized change. The key is in com.apple.assistant.backedup in the Sequoia, Tahoe and macOS 27 baselines alike, so it was never a migration. It named com.apple.assistant.support.\n\nIn the Accessibility pane rather than the Siri one, where the entry used to point.",
     "ai_generated": false,
     "contributed_by_issue": null,
     "ui_location_overrides": [
