@@ -20779,7 +20779,7 @@
     "source": "defaults",
     "value_type": "string",
     "ai_generated": false,
-    "icon_bundle_id": "com.apple.Screenshot"
+    "icon_bundle_id": "com.apple.screenshot.launcher"
   },
   {
     "domain": "com.apple.screencapture",
@@ -23840,7 +23840,7 @@
       "True": "No shadow",
       "False": "Drop shadow (default)"
     },
-    "icon_bundle_id": "com.apple.Screenshot"
+    "icon_bundle_id": "com.apple.screenshot.launcher"
   },
   {
     "id": "screencapture.include-date",
@@ -23885,7 +23885,7 @@
       "pdf": "PDF",
       "tiff": "TIFF"
     },
-    "icon_bundle_id": "com.apple.Screenshot"
+    "icon_bundle_id": "com.apple.screenshot.launcher"
   },
   {
     "id": "airport.AllowLegacyNetworks",
@@ -29782,7 +29782,7 @@
     "key_prefix": "kTCCServiceSystemPolicyAppData/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Access to other apps' data folders for {subject} \u2014 the \u201cwould like to access data from other applications\u201d prompt",
+    "description": "Access to other apps' data folders for {subject}",
     "ui_location": null,
     "settings_url": null,
     "value_map": {
@@ -29792,7 +29792,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "No pane in System Settings shows this permission. It was briefly given Files & Folders as its location on the strength of the apps holding it also appearing in that pane -- which they do, for their Desktop and Documents grants, not for this one. Switching off every toggle Files & Folders offers for an app moved its three SystemPolicy folder grants and its three FileProviderDomain grants from Allowed to Denied and left this one at 5, untouched.\n\nKept rather than suppressed, unlike the other permissions with no interface: an app reading another app's data is worth reporting even where it cannot be undone from a pane, and the value itself is accurate. `tccutil reset SystemPolicyAppData` is the only way found to clear it.\n\nThis service uses 5 for a granted permission where every other TCC service on the same Mac uses 2 -- 417 grants across 28 other services were all 0 or 2, while all ten holders of this one read 5. 1 (Unknown) and 3 (Limited) were never seen for it and are deliberately unlabelled. Issues 257 and this correction.",
+    "notes": "macOS asks for this with the \u201cwould like to access data from other applications\u201d prompt. Kept here rather than in the description, which should name the setting. Issue 309.",
     "ai_generated": false,
     "contributed_by_issue": 257
   },
@@ -29803,7 +29803,7 @@
     "key_prefix": "kTCCServiceSystemPolicyAppData/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Access to other apps' data folders for {subject} \u2014 the \u201cwould like to access data from other applications\u201d prompt",
+    "description": "Access to other apps' data folders for {subject}",
     "ui_location": null,
     "settings_url": null,
     "value_map": {
@@ -29813,7 +29813,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "No pane in System Settings shows this permission. It was briefly given Files & Folders as its location on the strength of the apps holding it also appearing in that pane -- which they do, for their Desktop and Documents grants, not for this one. Switching off every toggle Files & Folders offers for an app moved its three SystemPolicy folder grants and its three FileProviderDomain grants from Allowed to Denied and left this one at 5, untouched.\n\nKept rather than suppressed, unlike the other permissions with no interface: an app reading another app's data is worth reporting even where it cannot be undone from a pane, and the value itself is accurate. `tccutil reset SystemPolicyAppData` is the only way found to clear it.\n\nThis service uses 5 for a granted permission where every other TCC service on the same Mac uses 2 -- 417 grants across 28 other services were all 0 or 2, while all ten holders of this one read 5. 1 (Unknown) and 3 (Limited) were never seen for it and are deliberately unlabelled. Issues 257 and this correction.",
+    "notes": "macOS asks for this with the \u201cwould like to access data from other applications\u201d prompt. Kept here rather than in the description, which should name the setting. Issue 309.",
     "ai_generated": false,
     "contributed_by_issue": 257
   },
@@ -31136,7 +31136,7 @@
     "key_prefix": null,
     "source": "plist",
     "value_type": "string",
-    "description": "Where screenshots go: a file, the clipboard, or straight into an app",
+    "description": "Screenshots: where they go \u2014 a file, the clipboard, or straight into an app",
     "ui_location": "Screenshot app \u2192 Options \u2192 Save to",
     "settings_url": null,
     "noise": false,
@@ -31151,7 +31151,7 @@
       "preview": "Preview",
       "mail": "Mail"
     },
-    "icon_bundle_id": "com.apple.Screenshot"
+    "icon_bundle_id": "com.apple.screenshot.launcher"
   },
   {
     "id": "screencapture-target-screenrecording",
@@ -31160,7 +31160,7 @@
     "key_prefix": null,
     "source": "plist",
     "value_type": "string",
-    "description": "Where screen recordings go: a file, the clipboard, or straight into an app",
+    "description": "Screen recordings: where they go \u2014 a file, the clipboard, or straight into an app",
     "ui_location": "Screenshot app \u2192 Options \u2192 Save to",
     "settings_url": null,
     "noise": false,
@@ -31175,7 +31175,7 @@
       "preview": "Preview",
       "mail": "Mail"
     },
-    "icon_bundle_id": "com.apple.Screenshot"
+    "icon_bundle_id": "com.apple.screenshot.launcher"
   },
   {
     "id": "genpartner-gat-migration",
