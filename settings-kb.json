@@ -5851,7 +5851,7 @@
   },
   {
     "id": "universalaccess.DarkenSystemColors",
-    "domain": "NSGlobalDomain",
+    "domain": "com.apple.Accessibility",
     "key": "DarkenSystemColors",
     "source": "defaults",
     "value_type": "bool",
@@ -5861,13 +5861,13 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Mirrors com.apple.universalaccess increaseContrast in some macOS versions.",
-    "ai_generated": true,
+    "notes": "Mirrors com.apple.universalaccess increaseContrast in some macOS versions.\n\nFiled under the wrong domain until now, so the entry never matched and the setting was reported as an unrecognized change. The key is in com.apple.Accessibility in the Sequoia, Tahoe and macOS 27 baselines alike, so it was never a migration. It named NSGlobalDomain.",
+    "ai_generated": false,
     "contributed_by_issue": 118
   },
   {
     "id": "universalaccess.InvertColorsEnabled",
-    "domain": "com.apple.universalaccess",
+    "domain": "com.apple.Accessibility",
     "key": "InvertColorsEnabled",
     "source": "defaults",
     "value_type": "bool",
@@ -5877,13 +5877,13 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
-    "ai_generated": true,
+    "notes": "Filed under the wrong domain until now, so the entry never matched and the setting was reported as an unrecognized change. The key is in com.apple.Accessibility in the Sequoia, Tahoe and macOS 27 baselines alike, so it was never a migration. It named com.apple.universalaccess.",
+    "ai_generated": false,
     "contributed_by_issue": null
   },
   {
     "id": "universalaccess.AXSClassicInvertColorsPreference",
-    "domain": "com.apple.universalaccess",
+    "domain": "com.apple.Accessibility",
     "key": "AXSClassicInvertColorsPreference",
     "source": "defaults",
     "value_type": "bool",
@@ -5893,13 +5893,13 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
-    "ai_generated": true,
+    "notes": "Filed under the wrong domain until now, so the entry never matched and the setting was reported as an unrecognized change. The key is in com.apple.Accessibility in the Sequoia, Tahoe and macOS 27 baselines alike, so it was never a migration. It named com.apple.universalaccess.",
+    "ai_generated": false,
     "contributed_by_issue": 119
   },
   {
     "id": "universalaccess.GrayscaleDisplay",
-    "domain": "com.apple.universalaccess",
+    "domain": "com.apple.Accessibility",
     "key": "GrayscaleDisplay",
     "source": "defaults",
     "value_type": "bool",
@@ -5909,8 +5909,8 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
-    "ai_generated": true,
+    "notes": "Filed under the wrong domain until now, so the entry never matched and the setting was reported as an unrecognized change. The key is in com.apple.Accessibility in the Sequoia, Tahoe and macOS 27 baselines alike, so it was never a migration. It named com.apple.universalaccess.",
+    "ai_generated": false,
     "contributed_by_issue": null
   },
   {
@@ -6201,7 +6201,7 @@
   },
   {
     "id": "universalaccess.FullKeyboardAccessEnabled",
-    "domain": "com.apple.universalaccess",
+    "domain": "com.apple.Accessibility",
     "key": "FullKeyboardAccessEnabled",
     "source": "defaults",
     "value_type": "bool",
@@ -6211,8 +6211,8 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
-    "ai_generated": true,
+    "notes": "Filed under the wrong domain until now, so the entry never matched and the setting was reported as an unrecognized change. The key is in com.apple.Accessibility in the Sequoia, Tahoe and macOS 27 baselines alike, so it was never a migration. It named com.apple.universalaccess.",
+    "ai_generated": false,
     "contributed_by_issue": 116
   },
   {
@@ -8257,7 +8257,7 @@
   },
   {
     "id": "CoreGraphics-DisplayInvertedPolarity",
-    "domain": "CoreGraphics",
+    "domain": "com.apple.CoreGraphics",
     "key": "DisplayUseInvertedPolarity",
     "source": "defaults",
     "value_type": "bool",
@@ -8267,7 +8267,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
+    "notes": "Filed under the wrong domain until now, so the entry never matched and the setting was reported as an unrecognized change. The key is in com.apple.CoreGraphics in the Sequoia, Tahoe and macOS 27 baselines alike, so it was never a migration. It named CoreGraphics.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
@@ -8770,7 +8770,7 @@
   },
   {
     "id": "Siri-atypicalSpeech",
-    "domain": "com.apple.assistant.support",
+    "domain": "com.apple.assistant.backedup",
     "key": "Use Atypical Speech Model",
     "source": "defaults",
     "value_type": "bool",
@@ -8780,7 +8780,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "On a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present.",
+    "notes": "On a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present.\n\nFiled under the wrong domain until now, so the entry never matched and the setting was reported as an unrecognized change. The key is in com.apple.assistant.backedup in the Sequoia, Tahoe and macOS 27 baselines alike, so it was never a migration. It named com.apple.assistant.support.",
     "ai_generated": false,
     "contributed_by_issue": null,
     "ui_location_overrides": [
