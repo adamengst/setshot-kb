@@ -31356,5 +31356,41 @@
     "ai_generated": false,
     "contributed_by_issue": 301,
     "value_map": null
+  },
+  {
+    "id": "screencapture-visual-intelligence-active",
+    "domain": "com.apple.screencapture",
+    "key": "visual-intelligence-active",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "bool",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Whether Visual Intelligence is running right now, not whether it is switched on. It read False in one 27.0 snapshot and True in another taken twelve days later with nothing changed in between, which is a feature starting and stopping rather than a choice. Issue 311.",
+    "min_macos": "27.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 311,
+    "value_map": null
+  },
+  {
+    "id": "genpartner-agentintent-everturnedoff",
+    "domain": "com.apple.generativepartnerservicesettings",
+    "key": "",
+    "key_prefix": "agentIntentHasEverBeenTurnedOffFromSettings.",
+    "source": "plist",
+    "value_type": "bool",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "A latch recording that an extension's agent was switched off at some point, which never goes back to False and so says nothing about the current setting. Which extension is chosen is selectedLLMId. Issue 311.",
+    "min_macos": "26.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 311,
+    "value_map": null
   }
 ]
