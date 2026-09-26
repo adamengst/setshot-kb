@@ -2177,19 +2177,25 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Controls whether Siri and Dictation audio is shared with Apple to improve recognition",
-    "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Improve Siri & Dictation",
-    "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
+    "ui_location": "System Settings \u2192 Privacy & Security \u2192 Analytics & Improvements \u2192 Improve Siri & Apple Intelligence",
+    "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Analytics",
     "noise": false,
     "noise_reason": null,
     "min_macos": "10.15",
-    "notes": "Key name contains spaces. Values: 1 = opted in (sharing on), 2 or 3 = opted out.",
+    "notes": "Superseded on macOS 27 by Siri Data Sharing Opt-In Status 3.0, which is what the switch writes there; this key keeps whatever it last held and no longer moves. Confirmed by toggling the control on 27.0 and watching both.",
     "ai_generated": true,
     "contributed_by_issue": null,
     "value_map": {
       "1": "Opted in",
       "2": "Opted out",
       "3": "Opted out"
-    }
+    },
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Siri & Spotlight \u2192 Improve Siri & Dictation"
+      }
+    ]
   },
   {
     "id": "ncprefs.content_visibility",
@@ -31532,5 +31538,27 @@
     "contributed_by_issue": null,
     "value_map": null,
     "implicit_default": "Automatic"
+  },
+  {
+    "id": "assistant.support.SiriDataSharing30",
+    "domain": "com.apple.assistant.support",
+    "key": "Siri Data Sharing Opt-In Status 3.0",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "int",
+    "description": "Whether your Siri, Dictation and Translate interactions are shared with Apple to improve its models",
+    "ui_location": "System Settings \u2192 Privacy & Security \u2192 Analytics & Improvements \u2192 Improve Siri & Apple Intelligence",
+    "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Analytics",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "27.0",
+    "notes": "Measured on 27.0: switching Improve Siri & Apple Intelligence on took this from 2 to 1, and the opt-in history in com.apple.assistant.backedup recorded optedOut before and optedIn after, so 1 is sharing and 2 is not. 0 is unmapped by observation but the history's vocabulary has an unspecified state, which is what it is labelled as.\n\nThe control was called Improve Siri & Dictation before macOS 27 and wrote Siri Data Sharing Opt-In Status, without the 3.0. That key still exists and no longer tracks the switch \u2014 it stayed at 2 while this one moved.",
+    "ai_generated": false,
+    "contributed_by_issue": 308,
+    "value_map": {
+      "0": "Not set",
+      "1": "On",
+      "2": "Off"
+    }
   }
 ]
