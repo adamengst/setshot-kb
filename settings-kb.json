@@ -31225,5 +31225,23 @@
     "ai_generated": false,
     "contributed_by_issue": 285,
     "value_map": null
+  },
+  {
+    "id": "configurationprofiles-mdm-persist",
+    "domain": "com.apple.configurationprofiles.user",
+    "key": "",
+    "key_prefix": "MDM_Persist.",
+    "source": "plist",
+    "value_type": "any",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Per-enrolment bookkeeping the MDM client keeps: whether it still owes the server a poll, and similar flags, filed under the enrolment's UUID. Set by the management server and the client between them, never by anyone using the Mac.",
+    "min_macos": "13.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 287,
+    "value_map": null
   }
 ]
