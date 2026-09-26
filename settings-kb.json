@@ -1602,18 +1602,33 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Stage Manager menu bar visibility setting \u2014 whether the Stage Manager toggle button appears in the menu bar or only inside Control Center",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Stage Manager",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Stage Manager",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Values: 2 = in menu bar, 8 = in Control Center only. Distinct from com.apple.WindowManager.GloballyEnabled which is the actual Stage Manager on/off state.",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": null,
     "value_map": {
-      "2": "Show in Menu Bar",
-      "8": "Don't Show in Menu Bar"
-    }
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
+    },
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Stage Manager"
+      }
+    ]
   },
   {
     "id": "controlcenter.Battery",
@@ -1633,19 +1648,21 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "12.0",
-    "notes": "A bitfield, not a list, which is why labels derived from single readings kept coming out wrong. Each of the two places gets an explicit on and off bit: 1 = in Control Center, 4 = not in Control Center, 2 = in the menu bar, 8 = not in the menu bar, 16 = always in the menu bar. So 3 = 2+1, 6 = 2+4, 9 = 8+1, 12 = 8+4. Values 3, 6 and 9 were read off a Mac while changing one control at a time; 17 and 20 follow from the same bits but have not been seen. Show Percentage and Show Energy Mode are separate keys \u2014 BatteryShowPercentage and BatteryShowEnergyMode \u2014 not bits in this field, which an earlier label for 3 assumed.",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": 185,
     "value_map": {
-      "2": "Show in Menu Bar",
-      "8": "Don't Show in Menu Bar",
-      "16": "Always Show in Menu Bar",
-      "3": "Show in Menu Bar and Control Center",
-      "6": "Show in Menu Bar only",
-      "9": "Show in Control Center only",
-      "12": "Hidden from both",
-      "17": "Always Show in Menu Bar, and in Control Center",
-      "20": "Always Show in Menu Bar only"
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
     },
     "icon_bundle_id": "com.apple.Battery-Settings.extension",
     "requires_hardware": [
@@ -1659,19 +1676,34 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Controls whether the Wi-Fi indicator appears in the menu bar or only in Control Center",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Wi-Fi",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Wi-Fi",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "12.0",
-    "notes": "Stored in the ByHost plist. Values: 2 = in menu bar, 8 = in Control Center only.",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": null,
     "value_map": {
-      "2": "Show in Menu Bar",
-      "8": "Don't Show in Menu Bar"
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
     },
-    "icon_bundle_id": "com.apple.Network-Settings.extension"
+    "icon_bundle_id": "com.apple.Network-Settings.extension",
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Wi-Fi"
+      }
+    ]
   },
   {
     "id": "controlcenter.Bluetooth",
@@ -1680,20 +1712,34 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Controls whether the Bluetooth indicator appears in the menu bar or only in Control Center",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Bluetooth",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Bluetooth",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "12.0",
-    "notes": "Stored in the ByHost plist. Values: 2 = in menu bar, 8 or 24 = in Control Center only (24 seen starting macOS 15.7.9).",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": 175,
     "value_map": {
-      "2": "Show in Menu Bar",
-      "8": "Don't Show in Menu Bar",
-      "24": "Don't Show in Menu Bar"
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
     },
-    "icon_bundle_id": "com.apple.BluetoothSettings"
+    "icon_bundle_id": "com.apple.BluetoothSettings",
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Bluetooth"
+      }
+    ]
   },
   {
     "id": "controlcenter.AirDrop",
@@ -1702,19 +1748,34 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Controls whether the AirDrop button appears in the menu bar or only in Control Center",
-    "ui_location": "System Settings \u2192 Control Center \u2192 AirDrop",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 AirDrop",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "12.0",
-    "notes": "Stored in the ByHost plist. Values: 2 = in menu bar, 8 = in Control Center only.",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": null,
     "value_map": {
-      "2": "Show in Menu Bar",
-      "8": "Don't Show in Menu Bar"
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
     },
-    "icon_bundle_id": "com.apple.AirDrop-Handoff-Settings.extension"
+    "icon_bundle_id": "com.apple.AirDrop-Handoff-Settings.extension",
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 AirDrop"
+      }
+    ]
   },
   {
     "id": "useractivityd.ActivityAdvertisingAllowed",
@@ -1800,20 +1861,34 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Controls whether the Focus indicator appears in the menu bar or only in Control Center",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Focus",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Focus",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "12.0",
-    "notes": "Stored in the ByHost plist. Values: 2 = in menu bar, 8 = in Control Center only, 18 = always show in menu bar.",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": null,
     "value_map": {
-      "2": "Show When Active",
-      "8": "Don't Show in Menu Bar",
-      "18": "Always Show in Menu Bar"
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
     },
-    "icon_bundle_id": "com.apple.Focus-Settings.extension"
+    "icon_bundle_id": "com.apple.Focus-Settings.extension",
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Focus"
+      }
+    ]
   },
   {
     "id": "controlcenter.Sound",
@@ -1822,20 +1897,34 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Controls whether the Sound/volume indicator appears in the menu bar or only in Control Center",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Sound",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Sound",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "12.0",
-    "notes": "Stored in the ByHost plist. Values: 2 = in menu bar, 8 = in Control Center only, 18 = always show in menu bar.",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": null,
     "value_map": {
-      "2": "Show When Active",
-      "8": "Don't Show in Menu Bar",
-      "18": "Always Show in Menu Bar"
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
     },
-    "icon_bundle_id": "com.apple.Sound-Settings.extension"
+    "icon_bundle_id": "com.apple.Sound-Settings.extension",
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Sound"
+      }
+    ]
   },
   {
     "id": "controlcenter.Display",
@@ -1844,20 +1933,34 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Controls whether the Display brightness indicator appears in the menu bar or only in Control Center",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Display",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Display",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "12.0",
-    "notes": "Stored in the ByHost plist. Values: 2 = in menu bar, 8 = in Control Center only, 18 = always show in menu bar.",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": null,
     "value_map": {
-      "2": "Show When Active",
-      "8": "Don't Show in Menu Bar",
-      "18": "Always Show in Menu Bar"
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
     },
-    "icon_bundle_id": "com.apple.Displays-Settings.extension"
+    "icon_bundle_id": "com.apple.Displays-Settings.extension",
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Display"
+      }
+    ]
   },
   {
     "id": "controlcenter.NowPlaying",
@@ -1866,19 +1969,33 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Controls whether the Now Playing media controls appear in the menu bar or only in Control Center",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Now Playing",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Now Playing",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "12.0",
-    "notes": "Stored in the ByHost plist. Values: 2 = in menu bar, 8 = in Control Center only, 18 = always show in menu bar.",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": null,
     "value_map": {
-      "2": "Show When Active",
-      "8": "Don't Show in Menu Bar",
-      "18": "Always Show in Menu Bar"
-    }
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
+    },
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Now Playing"
+      }
+    ]
   },
   {
     "id": "controlcenter.Siri",
@@ -1887,19 +2004,34 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Controls whether the Siri button appears in the menu bar or only in Control Center",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Siri",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Siri",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "12.0",
-    "notes": "Stored in the ByHost plist. Values: 2 = in menu bar, 8 = in Control Center only.",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": null,
     "value_map": {
-      "2": "Show in Menu Bar",
-      "8": "Don't Show in Menu Bar"
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
     },
-    "icon_bundle_id": "com.apple.Siri-Settings.extension"
+    "icon_bundle_id": "com.apple.Siri-Settings.extension",
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Siri"
+      }
+    ]
   },
   {
     "id": "controlcenter.ScreenMirroring",
@@ -1908,19 +2040,33 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Controls whether the Screen Mirroring / AirPlay Display button appears in the menu bar or only in Control Center",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Screen Mirroring",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Screen Mirroring",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "12.0",
-    "notes": "Stored in the ByHost plist. Values: 2 = in menu bar, 8 = in Control Center only, 18 = always show.",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": null,
     "value_map": {
-      "2": "Show When Active",
-      "8": "Don't Show in Menu Bar",
-      "18": "Always Show in Menu Bar"
-    }
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
+    },
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Screen Mirroring"
+      }
+    ]
   },
   {
     "id": "controlcenter.UserSwitcher",
@@ -1929,19 +2075,33 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Controls whether the Fast User Switching button appears in the menu bar",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Fast User Switching",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Fast User Switching",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "12.0",
-    "notes": "Stored in the ByHost plist. Values: 2 = in menu bar, 8 = in Control Center only, 18 = always show.",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": 176,
     "value_map": {
-      "2": "Show in Menu Bar",
-      "8": "Don't Show in Menu Bar",
-      "18": "Always Show in Menu Bar"
-    }
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
+    },
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Fast User Switching"
+      }
+    ]
   },
   {
     "id": "controlcenter.Weather",
@@ -1950,18 +2110,33 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Controls whether the Weather summary appears in the menu bar or only in Control Center",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Weather",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Weather",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "14.0",
-    "notes": "Stored in the ByHost plist. Values: 2 = in menu bar, 8 = in Control Center only.",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": null,
     "value_map": {
-      "2": "Show in Menu Bar",
-      "8": "Don't Show in Menu Bar"
-    }
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
+    },
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Weather"
+      }
+    ]
   },
   {
     "id": "assistant.support.AssistantEnabled",
@@ -5437,7 +5612,7 @@
     "source": "defaults",
     "value_type": "int",
     "description": "When the menu bar is automatically hidden",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Automatically hide and show the menu bar",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Automatically hide and show the menu bar",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -5449,7 +5624,13 @@
       "0": "Always",
       "1": "In Full Screen Only",
       "2": "Never"
-    }
+    },
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Automatically hide and show the menu bar"
+      }
+    ]
   },
   {
     "id": "controlcenter.AirplayReceiverEnabled",
@@ -5479,13 +5660,21 @@
     "noise": true,
     "noise_reason": "Set automatically as a side effect of enabling/disabling Voice Control in Accessibility; not a separately configurable setting in macOS Sequoia",
     "min_macos": "13.0",
-    "notes": "2=In menu bar, 8=Hidden, 16=Always show.",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": null,
     "value_map": {
-      "2": "Show in Menu Bar",
-      "8": "Don't Show in Menu Bar",
-      "16": "Always Show in Menu Bar"
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
     }
   },
   {
@@ -5495,19 +5684,33 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Spotlight icon visibility in the menu bar",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Spotlight",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Spotlight",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "2=In menu bar, 8=Hidden, 16=Always show.",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": null,
     "value_map": {
-      "2": "Show in Menu Bar",
-      "8": "Don't Show in Menu Bar",
-      "16": "Always Show in Menu Bar"
-    }
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
+    },
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Spotlight"
+      }
+    ]
   },
   {
     "id": "controlcenter.TimeMachine",
@@ -5516,19 +5719,33 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Time Machine icon visibility in the menu bar",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Time Machine",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Time Machine",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "2=In menu bar, 8=Hidden, 16=Always show.",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": null,
     "value_map": {
-      "2": "Show in Menu Bar",
-      "8": "Don't Show in Menu Bar",
-      "16": "Always Show in Menu Bar"
-    }
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
+    },
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Time Machine"
+      }
+    ]
   },
   {
     "id": "controlcenter.Timer",
@@ -5537,19 +5754,33 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Timer icon visibility in the menu bar",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Timer",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Timer",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "15.0",
-    "notes": "2=In menu bar, 8=Hidden, 16=Always show.",
-    "ai_generated": true,
+    "notes": "Two settings packed into one number rather than a list of choices. The menu bar half is 2 for shown, 18 (16+2) for always shown, and 8 for not shown; the Control Center half adds 1 for shown and 4 for not shown. A module with a pop-up menu uses the first half, one with a pair of checkboxes uses both.\n\nMeasured on 27.0: Sound reads 18 on Always Show in Menu Bar and 2 on Show When Active. Battery has held 3, 6, 9 and 12 across a hundred snapshots, which is every combination of its two checkboxes. Across those snapshots every code carrying the 2 bit had its menu bar item present and every code carrying the 8 bit did not.",
+    "ai_generated": false,
     "contributed_by_issue": null,
     "value_map": {
-      "2": "Show in Menu Bar",
-      "8": "Don't Show in Menu Bar",
-      "16": "Always Show in Menu Bar"
-    }
+      "1": "In Control Center",
+      "2": "In the menu bar",
+      "3": "In the menu bar and Control Center",
+      "4": "Not in Control Center",
+      "6": "In the menu bar only",
+      "8": "Not in the menu bar",
+      "9": "In Control Center only",
+      "12": "In neither the menu bar nor Control Center",
+      "18": "Always in the menu bar",
+      "19": "Always in the menu bar, and in Control Center",
+      "22": "Always in the menu bar only"
+    },
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Timer"
+      }
+    ]
   },
   {
     "id": "textinputmenu.visible",
@@ -9609,7 +9840,7 @@
     "source": "defaults",
     "value_type": "int",
     "description": "Controls whether the Music Recognition button appears in the menu bar or Control Center",
-    "ui_location": "System Settings \u2192 Control Center \u2192 Music Recognition",
+    "ui_location": "System Settings \u2192 Menu Bar \u2192 Music Recognition",
     "settings_url": "x-apple.systempreferences:com.apple.ControlCenter-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -9618,7 +9849,13 @@
     "ai_generated": false,
     "contributed_by_issue": 25,
     "value_map": null,
-    "icon_bundle_id": "com.apple.Siri-Settings.extension"
+    "icon_bundle_id": "com.apple.Siri-Settings.extension",
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings \u2192 Control Center \u2192 Music Recognition"
+      }
+    ]
   },
   {
     "id": "siri.StatusMenuVisible",
