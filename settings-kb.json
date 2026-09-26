@@ -31519,13 +31519,13 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "27.0",
-    "notes": "Found by changing the control and diffing a whole snapshot; the domain is suppressed wholesale as daemon state, and naming the key outright wins over that. Stored in seconds. 2592000 and 31536000 were both watched being written by the 30 Days and 1 Year choices; Forever has not been recorded yet, so its entry in the map is a guess and would show as a number if wrong.",
+    "notes": "Found by changing the control and diffing a whole snapshot; the domain is suppressed wholesale as daemon state, and naming the key outright wins over that. Stored in seconds \u2014 2592000 for 30 Days and 31536000 for 1 Year, both watched being written.\n\nForever deletes the key rather than writing a value, so it is the implicit default rather than a map entry. A guess that it wrote 0 was wrong, and setting the control back to Forever is what showed it.",
     "ai_generated": false,
     "contributed_by_issue": null,
     "value_map": {
       "2592000": "30 Days",
-      "31536000": "1 Year",
-      "0": "Forever"
-    }
+      "31536000": "1 Year"
+    },
+    "implicit_default": "Forever"
   }
 ]
