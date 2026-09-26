@@ -20317,7 +20317,7 @@
     "key": "selectedLLMId",
     "description": "Apple Intelligence: Selected AI extension",
     "ui_location": "System Settings \u2192 Apple Intelligence & Siri \u2192 Extensions",
-    "settings_url": null,
+    "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "value_map": {
       "com.apple.openai.chatgpt": "ChatGPT"
     },
@@ -20327,7 +20327,8 @@
     "id": "com.apple.generativepartnerservicesettings.selectedllmid",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "notes": "The key that says which extension is chosen, and the one to read rather than AllLLMUISettings.<provider>.enablementCount, which counts how many times an extension has been switched on. Had no settings URL, so it drew no icon \u2014 the same complaint as issue 301, which was filed against the counter."
   },
   {
     "domain": "com.apple.generativepartnerservicesettings",
