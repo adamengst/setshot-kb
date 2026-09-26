@@ -6639,8 +6639,8 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Stored in /Library/Application Support/CrashReporter/DiagnosticMessagesHistory.plist.",
-    "ai_generated": true,
+    "notes": "Stored in /Library/Application Support/CrashReporter/DiagnosticMessagesHistory.plist.\n\nShare iCloud Analytics, the fifth switch in this pane, writes nothing on the Mac \u2014 switching it produced no change anywhere in a full snapshot. It is held with the Apple Account rather than locally, so SetShot cannot report it.",
+    "ai_generated": false,
     "contributed_by_issue": null
   },
   {
@@ -6650,13 +6650,13 @@
     "source": "plist",
     "value_type": "bool",
     "description": "Share diagnostic info with third-party app developers",
-    "ui_location": "System Settings \u2192 Privacy & Security \u2192 Analytics & Improvements \u2192 Share with App Developers",
+    "ui_location": "System Settings \u2192 Privacy & Security \u2192 Analytics & Improvements \u2192 Share with app developers",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Analytics",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
-    "ai_generated": true,
+    "notes": "Share iCloud Analytics, the fifth switch in this pane, writes nothing on the Mac \u2014 switching it produced no change anywhere in a full snapshot. It is held with the Apple Account rather than locally, so SetShot cannot report it.",
+    "ai_generated": false,
     "contributed_by_issue": null
   },
   {
@@ -20728,9 +20728,9 @@
   {
     "domain": "com.apple.Accessibility",
     "key": "AXSAudioDonationSiriImprovementEnabled",
-    "description": "Privacy: Share audio recordings to help improve Siri & Dictation",
-    "ui_location": "Privacy & Security \u2192 Analytics & Improvements",
-    "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_SiriAnalytics",
+    "description": "Improve Assistive Voice Features: share recordings and transcripts of your Vocal Shortcuts and Voice Control interactions with Apple",
+    "ui_location": "System Settings \u2192 Privacy & Security \u2192 Analytics & Improvements \u2192 Improve Assistive Voice Features",
+    "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Analytics",
     "value_map": null,
     "noise": false,
     "noise_reason": null,
@@ -20738,7 +20738,8 @@
     "id": "com.apple.accessibility.axsaudiodonationsiriimprovementenabled",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "notes": "Identified on 27.0 by switching each item in the pane in turn and watching which key moved: this is the third switch. It had been described as sharing audio to improve Siri and Dictation, which is the switch above it \u2014 that one writes com.apple.assistant.support Siri Data Sharing Opt-In Status 3.0.\n\nShare iCloud Analytics, the fifth switch in this pane, writes nothing on the Mac \u2014 switching it produced no change anywhere in a full snapshot. It is held with the Apple Account rather than locally, so SetShot cannot report it."
   },
   {
     "domain": "com.apple.Accessibility",
@@ -31659,7 +31660,7 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "27.0",
-    "notes": "Measured on 27.0: switching Improve Siri & Apple Intelligence on took this from 2 to 1, and the opt-in history in com.apple.assistant.backedup recorded optedOut before and optedIn after, so 1 is sharing and 2 is not. 0 is unmapped by observation but the history's vocabulary has an unspecified state, which is what it is labelled as.\n\nThe control was called Improve Siri & Dictation before macOS 27 and wrote Siri Data Sharing Opt-In Status, without the 3.0. That key still exists and no longer tracks the switch \u2014 it stayed at 2 while this one moved.",
+    "notes": "Measured on 27.0: switching Improve Siri & Apple Intelligence on took this from 2 to 1, and the opt-in history in com.apple.assistant.backedup recorded optedOut before and optedIn after, so 1 is sharing and 2 is not. 0 is unmapped by observation but the history's vocabulary has an unspecified state, which is what it is labelled as.\n\nThe control was called Improve Siri & Dictation before macOS 27 and wrote Siri Data Sharing Opt-In Status, without the 3.0. That key still exists and no longer tracks the switch \u2014 it stayed at 2 while this one moved.\n\nShare iCloud Analytics, the fifth switch in this pane, writes nothing on the Mac \u2014 switching it produced no change anywhere in a full snapshot. It is held with the Apple Account rather than locally, so SetShot cannot report it.",
     "ai_generated": false,
     "contributed_by_issue": 308,
     "value_map": {
