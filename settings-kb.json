@@ -31466,5 +31466,66 @@
     "ai_generated": false,
     "contributed_by_issue": 308,
     "value_map": null
+  },
+  {
+    "id": "campo.OpenOnNewConversation",
+    "domain": "com.apple.campo",
+    "key": "CampoOpenOnNewConversation",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "bool",
+    "description": "Whether the Siri app opens on a new conversation rather than your recent ones",
+    "ui_location": "System Settings \u2192 Siri \u2192 Siri App \u2192 Opens To",
+    "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "27.0",
+    "notes": "Found by changing the control and diffing a whole snapshot. The domain it lives in is suppressed wholesale as daemon state, which was hiding this; an entry naming the key outright wins over that rule.",
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "0": "Recent Conversations",
+      "1": "New Conversation"
+    }
+  },
+  {
+    "id": "campo.ConversationPreviewLines",
+    "domain": "com.apple.campo",
+    "key": "CampoConversationPreviewLines",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "int",
+    "description": "How many lines of each conversation the Siri app previews in its list",
+    "ui_location": "System Settings \u2192 Siri \u2192 Siri App \u2192 Preview",
+    "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "27.0",
+    "notes": "Found by changing the control and diffing a whole snapshot. The domain it lives in is suppressed wholesale as daemon state, which was hiding this; an entry naming the key outright wins over that rule.",
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": null
+  },
+  {
+    "id": "agentsessionkit.PersistenceTTL",
+    "domain": "com.apple.GenerativeModels.AgentSessionKit",
+    "key": "AgentSessionPersistenceTTL",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "int",
+    "description": "How long the Siri app keeps conversations before discarding them, in seconds",
+    "ui_location": "System Settings \u2192 Siri \u2192 Siri App \u2192 Keep Conversations",
+    "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "27.0",
+    "notes": "Found by changing the control and diffing a whole snapshot. The domain it lives in is suppressed wholesale as daemon state, which was hiding this; an entry naming the key outright wins over that rule. 31536000 is a year; Forever writes no value.",
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "2592000": "30 Days",
+      "31536000": "1 Year",
+      "0": "Forever"
+    }
   }
 ]
