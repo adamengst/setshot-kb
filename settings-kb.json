@@ -2513,45 +2513,6 @@
     "contributed_by_issue": null
   },
   {
-    "id": "globaldomain.AppleIconAppearanceTheme",
-    "domain": "NSGlobalDomain",
-    "key": "AppleIconAppearanceTheme",
-    "source": "defaults",
-    "value_type": "string",
-    "description": "App icon style",
-    "ui_location": "System Settings \u2192 Appearance \u2192 Icon style",
-    "settings_url": "x-apple.systempreferences:com.apple.Appearance-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
-    "min_macos": "26.0",
-    "notes": "Values: 'Default', 'TintedLight', 'TintedDark'.",
-    "ai_generated": true,
-    "contributed_by_issue": 154,
-    "value_map": {
-      "Default": "Default",
-      "Dark": "Dark",
-      "Clear": "Clear",
-      "TintedLight": "Tinted",
-      "TintedDark": "Tinted"
-    }
-  },
-  {
-    "id": "globaldomain.AppleIconAppearanceTintColor",
-    "domain": "NSGlobalDomain",
-    "key": "AppleIconAppearanceTintColor",
-    "source": "defaults",
-    "value_type": "string",
-    "description": "Folder tint color when icon style is set to Tinted",
-    "ui_location": "System Settings \u2192 Appearance \u2192 Folder color",
-    "settings_url": "x-apple.systempreferences:com.apple.Appearance-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
-    "min_macos": "26.0",
-    "notes": null,
-    "ai_generated": true,
-    "contributed_by_issue": null
-  },
-  {
     "id": "globaldomain.AppleReduceDesktopTinting",
     "domain": "NSGlobalDomain",
     "key": "AppleReduceDesktopTinting",
@@ -31527,5 +31488,49 @@
       "31536000": "1 Year"
     },
     "implicit_default": "Forever"
+  },
+  {
+    "id": "globaldomain.AppleIconAppearanceTheme",
+    "domain": "NSGlobalDomain",
+    "key": "AppleIconAppearanceTheme",
+    "key_prefix": null,
+    "source": "defaults",
+    "value_type": "string",
+    "description": "How app icons and widgets are styled",
+    "ui_location": "System Settings \u2192 Appearance \u2192 Icon & widget style",
+    "settings_url": "x-apple.systempreferences:com.apple.Appearance-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "26.0",
+    "notes": "Measured on 27.0 by watching the key while each choice was clicked. Default deletes the key; the other three write a name with the current light or dark appearance appended, so switching between Light and Dark rewrites it without the choice having changed. RegularDark, ClearDark, TintedDark and TintedLight were all seen; a ClearLight is expected by symmetry but has not been recorded.",
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": {
+      "RegularDark": "Dark",
+      "ClearLight": "Clear (light)",
+      "ClearDark": "Clear (dark)",
+      "TintedLight": "Tinted (light)",
+      "TintedDark": "Tinted (dark)"
+    },
+    "implicit_default": "Default"
+  },
+  {
+    "id": "globaldomain.AppleIconAppearanceTintColor",
+    "domain": "NSGlobalDomain",
+    "key": "AppleIconAppearanceTintColor",
+    "key_prefix": null,
+    "source": "defaults",
+    "value_type": "string",
+    "description": "The colour Finder folders are tinted",
+    "ui_location": "System Settings \u2192 Appearance \u2192 Folder color",
+    "settings_url": "x-apple.systempreferences:com.apple.Appearance-Settings.extension",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "26.0",
+    "notes": "Folder color writes this, despite the name reading as though it were the tint for the Icon & widget style setting beside it \u2014 changing the folder colour from yellow to purple moved this key and nothing else. Whether the tinted icon style shares it has not been tested. Absent means Automatic.",
+    "ai_generated": false,
+    "contributed_by_issue": null,
+    "value_map": null,
+    "implicit_default": "Automatic"
   }
 ]
