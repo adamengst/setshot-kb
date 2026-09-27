@@ -29715,6 +29715,23 @@
     "contributed_by_issue": 249
   },
   {
+    "id": "AuthenticationServicesCore.AuthenticationServicesAgent.WBSRemoteAutoFillQuirksLastUpdateTime",
+    "domain": "com.apple.AuthenticationServicesCore.AuthenticationServicesAgent",
+    "key": "WBSRemoteAutoFillQuirksLastUpdateTime",
+    "source": "plist",
+    "value_type": "string",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "value_map": null,
+    "noise": true,
+    "noise_reason": "Timestamp of the daily download of Apple's AutoFill quirks list, the per-site fixes for password and form autofill. Changes about once a day on its own; not a setting.",
+    "min_macos": null,
+    "notes": "Also submitted as issue 314.",
+    "ai_generated": false,
+    "contributed_by_issue": 313
+  },
+  {
     "id": "Family-Settings.extension.IIO_LaunchInfo",
     "domain": "com.apple.Family-Settings.extension",
     "key": "IIO_LaunchInfo",
