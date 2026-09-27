@@ -6629,6 +6629,45 @@
     ]
   },
   {
+    "id": "Spotlight.PasteboardHistoryTimeout",
+    "domain": "com.apple.Spotlight",
+    "key": "PasteboardHistoryTimeout",
+    "source": "defaults",
+    "value_type": "integer",
+    "description": "How long clipboard history is available in Spotlight",
+    "ui_location": "System Settings → Spotlight → Clipboard history is available in Spotlight",
+    "settings_url": "x-apple.systempreferences:com.apple.Spotlight-Settings.extension",
+    "value_map": {
+      "1800": "30 minutes",
+      "28800": "8 hours",
+      "604800": "7 days"
+    },
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "26.0",
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 315,
+    "ui_location_overrides": null
+  },
+  {
+    "id": "Spotlight.newFTECount",
+    "domain": "com.apple.Spotlight",
+    "key": "newFTECount",
+    "source": "defaults",
+    "value_type": "integer",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Counter for Spotlight's first-time introduction to a feature, cleared once it has been shown. Changed alongside the clipboard history setting in issue 315, but it is not a setting itself.",
+    "min_macos": null,
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 316,
+    "ui_location_overrides": null
+  },
+  {
     "id": "diag.AutoSubmit",
     "domain": "DiagnosticMessagesHistory",
     "key": "AutoSubmit",
