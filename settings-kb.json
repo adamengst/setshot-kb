@@ -28807,14 +28807,17 @@
     "key_prefix": "",
     "source": "btm",
     "value_type": "string",
-    "description": "Whether this item may run in the background for you",
+    "description": "Allow {subject} to run automatically in the background",
     "ui_location": "System Settings → General → Login Items & Extensions",
     "settings_url": "x-apple.systempreferences:com.apple.LoginItems-Settings.extension",
-    "value_map": null,
+    "value_map": {
+      "1": "Yes",
+      "0": "No"
+    },
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Read by SetShot 1.0b29 and later from the Background Task Management database. The key is BTM's identifier for the item, prefixed with its type number (2 app, 8 login agent, 16 daemon). The value is the Allow in the Background switch; turning it off leaves the item's plist in place, so the LaunchAgents and LaunchDaemons entries do not change.",
+    "notes": "Read by SetShot 1.0b29 and later from the Background Task Management database. The key is the item's bundle identifier, with BTM's type number removed; an app's several records share one row. The value is the Allow in the Background switch (1 allowed, 0 not); turning it off leaves the item's plist in place, so the LaunchAgents and LaunchDaemons entries do not change.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
@@ -28825,14 +28828,17 @@
     "key_prefix": "",
     "source": "btm",
     "value_type": "string",
-    "description": "Whether this item may run in the background for everyone on this Mac",
+    "description": "Allow {subject} to run automatically in the background",
     "ui_location": "System Settings → General → Login Items & Extensions",
     "settings_url": "x-apple.systempreferences:com.apple.LoginItems-Settings.extension",
-    "value_map": null,
+    "value_map": {
+      "1": "Yes",
+      "0": "No"
+    },
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Read by SetShot 1.0b29 and later from the Background Task Management database. The key is BTM's identifier for the item, prefixed with its type number (2 app, 8 login agent, 16 daemon). The value is the Allow in the Background switch; turning it off leaves the item's plist in place, so the LaunchAgents and LaunchDaemons entries do not change. These are system-wide items such as an updater's privileged helper daemon.",
+    "notes": "Read by SetShot 1.0b29 and later from the Background Task Management database. The key is the item's bundle identifier, with BTM's type number removed; an app's several records share one row. The value is the Allow in the Background switch (1 allowed, 0 not); turning it off leaves the item's plist in place, so the LaunchAgents and LaunchDaemons entries do not change. These are system-wide items such as an updater's privileged helper daemon.",
     "ai_generated": false,
     "contributed_by_issue": null
   },
