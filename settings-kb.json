@@ -32422,5 +32422,23 @@
     "ai_generated": false,
     "contributed_by_issue": 353,
     "value_map": null
+  },
+  {
+    "id": "assistant.support.QuickTypeGesture",
+    "domain": "com.apple.assistant.support",
+    "key": "Quick Type Gesture Enabled",
+    "key_prefix": null,
+    "source": "defaults",
+    "value_type": "bool",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "The iPhone and iPad gesture for typing to Siri (double-tap the bottom of the screen). Siri's shared preference list carries it on the Mac, where nothing controls it.",
+    "min_macos": "13.0",
+    "notes": "Found on 27.0.1 with no matching control in System Settings \u2192 Siri or Accessibility \u2192 Siri. In Siri's shared preference list it sits between Type To Siri Enabled and Visual Intelligence Camera Control Enabled, among other platforms' keys such as Crown Activation Enabled. Issue 321.",
+    "ai_generated": false,
+    "contributed_by_issue": 321,
+    "value_map": null
   }
 ]
