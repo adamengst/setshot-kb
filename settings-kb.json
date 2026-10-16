@@ -29351,9 +29351,10 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Reported from macOS 15.7.9 and 26.6.2. The control only appears when a language that marks grammatical gender is in use, so it is absent on an English-only Mac \u2014 which is why the path could not be confirmed directly during review.",
+    "notes": "Measured on 27.0.1 (issue 346): the control appears only when a language that marks grammatical gender, such as German, is the primary language, not merely in the list. \"Not specified\" is stored as the key's absence: a Mac where it was never set has no com.apple.morphology.internal domain, and choosing Not specified after another option deletes the key and leaves an empty AppleUserMorphology dictionary. Choosing Neutral writes \"neuter\". Earlier reports came from macOS 15.7.9 and 26.6.2 (issue 215).",
     "ai_generated": false,
-    "contributed_by_issue": 215
+    "contributed_by_issue": 346,
+    "implicit_default": "Not specified"
   },
   {
     "id": "mail-shared.DomainForMatching",
