@@ -2863,15 +2863,21 @@
     "key": "AppleMetricUnits",
     "source": "defaults",
     "value_type": "bool",
-    "description": "Whether to use metric units for measurements",
+    "description": "Measurement system: US, or one of the systems built on metric units (Metric or UK)",
     "ui_location": "System Settings \u2192 General \u2192 Language & Region \u2192 Measurement system",
     "settings_url": "x-apple.systempreferences:com.apple.Localization-Settings.extension?MEASUREMENT_SYSTEM",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
-    "ai_generated": true,
-    "contributed_by_issue": null
+    "notes": "Measured on 27.0.1: Metric writes AppleMetricUnits 1 with Centimeters, UK writes 1 with Inches, and US writes 0 with Inches. Foundation takes Metric versus not from AppleMeasurementUnits and US versus UK from the region, so each key answers half the question: US\u2194UK changes only AppleMetricUnits, Metric\u2194UK only AppleMeasurementUnits. Issues 318, 319.",
+    "ai_generated": false,
+    "contributed_by_issue": 318,
+    "value_map": {
+      "0": "US",
+      "False": "US",
+      "1": "Metric or UK",
+      "True": "Metric or UK"
+    }
   },
   {
     "id": "globaldomain.AppleMeasurementUnits",
@@ -2879,15 +2885,19 @@
     "key": "AppleMeasurementUnits",
     "source": "defaults",
     "value_type": "string",
-    "description": "Measurement system used for distances and lengths",
+    "description": "Measurement system: Metric, or one of the systems that measures length in inches (US or UK)",
     "ui_location": "System Settings \u2192 General \u2192 Language & Region \u2192 Measurement system",
     "settings_url": "x-apple.systempreferences:com.apple.Localization-Settings.extension?MEASUREMENT_SYSTEM",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "Values: 'Inches', 'Centimeters'.",
-    "ai_generated": true,
-    "contributed_by_issue": null
+    "notes": "Measured on 27.0.1: Metric writes AppleMetricUnits 1 with Centimeters, UK writes 1 with Inches, and US writes 0 with Inches. Foundation takes Metric versus not from AppleMeasurementUnits and US versus UK from the region, so each key answers half the question: US\u2194UK changes only AppleMetricUnits, Metric\u2194UK only AppleMeasurementUnits. Issues 318, 319.",
+    "ai_generated": false,
+    "contributed_by_issue": 319,
+    "value_map": {
+      "Centimeters": "Metric",
+      "Inches": "US or UK"
+    }
   },
   {
     "id": "globaldomain.tapBehavior",
