@@ -2774,13 +2774,13 @@
     "noise": false,
     "noise_reason": null,
     "value_map": {
-      "": "Off",
+      "": "Region default",
       "0": "Off",
       "1": "On"
     },
     "icon_bundle_id": "com.apple.Date-Time-Settings.extension",
     "min_macos": "13.0",
-    "notes": null,
+    "notes": "Absent until the 24-hour time switch is first changed, so the clock follows the region. Changing the switch writes this key and AppleICUForce12HourTime together, in both 12-hour and 24-hour regions (checked with United States and United Kingdom, issue 354).",
     "ai_generated": true,
     "contributed_by_issue": 58
   },
@@ -29724,7 +29724,7 @@
     "noise": true,
     "noise_reason": "Written alongside AppleICUForce24HourTime by the same 24-hour time switch; that entry reports the change.",
     "min_macos": "13.0",
-    "notes": "The counterpart of AppleICUForce24HourTime; macOS writes whichever contradicts the region.",
+    "notes": "The counterpart of AppleICUForce24HourTime, always written with it and set to the opposite value; that entry reports the switch.",
     "ai_generated": false,
     "contributed_by_issue": 354
   },
