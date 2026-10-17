@@ -29717,16 +29717,16 @@
     "key": "AppleICUForce12HourTime",
     "source": "plist",
     "value_type": "bool",
-    "description": "Forces 12-hour time regardless of the region default",
-    "ui_location": "System Settings \u2192 General \u2192 Date & Time \u2192 24-hour time",
-    "settings_url": "x-apple.systempreferences:com.apple.Date-Time-Settings.extension",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
     "value_map": null,
-    "noise": false,
-    "noise_reason": null,
+    "noise": true,
+    "noise_reason": "Written alongside AppleICUForce24HourTime by the same 24-hour time switch; that entry reports the change.",
     "min_macos": "13.0",
     "notes": "The counterpart of AppleICUForce24HourTime; macOS writes whichever contradicts the region.",
     "ai_generated": false,
-    "contributed_by_issue": 249
+    "contributed_by_issue": 354
   },
   {
     "id": "globaldomain.AppleLanguagesAdditional",
