@@ -4625,19 +4625,25 @@
     "key": "UserPreferredVoiceTriggerPhraseType",
     "source": "defaults",
     "value_type": "int",
-    "description": "Which voice activation phrase is used to summon Siri",
-    "ui_location": "System Settings \u2192 Siri \u2192 Ask Siri \u2192 Listen for",
+    "description": "The phrase that summons Siri",
+    "ui_location": "System Settings \u2192 Siri \u2192 Requests",
     "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "0='Hey Siri', 1='Siri'.",
-    "ai_generated": true,
-    "contributed_by_issue": null,
+    "notes": "Measured on 27.0.1: 1 when Requests is set to \u201cSiri\u201d or \u201cHey Siri\u201d, 0 after switching to \u201cHey Siri\u201d. There is no Siri-only choice. Issue 355.",
+    "ai_generated": false,
+    "contributed_by_issue": 355,
     "value_map": {
-      "0": "Hey Siri",
-      "1": "Siri"
-    }
+      "0": "\u201cHey Siri\u201d",
+      "1": "\u201cSiri\u201d or \u201cHey Siri\u201d"
+    },
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 27,
+        "ui_location": "System Settings \u2192 Siri \u2192 Ask Siri \u2192 Listen for"
+      }
+    ]
   },
   {
     "id": "siri.backedup.responses",
@@ -12562,16 +12568,21 @@
     "key_prefix": null,
     "source": "defaults",
     "value_type": "string",
-    "description": "Screenshot capture type",
-    "ui_location": "Screenshot app \u2192 Options",
+    "description": "Screenshot app: capture area",
+    "ui_location": "Screenshot app toolbar",
     "settings_url": null,
     "noise": false,
     "noise_reason": null,
     "min_macos": null,
-    "notes": "Common types: window, screen, selection.",
-    "ai_generated": true,
-    "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.screenshot.launcher"
+    "notes": "Set by the toolbar buttons each time a capture is taken. Observed values: window, selection, screen.",
+    "ai_generated": false,
+    "contributed_by_issue": 356,
+    "icon_bundle_id": "com.apple.screenshot.launcher",
+    "value_map": {
+      "screen": "Entire screen",
+      "window": "Window",
+      "selection": "Selection"
+    }
   },
   {
     "id": "screencapture-show-thumbnail",
