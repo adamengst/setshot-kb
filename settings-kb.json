@@ -10388,16 +10388,21 @@
     "key": "video",
     "source": "plist",
     "value_type": "bool",
-    "description": "Screenshot app: video mode enabled",
+    "description": "Screenshot app: take screenshots or record the screen",
     "ui_location": "Screenshot app toolbar",
     "settings_url": null,
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
+    "notes": "The toolbar's switch between the screenshot buttons and the screen recording buttons; True means the recording buttons were last used.",
     "ai_generated": false,
     "contributed_by_issue": 40,
-    "value_map": null,
+    "value_map": {
+      "True": "Screen recording",
+      "1": "Screen recording",
+      "False": "Screenshot",
+      "0": "Screenshot"
+    },
     "icon_bundle_id": "com.apple.screenshot.launcher"
   },
   {
