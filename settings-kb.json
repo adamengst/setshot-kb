@@ -4609,14 +4609,14 @@
     "key": "VoiceTrigger Enabled",
     "source": "defaults",
     "value_type": "bool",
-    "description": "Enable 'Hey Siri' from the voicetrigger daemon",
-    "ui_location": "System Settings \u2192 Siri \u2192 Ask Siri \u2192 Listen for",
-    "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
-    "noise": false,
-    "noise_reason": null,
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "noise": true,
+    "noise_reason": "Changes together with Remote Darwin VoiceTrigger Enabled, which reports the same Siri listening switch.",
     "min_macos": "13.0",
-    "notes": null,
-    "ai_generated": true,
+    "notes": "Both keys went from True to False together when Requests was turned off on 27.0.1.",
+    "ai_generated": false,
     "contributed_by_issue": null
   },
   {
@@ -8810,8 +8810,8 @@
     "key": "Remote Darwin VoiceTrigger Enabled",
     "source": "defaults",
     "value_type": "bool",
-    "description": "Hey Siri: listen for Hey Siri",
-    "ui_location": "System Settings \u2192 Siri \u2192 Ask Siri \u2192 Listen for",
+    "description": "Siri: listen for a spoken phrase",
+    "ui_location": "System Settings \u2192 Siri \u2192 Requests",
     "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "noise": false,
     "noise_reason": null,
@@ -10364,10 +10364,13 @@
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": null,
+    "notes": "Values are Core Audio device UIDs. Bluetooth devices appear as their address with :input, USB devices as AppleUSBAudioEngine:vendor:product:\u2026; SetShot 1.0b31 names both.",
     "ai_generated": false,
     "contributed_by_issue": 38,
-    "value_map": null,
+    "value_map": {
+      "BuiltInMicrophoneDevice": "Built-in Microphone",
+      "BuiltInLineInDevice": "Line In"
+    },
     "icon_bundle_id": "com.apple.FaceTime"
   },
   {
