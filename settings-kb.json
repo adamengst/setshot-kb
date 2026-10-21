@@ -4625,7 +4625,7 @@
     "key": "UserPreferredVoiceTriggerPhraseType",
     "source": "defaults",
     "value_type": "int",
-    "description": "The phrase that summons Siri",
+    "description": "Siri trigger phrase",
     "ui_location": "System Settings \u2192 Siri \u2192 Requests",
     "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "noise": false,
@@ -8810,13 +8810,13 @@
     "key": "Remote Darwin VoiceTrigger Enabled",
     "source": "defaults",
     "value_type": "bool",
-    "description": "Siri: listen for a spoken phrase",
+    "description": "Siri trigger phrase",
     "ui_location": "System Settings \u2192 Siri \u2192 Requests",
     "settings_url": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "On a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present.",
+    "notes": "Requests offers \u201cSiri\u201d or \u201cHey Siri\u201d, \u201cHey Siri\u201d and Off, stored as this switch plus UserPreferredVoiceTriggerPhraseType, which keeps its value while the switch is off. From 1.0b31 SetShot reports the choice on this row as off, phrase:0 or phrase:1, reading the phrase from each snapshot, and drops the phrase row when this one is present; earlier versions show On and Off here. On a Sequoia Mac without Apple Intelligence \u2014 an unsupported model, a virtual machine, or a region where it has not shipped \u2014 the pane is plain Siri rather than Apple Intelligence & Siri. The override is keyed on the macOS version, which cannot express that, so 15 is named for the case where Apple Intelligence is present.",
     "ai_generated": false,
     "contributed_by_issue": null,
     "ui_location_overrides": [
@@ -8828,7 +8828,12 @@
         "before_macos_major": 27,
         "ui_location": "System Settings \u2192 Apple Intelligence & Siri \u2192 Ask Siri \u2192 Listen for"
       }
-    ]
+    ],
+    "value_map": {
+      "off": "Off",
+      "phrase:0": "\u201cHey Siri\u201d",
+      "phrase:1": "\u201cSiri\u201d or \u201cHey Siri\u201d"
+    }
   },
   {
     "id": "Siri-atypicalSpeech",
