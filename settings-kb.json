@@ -4396,15 +4396,15 @@
     "key": "FXPreferredViewStyle",
     "source": "defaults",
     "value_type": "string",
-    "description": "Default view style (Icon, List, Column, or Gallery) for new Finder windows and any folder without its own saved view. Viewing just one such folder in a different style \u2014 without deliberately setting a default \u2014 silently changes this same value.",
-    "ui_location": "Finder \u2192 View menu (sets default)",
+    "description": null,
+    "ui_location": null,
     "settings_url": null,
-    "noise": false,
-    "noise_reason": null,
+    "noise": true,
+    "noise_reason": "Finder rewrites this whenever a folder with no saved view of its own is shown in a different style, so it changes in ordinary browsing far more often than anyone sets a default with View → Show View Options → Use as Defaults.",
     "min_macos": "13.0",
-    "notes": "Values: 'icnv'=Icon, 'Nlsv'=List, 'clmv'=Column, 'glyv'=Gallery. macOS writes to this same key when a folder with no per-folder view override (no saved .DS_Store view state) has its view style changed, not only via View \u2192 Show View Options \u2192 Use as Defaults. So a change here isn't always a deliberate default change.",
-    "ai_generated": true,
-    "contributed_by_issue": null,
+    "notes": "Values: 'icnv'=Icon, 'Nlsv'=List, 'clmv'=Column, 'glyv'=Gallery. macOS writes to this same key when a folder with no per-folder view override (no saved .DS_Store view state) has its view style changed, not only via View → Show View Options → Use as Defaults. So a change here isn't always a deliberate default change.",
+    "ai_generated": false,
+    "contributed_by_issue": 363,
     "value_map": {
       "icnv": "Icon",
       "Nlsv": "List",
@@ -6347,6 +6347,29 @@
     "notes": null,
     "ai_generated": true,
     "contributed_by_issue": null
+  },
+  {
+    "id": "universalaccess.typingEchoOptions",
+    "domain": "com.apple.universalaccess",
+    "key": "typingEchoOptions",
+    "source": "plist",
+    "value_type": "int",
+    "description": "Which kinds of typing Speak while typing reads aloud, such as characters, words, or modifier keys, stored as a number combining the options chosen",
+    "ui_location": "System Settings → Accessibility → Read & Speak → Speak while typing → Options",
+    "ui_location_overrides": [
+      {
+        "before_macos_major": 26,
+        "ui_location": "System Settings → Accessibility → Spoken Content → Speak while typing → Options"
+      }
+    ],
+    "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
+    "value_map": null,
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "A bitmask; which bit is which option hasn't been confirmed, so values aren't labelled. Appears once the options are first changed.",
+    "ai_generated": false,
+    "contributed_by_issue": 358
   },
   {
     "id": "universalaccess.stereoAsMono",
@@ -32502,5 +32525,41 @@
     "key_prefix": "searchdomains.",
     "description": "Search domains set manually for {subject}, added to host names that aren't fully qualified",
     "notes": "Captured from 1.0b31 with networksetup -getsearchdomains, one line per network service."
+  },
+  {
+    "id": "com.apple.print.add",
+    "domain": "com.apple.print.add",
+    "key": "",
+    "key_prefix": "",
+    "source": "plist",
+    "value_type": "any",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "value_map": null,
+    "noise": true,
+    "noise_reason": "The Add Printer window remembering what was last chosen in it, such as the protocol for an IP printer. Window state, not a printing preference.",
+    "min_macos": null,
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 370
+  },
+  {
+    "id": "com.apple.dataaccess.babysitter",
+    "domain": "com.apple.dataaccess.babysitter",
+    "key": "",
+    "key_prefix": "",
+    "source": "plist",
+    "value_type": "any",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
+    "value_map": null,
+    "noise": true,
+    "noise_reason": "Bookkeeping by the watchdog that supervises calendar and contacts syncing: counts of failed checks such as CalDAV validity, filed under per-account UUIDs. Written by the system, not set by anyone using the Mac.",
+    "min_macos": null,
+    "notes": null,
+    "ai_generated": false,
+    "contributed_by_issue": 357
   }
 ]
