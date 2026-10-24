@@ -6333,11 +6333,15 @@
     "source": "defaults",
     "value_type": "bool",
     "description": "Spoken Content echoes each word or character aloud while typing",
-    "ui_location": "System Settings \u2192 Accessibility \u2192 Read & Speak \u2192 Speak while typing",
+    "ui_location": "System Settings → Accessibility → Read & Speak → Speak typing feedback",
     "ui_location_overrides": [
       {
+        "before_macos_major": 27,
+        "ui_location": "System Settings → Accessibility → Read & Speak → Speak while typing"
+      },
+      {
         "before_macos_major": 26,
-        "ui_location": "System Settings \u2192 Accessibility \u2192 Spoken Content \u2192 Speak while typing"
+        "ui_location": "System Settings → Accessibility → Spoken Content → Speak while typing"
       }
     ],
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
@@ -6346,7 +6350,7 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": 358
   },
   {
     "id": "universalaccess.typingEchoOptions",
@@ -6354,20 +6358,41 @@
     "key": "typingEchoOptions",
     "source": "plist",
     "value_type": "int",
-    "description": "Which kinds of typing Speak while typing reads aloud, such as characters, words, or modifier keys, stored as a number combining the options chosen",
-    "ui_location": "System Settings → Accessibility → Read & Speak → Speak while typing → Options",
+    "description": "Which kinds of typing are spoken when typing feedback is on: characters, words, selection changes, modifier keys, or a combination",
+    "ui_location": "System Settings → Accessibility → Read & Speak → Speak typing feedback → ⓘ",
     "ui_location_overrides": [
+      {
+        "before_macos_major": 27,
+        "ui_location": "System Settings → Accessibility → Read & Speak → Speak while typing → Options"
+      },
       {
         "before_macos_major": 26,
         "ui_location": "System Settings → Accessibility → Spoken Content → Speak while typing → Options"
       }
     ],
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
-    "value_map": null,
+    "value_map": {
+      "0": "None",
+      "1": "Characters",
+      "4": "Words",
+      "5": "Characters, words",
+      "8": "Selection changes",
+      "9": "Characters, selection changes",
+      "12": "Words, selection changes",
+      "13": "Characters, words, selection changes",
+      "16": "Modifier keys",
+      "17": "Characters, modifier keys",
+      "20": "Words, modifier keys",
+      "21": "Characters, words, modifier keys",
+      "24": "Selection changes, modifier keys",
+      "25": "Characters, selection changes, modifier keys",
+      "28": "Words, selection changes, modifier keys",
+      "29": "Characters, words, selection changes, modifier keys"
+    },
     "noise": false,
     "noise_reason": null,
     "min_macos": "13.0",
-    "notes": "A bitmask; which bit is which option hasn't been confirmed, so values aren't labelled. Appears once the options are first changed.",
+    "notes": "A bitmask, measured on macOS 27 by checking each box alone: Echo characters 1, Echo words 4, Echo selection changes 8, Echo modifier keys 16; 2 is unused. Each box is saved as soon as it is checked. The key appears only once an option is first changed.",
     "ai_generated": false,
     "contributed_by_issue": 358
   },
