@@ -32712,5 +32712,26 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 375
+  },
+  {
+    "id": "btm.login",
+    "domain": "BTM-login",
+    "key": "",
+    "key_prefix": "",
+    "source": "btm",
+    "value_type": "string",
+    "description": "Open {subject} at login",
+    "ui_location": "System Settings → General → Login Items & Extensions → Open at Login",
+    "settings_url": "x-apple.systempreferences:com.apple.LoginItems-Settings.extension",
+    "value_map": {
+      "1": "Yes",
+      "0": "No"
+    },
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "Read by SetShot after 1.0b32 from the Background Task Management database: the enabled bit (0x1) of an app's own record (type 0x2). Removing an app from Open at Login clears that bit and leaves the record and its Allow in the Background switch in place. The key is the app's bundle identifier.",
+    "ai_generated": false,
+    "contributed_by_issue": 373
   }
 ]
