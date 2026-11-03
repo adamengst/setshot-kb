@@ -32990,7 +32990,7 @@
     "id": "globaldomain.SwiftUIDisableSolarium",
     "domain": "NSGlobalDomain",
     "key": "com.apple.SwiftUI.DisableSolarium",
-    "key_prefix": "",
+    "key_prefix": null,
     "source": "plist",
     "value_type": "bool",
     "description": "Turn off the Liquid Glass design in SwiftUI apps",
