@@ -14865,16 +14865,20 @@
     "key_prefix": null,
     "source": "defaults",
     "value_type": "bool",
-    "description": "Show website names instead of URLs in Passwords",
-    "ui_location": "Passwords \u2192 Settings",
+    "description": "How Passwords names each account in its list: by title or by website",
+    "ui_location": "Passwords → Settings → Show accounts as",
     "settings_url": null,
     "noise": false,
     "noise_reason": null,
     "min_macos": null,
-    "notes": null,
-    "ai_generated": true,
-    "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.Passwords"
+    "notes": "Confirmed on macOS 27: with the picker on Titles the key is 1.",
+    "ai_generated": false,
+    "contributed_by_issue": 393,
+    "icon_bundle_id": "com.apple.Passwords",
+    "value_map": {
+      "1": "Titles",
+      "0": "Websites"
+    }
   },
   {
     "id": "passwords-noise",
