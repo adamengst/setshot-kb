@@ -33256,5 +33256,49 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 410
+  },
+  {
+    "id": "universalaccess.cursorFill",
+    "domain": "com.apple.universalaccess",
+    "key": "cursorFill",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "string",
+    "description": "Color inside the mouse pointer",
+    "ui_location": "System Settings → Accessibility → Display → Pointer fill color",
+    "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
+    "value_map": {
+      "#000000": "Black",
+      "#FFFFFF": "White"
+    },
+    "implicit_default": "#000000",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "12.0",
+    "notes": "Stored as cursorFill.red, .green, .blue and .alpha, each 0 to 1. SetShot from 1.0.1 shows them as one hex color; earlier versions filtered them as noise. With no custom color, the fill is black.",
+    "ai_generated": false,
+    "contributed_by_issue": null
+  },
+  {
+    "id": "universalaccess.cursorOutline",
+    "domain": "com.apple.universalaccess",
+    "key": "cursorOutline",
+    "key_prefix": null,
+    "source": "plist",
+    "value_type": "string",
+    "description": "Color of the mouse pointer's outline",
+    "ui_location": "System Settings → Accessibility → Display → Pointer outline color",
+    "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
+    "value_map": {
+      "#000000": "Black",
+      "#FFFFFF": "White"
+    },
+    "implicit_default": "#FFFFFF",
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "12.0",
+    "notes": "Stored as cursorOutline.red, .green, .blue and .alpha, each 0 to 1. SetShot from 1.0.1 shows them as one hex color; earlier versions filtered them as noise. With no custom color, the outline is white.",
+    "ai_generated": false,
+    "contributed_by_issue": null
   }
 ]
