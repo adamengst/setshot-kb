@@ -29448,12 +29448,12 @@
     "key_prefix": "applications[",
     "source": "defaults",
     "value_type": "string",
-    "description": "An app the firewall has been told to allow or block incoming connections for",
-    "ui_location": "System Settings \u2192 Network \u2192 Firewall \u2192 Options",
-    "settings_url": "x-apple.systempreferences:com.apple.Network-Settings.extension",
+    "description": null,
+    "ui_location": null,
+    "settings_url": null,
     "value_map": null,
-    "noise": false,
-    "noise_reason": null,
+    "noise": true,
+    "noise_reason": "Dropped by the capture from the release after 1.0.1 on, which reads the firewall's app list from socketfilterfw as Firewall-app instead. Older macOS kept the list in com.apple.alf.plist, keyed by position.",
     "min_macos": "13.0",
     "notes": "Keyed by position in the list, so adding or removing an app shifts the rest. The alias and reqdata entries beside each app are binary blobs and are filtered out.",
     "ai_generated": false,
@@ -33448,5 +33448,89 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 431
+  },
+  {
+    "id": "firewall.stealthMode",
+    "domain": "Firewall",
+    "key": "stealthMode",
+    "key_prefix": null,
+    "source": "socketfilterfw",
+    "value_type": "int",
+    "description": "Enable stealth mode. The Mac does not answer probes such as ping from the network.",
+    "ui_location": "System Settings → Network → Firewall → Options",
+    "settings_url": "x-apple.systempreferences:com.apple.Network-Settings.extension",
+    "value_map": {
+      "1": "On",
+      "0": "Off"
+    },
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "From `socketfilterfw --getstealthmode`.",
+    "ai_generated": false,
+    "contributed_by_issue": 441
+  },
+  {
+    "id": "firewall.allowBuiltInSigned",
+    "domain": "Firewall",
+    "key": "allowBuiltInSigned",
+    "key_prefix": null,
+    "source": "socketfilterfw",
+    "value_type": "int",
+    "description": "Automatically allow built-in software to receive incoming connections",
+    "ui_location": "System Settings → Network → Firewall → Options",
+    "settings_url": "x-apple.systempreferences:com.apple.Network-Settings.extension",
+    "value_map": {
+      "1": "On",
+      "0": "Off"
+    },
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "From `socketfilterfw --getallowsigned`, the built-in line.",
+    "ai_generated": false,
+    "contributed_by_issue": 442
+  },
+  {
+    "id": "firewall.allowDownloadedSigned",
+    "domain": "Firewall",
+    "key": "allowDownloadedSigned",
+    "key_prefix": null,
+    "source": "socketfilterfw",
+    "value_type": "int",
+    "description": "Automatically allow downloaded signed software to receive incoming connections",
+    "ui_location": "System Settings → Network → Firewall → Options",
+    "settings_url": "x-apple.systempreferences:com.apple.Network-Settings.extension",
+    "value_map": {
+      "1": "On",
+      "0": "Off"
+    },
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "From `socketfilterfw --getallowsigned`, the downloaded line.",
+    "ai_generated": false,
+    "contributed_by_issue": 443
+  },
+  {
+    "id": "firewall.app",
+    "domain": "Firewall-app",
+    "key": "",
+    "key_prefix": "",
+    "source": "socketfilterfw",
+    "value_type": "string",
+    "description": "Incoming connections for {subject}",
+    "ui_location": "System Settings → Network → Firewall → Options",
+    "settings_url": "x-apple.systempreferences:com.apple.Network-Settings.extension",
+    "value_map": {
+      "allow": "Allow incoming connections",
+      "block": "Block incoming connections"
+    },
+    "noise": false,
+    "noise_reason": null,
+    "min_macos": "13.0",
+    "notes": "From `socketfilterfw --listapps`. The key is the bundle identifier of the innermost bundle holding the executable, or the executable's path for a tool outside any bundle or a second entry for the same identifier. An app added to the list appears with no earlier value, one removed with no later value. Replaces alf.applications, whose plist recent macOS no longer keeps.",
+    "ai_generated": false,
+    "contributed_by_issue": 445
   }
 ]
