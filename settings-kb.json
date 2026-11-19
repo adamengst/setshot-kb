@@ -1536,7 +1536,8 @@
     "min_macos": "10.12",
     "notes": "Animation types reduced include zoom effects, parallax, and animated backgrounds.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "windowmanager.GloballyEnabled",
@@ -2270,7 +2271,8 @@
       "1": "Off",
       "False": "On",
       "0": "On"
-    }
+    },
+    "implicit_default": "True"
   },
   {
     "id": "ncprefs.dndDisplayLock",
@@ -2286,7 +2288,8 @@
     "min_macos": "12.0",
     "notes": "Stored as a nested binary plist under dnd_prefs. True = suppress, False = allow.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "ncprefs.facetimeCanBreakDND",
@@ -2302,7 +2305,8 @@
     "min_macos": "12.0",
     "notes": "Stored as a nested binary plist under dnd_prefs in ncprefs.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "ncprefs.repeatedFacetimeCallsBreaksDND",
@@ -2318,7 +2322,8 @@
     "min_macos": "12.0",
     "notes": "Stored as a nested binary plist under dnd_prefs in ncprefs.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "donotdisturbd.disableCloudSync",
@@ -2372,7 +2377,8 @@
     "min_macos": "10.14",
     "notes": "Stored in /Library/Preferences/com.apple.SoftwareUpdate.plist (system-level, requires admin).",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "True"
   },
   {
     "id": "softwareupdate.CriticalUpdateInstall",
@@ -2388,7 +2394,8 @@
     "min_macos": "10.14",
     "notes": "Includes Rapid Security Responses, XProtect updates, and Malware Removal Tool (MRT) updates. Stored in /Library/Preferences/com.apple.SoftwareUpdate.plist (system-level, requires admin).",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "True"
   },
   {
     "id": "softwareupdate.ConfigDataInstall",
@@ -2404,7 +2411,8 @@
     "min_macos": "10.14",
     "notes": "Stored in /Library/Preferences/com.apple.SoftwareUpdate.plist. Often changes together with CriticalUpdateInstall.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "True"
   },
   {
     "id": "com.apple.SetShotCanary.CanaryTest",
@@ -3627,7 +3635,8 @@
     "min_macos": "12.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "comfortsounds.timerDuration",
@@ -5285,7 +5294,8 @@
     "value_map": {
       "True": "On",
       "False": "Off"
-    }
+    },
+    "implicit_default": "False"
   },
   {
     "id": "bt-obex-file-handling",
@@ -5363,7 +5373,8 @@
     "min_macos": "13.0",
     "notes": "1=ON, 0=OFF.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "1"
   },
   {
     "id": "bluetooth.gcAutoSwitch",
@@ -5548,7 +5559,8 @@
     "notes": null,
     "ai_generated": true,
     "contributed_by_issue": null,
-    "icon_bundle_id": "com.apple.Passwords"
+    "icon_bundle_id": "com.apple.Passwords",
+    "implicit_default": "False"
   },
   {
     "id": "mail.AlertForNonmatchingDomains",
@@ -5829,7 +5841,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "universalaccess.reduceTransparency",
@@ -5845,7 +5858,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "universalaccess.increaseContrast",
@@ -5861,7 +5875,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "universalaccess.DarkenSystemColors",
@@ -5957,7 +5972,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "universalaccess.PhotosensitiveMitigation",
@@ -5973,7 +5989,8 @@
     "min_macos": "14.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "globaldomain.ReduceMotionAutoplayAnimated",
@@ -6005,7 +6022,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "globaldomain.UIPreferredContentSizeCategoryName",
@@ -6051,7 +6069,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "universalaccess.mouseDriverCursorSize",
@@ -6067,7 +6086,8 @@
     "min_macos": "13.0",
     "notes": "1.0 = normal. Higher values = larger pointer.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "1"
   },
   {
     "id": "universalaccess.cursorIsCustomized",
@@ -6083,7 +6103,8 @@
     "min_macos": "14.0",
     "notes": "True when the pointer's fill and outline colors differ from the default black/white.",
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "globaldomain.CGDisableCursorLocationMagnification",
@@ -6115,7 +6136,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "universalaccess.hoverTextIsAlwaysOn",
@@ -6163,7 +6185,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "universalaccess.useStickyKeysShortcutKeys",
@@ -6195,7 +6218,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "universalaccess.slowKeyDelay",
@@ -6249,7 +6273,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "accessibility.SpeakThisEnabled",
@@ -6293,7 +6318,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "universalaccess.liveSpeechEnabled",
@@ -6315,7 +6341,8 @@
     "min_macos": "14.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "universalaccess.typingEchoEnabled",
@@ -6324,15 +6351,15 @@
     "source": "defaults",
     "value_type": "bool",
     "description": "Spoken Content echoes each word or character aloud while typing",
-    "ui_location": "System Settings → Accessibility → Read & Speak → Speak typing feedback",
+    "ui_location": "System Settings \u2192 Accessibility \u2192 Read & Speak \u2192 Speak typing feedback",
     "ui_location_overrides": [
       {
         "before_macos_major": 27,
-        "ui_location": "System Settings → Accessibility → Read & Speak → Speak while typing"
+        "ui_location": "System Settings \u2192 Accessibility \u2192 Read & Speak \u2192 Speak while typing"
       },
       {
         "before_macos_major": 26,
-        "ui_location": "System Settings → Accessibility → Spoken Content → Speak while typing"
+        "ui_location": "System Settings \u2192 Accessibility \u2192 Spoken Content \u2192 Speak while typing"
       }
     ],
     "settings_url": "x-apple.systempreferences:com.apple.Accessibility-Settings.extension",
@@ -6341,7 +6368,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": 358
+    "contributed_by_issue": 358,
+    "implicit_default": "False"
   },
   {
     "id": "universalaccess.typingEchoOptions",
@@ -6401,7 +6429,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "universalaccess.systemTranscriptionEnabled",
@@ -6417,7 +6446,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "universalaccess.FaceTimeCaptions",
@@ -6449,7 +6479,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "universalaccess.closeViewScrollWheelToggle",
@@ -6465,7 +6496,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "universalaccess.closeViewScrollWheelModifiersInt",
@@ -6572,7 +6604,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "mediaaccessibility.colorFilters",
@@ -8146,7 +8179,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "ua-closeViewPressOnReleaseOff",
@@ -8338,7 +8372,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "ua-whiteOnBlack",
@@ -8354,7 +8389,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "CoreGraphics-DisplayInvertedPolarity",
@@ -8386,7 +8422,8 @@
     "min_macos": "13.0",
     "notes": "Legacy key for the greyscale color filter; may appear in snapshots from older macOS versions.",
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "ua-contrastLevel",
@@ -8402,7 +8439,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "0"
   },
   {
     "id": "ua-showToolbarButtonShapes",
@@ -8418,7 +8456,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "ua-hoverTypingEnabled",
@@ -8434,7 +8473,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "ua-hoverColorEnabled",
@@ -8619,7 +8659,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "ua-AssistiveTouchScannerEnabled",
@@ -8635,7 +8676,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "ua-switchHoverTextToolbarEnabled",
@@ -8872,7 +8914,8 @@
       "off": "Off",
       "phrase:0": "\u201cHey Siri\u201d",
       "phrase:1": "\u201cSiri\u201d or \u201cHey Siri\u201d"
-    }
+    },
+    "implicit_default": "False"
   },
   {
     "id": "Siri-atypicalSpeech",
@@ -10071,7 +10114,8 @@
     "min_macos": "10.14",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": 28
+    "contributed_by_issue": 28,
+    "implicit_default": "True"
   },
   {
     "id": "siri.KeyboardShortcutSAE.enabled",
@@ -11033,7 +11077,8 @@
     "notes": null,
     "ai_generated": false,
     "contributed_by_issue": 10,
-    "icon_bundle_id": "com.apple.Notifications-Settings.extension"
+    "icon_bundle_id": "com.apple.Notifications-Settings.extension",
+    "implicit_default": "False"
   },
   {
     "id": "terminal-window-settings",
@@ -12945,7 +12990,8 @@
     "min_macos": null,
     "notes": null,
     "ai_generated": true,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "True"
   },
   {
     "id": "ncprefs-app-prefs",
@@ -18804,7 +18850,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "True"
   },
   {
     "id": "bluetooth.autoSeekPointing",
@@ -18820,7 +18867,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "True"
   },
   {
     "id": "speech.selectedVoiceName",
@@ -18884,7 +18932,8 @@
     "min_macos": "13.0",
     "notes": "In macOS 15 Sequoia, this option appears under Store Restrictions. Earlier versions used Content Restrictions.",
     "ai_generated": false,
-    "contributed_by_issue": 47
+    "contributed_by_issue": 47,
+    "implicit_default": "True"
   },
   {
     "id": "bluetooth.domainNoise",
@@ -19308,7 +19357,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "hitoolbox.keyboardLayout",
@@ -19703,7 +19753,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "ua.differentiateWithoutColor",
@@ -19719,7 +19770,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "ua.dwellEnabled",
@@ -19735,7 +19787,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "ua.headMouseEnabled",
@@ -19751,7 +19804,8 @@
     "min_macos": "14.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "ua.speakItemUnderMouseMode",
@@ -19783,7 +19837,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "True"
   },
   {
     "id": "ua.virtualKeyboard",
@@ -19799,7 +19854,8 @@
     "min_macos": "13.0",
     "notes": null,
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": null,
+    "implicit_default": "False"
   },
   {
     "id": "ua.userSwitchesNoise",
@@ -20699,7 +20755,8 @@
     "id": "com.apple.speechrecognitioncore.allowaudioducking",
     "source": "defaults",
     "value_type": "string",
-    "ai_generated": false
+    "ai_generated": false,
+    "implicit_default": "False"
   },
   {
     "domain": "com.apple.ScreenSharingSharedDefaults",
