@@ -2436,7 +2436,7 @@
     "key": "AppleInterfaceStyle",
     "source": "defaults",
     "value_type": "string",
-    "description": "Light or Dark Mode",
+    "description": "Light or Dark Mode. With Appearance set to Auto, macOS changes this itself as day turns to night and back",
     "ui_location": "System Settings \u2192 Appearance \u2192 Appearance",
     "settings_url": "x-apple.systempreferences:com.apple.Appearance-Settings.extension?appearance",
     "noise": false,
@@ -2444,7 +2444,7 @@
     "min_macos": "13.0",
     "notes": "Value: 'Dark' = dark mode; key absent or any other value = light mode.",
     "ai_generated": true,
-    "contributed_by_issue": 38,
+    "contributed_by_issue": 458,
     "implicit_default": "",
     "value_map": {
       "": "Light",
@@ -26998,8 +26998,8 @@
     "key_prefix": "kTCCServiceAccessibility/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Accessibility access for {subject}",
-    "ui_location": "System Settings \u2192 Privacy & Security \u2192 Accessibility",
+    "description": "Accessibility access, called Device Control and Data Access on macOS 27, for {subject}",
+    "ui_location": "System Settings \u2192 Privacy & Security \u2192 Accessibility, or Device Control and Data Access on macOS 27",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Accessibility",
     "value_map": {
       "0": "Denied",
@@ -27012,7 +27012,7 @@
     "min_macos": "13.0",
     "notes": "per-user grant. The key is the requesting app's bundle ID or executable path. Requires Full Disk Access for SetShot to read.",
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": 457
   },
   {
     "id": "tcc.user.PostEvent",
@@ -27550,8 +27550,8 @@
     "key_prefix": "kTCCServiceAccessibility/",
     "source": "tcc",
     "value_type": "int",
-    "description": "Accessibility access for {subject}",
-    "ui_location": "System Settings \u2192 Privacy & Security \u2192 Accessibility",
+    "description": "Accessibility access, called Device Control and Data Access on macOS 27, for {subject}",
+    "ui_location": "System Settings \u2192 Privacy & Security \u2192 Accessibility, or Device Control and Data Access on macOS 27",
     "settings_url": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Accessibility",
     "value_map": {
       "0": "Denied",
@@ -27564,7 +27564,7 @@
     "min_macos": "13.0",
     "notes": "system-wide grant. The key is the requesting app's bundle ID or executable path. Requires Full Disk Access for SetShot to read.",
     "ai_generated": false,
-    "contributed_by_issue": null
+    "contributed_by_issue": 457
   },
   {
     "id": "tcc.system.PostEvent",
